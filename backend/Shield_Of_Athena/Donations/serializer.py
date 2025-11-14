@@ -11,4 +11,14 @@ class DonationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Donation
         fields = ["id", "amount","currency", "is_recurring", "date", "user"]
-        
+
+    def create(self, validated_data): 
+        request = self.context.get("request")
+        user = getattr(request, "user", None)
+
+        if user and user.is_authenticated: 
+            validated_data["user"] = user
+        else:
+            validated_data["is_recurring"] = False; 
+
+        return super().create(validated_data)
