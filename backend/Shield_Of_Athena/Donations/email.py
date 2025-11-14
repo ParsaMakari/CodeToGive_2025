@@ -1,6 +1,4 @@
 from django.core.mail import send_mail
-import logging
-from django.conf import settings
 
 def confirmation(first_name, amount, currency, impact_pathway_name=None, recipient_email=None,):
 
