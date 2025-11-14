@@ -14,22 +14,25 @@ class UserSerializer(serializers.ModelSerializer):
         
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
+    firstName = serializers.CharField(source='first_name')
+    lastName = serializers.CharField(source='last_name')
 
     class Meta:
         model = User
-        fields=["first_name","last_name", "email", "password"]
+        fields = ["firstName", "lastName", "username", "email", "password"]
 
     def validate_password(self, value):
         validate_password(value)
         return value
-    
-     
-    def create(self, validated_data):
-        return User.objects.create_user(**validated_data)
 
+    def create(self, validated_data):
+        password = validated_data.pop('password')
+        user = User.objects.create_user(**validated_data)
+        user.set_password(password)
+        user.save()
+        return user
 
 class EmailTokenObtainPairSerializer(TokenObtainPairSerializer):
-    """Custom serializer that uses email instead of username for token authentication"""
     email = serializers.EmailField()
     password = serializers.CharField(write_only=True)
     
@@ -43,6 +46,7 @@ class EmailTokenObtainPairSerializer(TokenObtainPairSerializer):
     def get_token(cls, user):
         token = super().get_token(user)
         token['email'] = user.email
+        token['username'] = user.username
         return token
     
     def validate(self, attrs):
