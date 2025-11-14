@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'Donations',
     'Impact',
     'Stories',
+    'FAQ',
+    'Quiz',
     'rest_framework',
     'corsheaders',
 ]

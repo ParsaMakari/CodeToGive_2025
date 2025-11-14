@@ -4,14 +4,6 @@ from .models import Donation
 
 
 
-
-
-
-
-
-
-
-
 class DonationSerializer(serializers.ModelSerializer):
     user = UserSerializer(read_only=True)
     date = serializers.DateField(format="%Y-%m-%d")
