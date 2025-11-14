@@ -15,7 +15,8 @@ All routes are prefixed by `/api/` in this draft.
 {
   "email": "user@example.com",
   "password": "string",
-  "firstName": "Optional string"
+  "firstName": "string"
+  "lastName": "string" 
 }
 
 **Response 201 (JSON):**
@@ -84,7 +85,7 @@ All routes are prefixed by `/api/` in this draft.
   "currency": "CAD",
   "impactPathwaySlug": "emergency-shelter-safety",
   "isRecurring": false,
-  "isAnonymous": true,
+  "name": string or "Anonymus"
   "message": "Optional message from donor"
 }
 
@@ -94,9 +95,9 @@ All routes are prefixed by `/api/` in this draft.
   "id": 123,
   "amount": 50,
   "currency": "CAD",
-  "impactPathwaySlug": "emergency-shelter-safety",
+  "impactPathwaySlug": "emergency-shelter-safety", 
   "isRecurring": false,
-  "isAnonymous": true,
+  "name": string or "Anonymus"
   "createdAt": "2025-11-14T12:00:00Z"
 }
 
@@ -116,7 +117,7 @@ All routes are prefixed by `/api/` in this draft.
     "currency": "CAD",
     "impactPathwaySlug": "emergency-shelter-safety",
     "isRecurring": false,
-    "isAnonymous": true,
+    "name": string or "Anonymus"
     "createdAt": "2025-11-14T12:00:00Z"
   }
 ]

@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Donation
 from django.contrib.auth.models import User
 from django.contrib.auth.password_validation import validate_password
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -9,14 +9,7 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = ["id", "first_name", "last_name","username", "email"]
 
-class DonationSerializer(serializers.ModelSerializer):
-    user = UserSerializer(read_only=True)
-    date = serializers.DateField(format="%Y-%m-%d")
 
-    class Meta:
-        model = Donation
-        fields = ["id", "amount", "date", "user"]
-        
     
         
 class RegisterSerializer(serializers.ModelSerializer):
@@ -24,7 +17,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields=["username","first_name","last_name", "email", "password"]
+        fields=["first_name","last_name", "email", "password"]
 
     def validate_password(self, value):
         validate_password(value)
@@ -33,3 +26,33 @@ class RegisterSerializer(serializers.ModelSerializer):
      
     def create(self, validated_data):
         return User.objects.create_user(**validated_data)
+
+
+class EmailTokenObtainPairSerializer(TokenObtainPairSerializer):
+    """Custom serializer that uses email instead of username for token authentication"""
+    email = serializers.EmailField()
+    password = serializers.CharField(write_only=True)
+    
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # Remove the username field if it exists
+        if 'username' in self.fields:
+            del self.fields['username']
+    
+    @classmethod
+    def get_token(cls, user):
+        token = super().get_token(user)
+        token['email'] = user.email
+        return token
+    
+    def validate(self, attrs):
+        # Replace email with username for parent class validation
+        email = attrs.pop('email', None)
+        if email:
+            try:
+                user = User.objects.get(email=email)
+                attrs['username'] = user.username
+            except User.DoesNotExist:
+                raise serializers.ValidationError("Invalid email or password")
+        
+        return super().validate(attrs)
