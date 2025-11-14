@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Heart, FolderOpen, HandFist, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "./LanguageToggle";
+import ThemeToggle from "./ThemeToggle";
 import TimelineStep from "./TimelineStep";
 import CampaignProgress from "./CampaignProgress";
 import { fetchImpactJourney } from "../api/impactJourney";
@@ -71,7 +72,8 @@ function ImpactJourney({
     <div className="impact-page">
       <div className="impact-page-header">
         <div className="impact-header">
-            <div> <h1 className="text-3xl md:text-4xl font-semibold text-foreground">
+            <div className="impact-header-title-group">
+                <h1 className="text-3xl md:text-4xl font-semibold text-foreground">
                 {t("impactJourney.title")}
             </h1>
                 <p
@@ -81,7 +83,10 @@ function ImpactJourney({
                     {t("impactJourney.subtitle")}
                 </p>
             </div>
-          <LanguageToggle />
+            <div className="impact-header-toggles">
+                <LanguageToggle />
+                <ThemeToggle />
+            </div>
         </div>
       </div>
 

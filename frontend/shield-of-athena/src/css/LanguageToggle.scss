@@ -4,7 +4,7 @@
   display: inline-flex;
   padding: 0.15rem;
   border-radius: 999px;
-  background: rgba(148, 163, 184, 0.12);
+  background: var(--color-card-bg-soft);
   border: 1px solid rgba(148, 163, 184, 0.4);
   gap: 0.15rem;
   margin-bottom: 1.5rem;
@@ -24,8 +24,8 @@
   transition: all 0.15s ease-in-out;
 
   &.is-active {
-    background: var(--color-primary);
-    color: #ffffff;
+    background: var(--color-primary-soft);
+    color: var(--color-primary-chip-text);
     box-shadow: 0 6px 16px $shadow-soft-strong;
   }
 
