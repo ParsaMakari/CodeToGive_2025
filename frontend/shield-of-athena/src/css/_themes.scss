@@ -1,0 +1,89 @@
+// Fonts
+$font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+// Layout
+$impact-max-width: 1100px;
+$radius-lg: 1rem;
+$radius-pill: 999px;
+
+// Shadows
+$shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.06);
+$shadow-soft-strong: 0 18px 45px rgba(79, 70, 229, 0.2);
+$shadow-chip: 0 8px 18px rgba(15, 23, 42, 0.12);
+$shadow-button: 0 8px 20px rgba(79, 70, 229, 0.08);
+
+// Transitions
+$transition-soft: 0.15s ease-in-out;
+
+:root {
+  /* Base */
+  --color-bg-page: #f9fafb;
+  --color-text-main: #453947;
+  --color-text-muted: #4b5563;
+
+  /* Cards / surfaces */
+  --color-card-bg-soft: #faf5ff;
+  --color-card-bg-strong: #ffffff;
+  --color-card-border-soft: rgba(148, 163, 184, 0.25);
+  --color-border-subtle: #e5e7eb;
+
+  /* Primary / brand */
+  --color-primary: #4c1d95;
+  --color-primary-soft: #ede9fe;
+  --color-primary-chip-bg: #f1e6ff;
+  --color-primary-chip-text: #5b21b6;
+
+  /* Accent / gradients */
+  --color-gradient-icon-start: #f5e1ff;
+  --color-gradient-icon-mid: #c4b5fd;
+  --color-gradient-bar-start: #d8b4fe;
+  --color-gradient-bar-mid: #c084fc;
+  --color-gradient-bar-end: #692ca6;
+
+  /* Tag / success */
+  --color-tag-bg: #ede9fe;
+  --color-tag-text: #4c1d95;
+
+  /* Progress */
+  --color-progress-bg: #f3f4f6;
+
+  /* Share button */
+  --color-share-bg: #f9fafb;
+  --color-share-text: #4c1d95;
+  --color-share-border: #e5e7eb;
+  --color-share-bg-hover: #f1e6ff;
+  --color-share-border-hover: #c4b5fd;
+}
+
+[data-theme="dark"] {
+  --color-bg-page: #020617;
+  --color-text-main: #e5e7eb;
+  --color-text-muted: #9ca3af;
+
+  --color-card-bg-soft: #020617;
+  --color-card-bg-strong: #020617;
+  --color-card-border-soft: rgba(148, 163, 184, 0.35);
+  --color-border-subtle: rgba(148, 163, 184, 0.4);
+
+  --color-primary: #e5e7ff;
+  --color-primary-soft: #1e1b4b;
+  --color-primary-chip-bg: #1f2937;
+  --color-primary-chip-text: #e5e7ff;
+
+  --color-gradient-icon-start: #4c1d95;
+  --color-gradient-icon-mid: #7c3aed;
+  --color-gradient-bar-start: #7c3aed;
+  --color-gradient-bar-mid: #a855f7;
+  --color-gradient-bar-end: #f97316;
+
+  --color-tag-bg: rgba(79, 70, 229, 0.3);
+  --color-tag-text: #e5e7ff;
+
+  --color-progress-bg: #111827;
+
+  --color-share-bg: #020617;
+  --color-share-text: #e5e7eb;
+  --color-share-border: rgba(148, 163, 184, 0.5);
+  --color-share-bg-hover: #111827;
+  --color-share-border-hover: #a855f7;
+}

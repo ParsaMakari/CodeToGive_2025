@@ -1,0 +1,39 @@
+{
+  "impactJourney": {
+    "header": {
+      "title": "Votre parcours d’impact",
+      "subtitle": "Votre générosité change réellement des vies"
+    },
+    "steps": {
+      "1": {
+        "title": "Votre don a été reçu",
+        "description": "Merci de soutenir des femmes et des enfants dans le besoin."
+      },
+      "2": {
+        "title": "Les fonds sont alloués au programme choisi",
+        "description": "Votre contribution est dirigée vers des programmes qui offrent une sécurité immédiate et un soutien à long terme.",
+        "programName": "Programme d’hébergement d’urgence"
+      },
+      "3": {
+        "title": "Votre don crée un impact immédiat",
+        "description": "Ce soir, une femme et ses enfants dormiront en sécurité grâce à vous."
+      },
+      "4": {
+        "title": "Vous faites partie de leur parcours de guérison",
+        "description": "Votre don contribue à la stabilité, à la sécurité et à l’espoir à long terme pour des familles qui reconstruisent leur vie."
+      }
+    },
+    "progress": {
+      "title": "Soutenez la campagne de logements Second Step",
+      "subtitle": "Aidez la Maison d’Athéna à atteindre son objectif de financement pour le logement.",
+      "raisedLabel": "Montant amassé",
+      "goalLabel": "Objectif"
+    },
+    "actions": {
+      "seeFullJourney": "Voir tout mon parcours d’impact",
+      "backToDonation": "Retour à la page de don",
+      "shareButton": "Partager mon geste de soutien",
+      "shareCopied": "Lien copié ! Partagez-le pour inspirer d’autres personnes à soutenir cette cause."
+    }
+  }
+}

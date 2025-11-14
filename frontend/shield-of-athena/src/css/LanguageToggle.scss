@@ -1,0 +1,35 @@
+@use "./themes" as *;
+
+.lang-toggle {
+  display: inline-flex;
+  padding: 0.15rem;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  gap: 0.15rem;
+  margin-bottom: 1.5rem;
+}
+
+.lang-pill {
+  border: none;
+  background: transparent;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  color: #4b5563;
+  transition: all 0.15s ease-in-out;
+
+  &.is-active {
+    background: var(--color-primary);
+    color: #ffffff;
+    box-shadow: 0 6px 16px $shadow-soft-strong;
+  }
+
+  &:hover:not(.is-active) {
+    background: rgba(148, 163, 184, 0.18);
+  }
+}
