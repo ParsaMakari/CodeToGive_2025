@@ -27,7 +27,6 @@ def donate(request):
             impact_pathway_name=getattr(donation, "impact_pathway_slug", None),
             recipient_email=recipient_email,
         )
-
         return Response(DonationSerializer(donation).data, status=status.HTTP_201_CREATED)
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST) 
 
