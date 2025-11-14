@@ -5,7 +5,7 @@ import "../css/CampaignProgress.scss";
 
 function formatCurrency(amount) {
     return `$${amount.toLocaleString("en-CA", {
-        maximumFractionDigits: 0
+        maximumFractionDigits: 0,
     })}`;
 }
 
@@ -15,7 +15,7 @@ function CampaignProgress({
                               raisedLabelKey,
                               goalLabelKey,
                               currentAmount,
-                              goalAmount
+                              goalAmount,
                           }) {
     const { t } = useTranslation();
     const progress = Math.min((currentAmount / goalAmount) * 100, 100);
@@ -24,9 +24,11 @@ function CampaignProgress({
         <div className="impact-progress-card">
             <h2>{t(titleKey)}</h2>
 
-            <p className="impact-progress-subtitle">
-                {t(subtitleKey)}
-            </p>
+            {subtitleKey && (
+                <p className="impact-progress-subtitle">
+                    {t(subtitleKey)}
+                </p>
+            )}
 
             <div className="impact-progress-bar">
                 <div
@@ -60,9 +62,9 @@ function CampaignProgress({
                     if (navigator.share) {
                         navigator
                             .share({
-                                title: t("impactJourney.progress.title"),
+                                title: t("impactJourney.title"),
                                 text: t("impactJourney.actions.shareButton"),
-                                url: window.location.href
+                                url: window.location.href,
                             })
                             .catch(() => {});
                     } else {
