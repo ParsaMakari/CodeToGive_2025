@@ -1,110 +1,141 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Heart, FolderOpen, HandFist, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import LanguageToggle from "./LanguageToggle";
 import TimelineStep from "./TimelineStep";
 import CampaignProgress from "./CampaignProgress";
+import { fetchImpactJourney } from "../api/impactJourney";
 import "../css/ImpactJourney.scss";
-import LanguageToggle from "./LanguageToggle";
 
-const timelineSteps = [
-    {
-        icon: Heart,
-        titleKey: "impactJourney.steps.1.title",
-        descriptionKey: "impactJourney.steps.1.description"
-    },
-    {
-        icon: FolderOpen,
-        titleKey: "impactJourney.steps.2.title",
-        descriptionKey: "impactJourney.steps.2.description",
-        programNameKey: "impactJourney.steps.2.programName"
-    },
-    {
-        icon: HandFist,
-        titleKey: "impactJourney.steps.3.title",
-        descriptionKey: "impactJourney.steps.3.description"
-    },
-    {
-        icon: TrendingUp,
-        titleKey: "impactJourney.steps.4.title",
-        descriptionKey: "impactJourney.steps.4.description"
+const STEP_ICON_MAP = {
+  DONATION_RECEIVED: Heart,
+  FUNDS_ALLOCATED: FolderOpen,
+  IMMEDIATE_IMPACT: HandFist,
+  LONG_TERM_IMPACT: TrendingUp,
+};
+
+function ImpactJourney({
+  amount = 100,
+  pathwaySlug = "emergency-shelter-safety",
+}) {
+  const { t, i18n } = useTranslation();
+  const [journey, setJourney] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    async function load() {
+      try {
+        setLoading(true);
+        setError(null);
+        const data = await fetchImpactJourney({
+          amount,
+          pathway: pathwaySlug,
+          lang: i18n.language || "en",
+        });
+        if (isMounted) setJourney(data);
+      } catch (err) {
+        if (isMounted) setError(err.message || "Error loading impact journey");
+      } finally {
+        if (isMounted) setLoading(false);
+      }
     }
-];
 
-function ImpactJourney() {
-    const { t } = useTranslation();
+    load();
+    return () => {
+      isMounted = false;
+    };
+  }, [amount, pathwaySlug, i18n.language]);
 
+  if (loading) {
     return (
-        <div className="impact-page">
-            <div className="impact-page-header">
-                <div className="impact-header">
-                    <h1 className="text-3xl md:text-4xl font-semibold text-foreground">
-                        {t("impactJourney.header.title")}
-                    </h1>
-                    <p
-                        className="text-sm font-medium text-muted-foreground tracking-wide uppercase"
-                        data-testid="text-top-message"
-                    >
-                        {t("impactJourney.header.subtitle")}
-                    </p>
-                </div>
-
-                <LanguageToggle />
-            </div>
-
-
-            <div className="impact-layout">
-                <div className="impact-main">
-                    <div className="impact-timeline">
-                        {timelineSteps.map((step, index) => (
-                            <TimelineStep
-                                key={step.titleKey}
-                                stepNumber={index + 1}
-                                totalSteps={timelineSteps.length}
-                                icon={step.icon}
-                                title={t(step.titleKey)}
-                                description={t(step.descriptionKey)}
-                                programName={
-                                    step.programNameKey ? t(step.programNameKey) : undefined
-                                }
-                                isLast={index === timelineSteps.length - 1}
-                            />
-                        ))}
-                    </div>
-
-                    <div className="impact-cta-row">
-                        {/*<button*/}
-                        {/*    className="impact-primary-button"*/}
-                        {/*    onClick={() => {*/}
-                        {/*        console.log("See full impact journey clicked");*/}
-                        {/*    }}*/}
-                        {/*>*/}
-                        {/*    {t("impactJourney.actions.seeFullJourney")}*/}
-                        {/*</button>*/}
-
-                        {/*<button*/}
-                        {/*    className="impact-secondary-button"*/}
-                        {/*    onClick={() => {*/}
-                        {/*        console.log("Back to donation page clicked");*/}
-                        {/*    }}*/}
-                        {/*>*/}
-                        {/*    {t("impactJourney.actions.backToDonation")}*/}
-                        {/*</button>*/}
-                    </div>
-                </div>
-
-                <aside className="impact-sidebar">
-                    <CampaignProgress
-                        titleKey="impactJourney.progress.title"
-                        subtitleKey="impactJourney.progress.subtitle"
-                        raisedLabelKey="impactJourney.progress.raisedLabel"
-                        goalLabelKey="impactJourney.progress.goalLabel"
-                        currentAmount={3250000}
-                        goalAmount={5000000}
-                    />
-                </aside>
-            </div>
-        </div>
+      <div className="impact-page">
+        <p>{t("impactJourney.loading")}</p>
+      </div>
     );
+  }
+
+  if (error || !journey) {
+    return (
+      <div className="impact-page">
+        <p>{t("impactJourney.error", { message: error || "Unknown error" })}</p>
+      </div>
+    );
+  }
+
+  const { campaign, steps, pathway } = journey;
+
+  return (
+    <div className="impact-page">
+      <div className="impact-page-header">
+        <div className="impact-header">
+            <div> <h1 className="text-3xl md:text-4xl font-semibold text-foreground">
+                {t("impactJourney.title")}
+            </h1>
+                <p
+                    className="text-sm font-medium text-muted-foreground tracking-wide uppercase"
+                    data-testid="text-top-message"
+                >
+                    {t("impactJourney.subtitle")}
+                </p>
+            </div>
+          <LanguageToggle />
+        </div>
+      </div>
+
+      <div className="impact-layout">
+        <div className="impact-main">
+          <div className="impact-timeline">
+            {steps.map((step, index) => {
+              const Icon = STEP_ICON_MAP[step.code] ?? Heart;
+              const isLast = index === steps.length - 1;
+
+              return (
+                <TimelineStep
+                  key={step.code + index}
+                  stepNumber={index + 1}
+                  totalSteps={steps.length}
+                  icon={Icon}
+                  title={t(`impactJourney.steps.${step.code}.title`)}
+                  description={t(
+                    `impactJourney.steps.${step.code}.description`,
+                    {
+                      amount: journey.donation.amount,
+                    },
+                  )}
+                  programName={
+                    step.programCode
+                      ? t(`impactJourney.programs.${step.programCode}`, {
+                          defaultValue: "",
+                        })
+                      : null
+                  }
+                  isLast={isLast}
+                />
+              );
+            })}
+          </div>
+
+          <div className="impact-cta-row">
+            {/* extra buttons later if you want */}
+          </div>
+        </div>
+
+        <aside className="impact-sidebar">
+          <CampaignProgress
+            titleKey="impactJourney.campaign.title"
+            subtitleKey="impactJourney.campaign.subtitle"
+            raisedLabelKey="impactJourney.campaign.raisedLabel"
+            goalLabelKey="impactJourney.campaign.goalLabel"
+            currentAmount={campaign.currentAmount}
+            goalAmount={campaign.goalAmount}
+          />
+        </aside>
+      </div>
+    </div>
+  );
 }
 
 export default ImpactJourney;
