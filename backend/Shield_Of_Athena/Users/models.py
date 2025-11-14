@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-class Donations(models.Model):
+class Donation(models.Model):
     amount = models.FloatField(verbose_name="amount donated")
     date = models.DateField()
     user = models.ForeignKey(
