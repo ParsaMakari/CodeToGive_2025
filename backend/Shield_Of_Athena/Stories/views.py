@@ -10,7 +10,6 @@ import json
 @api_view(["GET"])
 @permission_classes([AllowAny])
 def stories_list(request):
-	"""Return the stories.json content as JSON."""
 	content_file = Path(__file__).resolve().parent / "stories.json"
 	try:
 		with content_file.open("r", encoding="utf-8") as f:
