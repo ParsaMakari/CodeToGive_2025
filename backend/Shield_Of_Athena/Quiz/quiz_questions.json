@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Which statement best describes domestic and family violence?",
+    "options": [
+      "It only happens in certain neighborhoods or cultures.",
+      "It can affect anyone, regardless of age, culture, or income.",
+      "It is always physical and never emotional or psychological.",
+      "It is a private matter that should stay inside the family."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Domestic and family violence can affect anyone and can take many forms, including physical, emotional, psychological, financial, and verbal abuse."
+  },
+  {
+    "id": 2,
+    "question": "What is one key goal of Shield of Athena?",
+    "options": [
+      "To replace government services.",
+      "To support women and children affected by domestic and family violence.",
+      "To provide financial loans to families.",
+      "To run a general community centre for sports."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Shield of Athena focuses on supporting women and children affected by domestic and family violence through shelter, counselling, and related services."
+  },
+  {
+    "id": 3,
+    "question": "Why is it important to share anonymized survivor stories?",
+    "options": [
+      "To entertain donors with dramatic stories.",
+      "To expose the personal details of survivors.",
+      "To raise awareness and show the real impact while protecting privacy.",
+      "To rank survivors based on how difficult their experience was."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Anonymized stories help people understand the impact of their donations while respecting the safety and privacy of survivors."
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is a safe way to support someone who might be experiencing domestic violence?",
+    "options": [
+      "Telling them what to do and pressuring them to leave immediately.",
+      "Listening without judgment and sharing information about support services.",
+      "Posting about their situation on social media to get help.",
+      "Confronting the person who is abusive directly."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Listening, believing the person, and gently sharing information about support services is safer than pressuring them or confronting the abuser."
+  },
+  {
+    "id": 5,
+    "question": "What is one advantage of making a recurring monthly donation?",
+    "options": [
+      "It is less secure than a one-time donation.",
+      "It helps the organization plan long-term support and services.",
+      "It cannot be cancelled once started.",
+      "It does not qualify for a tax receipt."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Recurring donations provide stable, predictable funding, which helps the organization plan and maintain essential services."
+  },
+  {
+    "id": 6,
+    "question": "Which action can increase awareness about domestic violence and available support?",
+    "options": [
+      "Ignoring campaigns because the topic is uncomfortable.",
+      "Sharing reliable information or official campaigns on social media.",
+      "Spreading unverified stories to create fear.",
+      "Discouraging others from talking about violence."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sharing reliable information and official campaigns helps others learn about the issue and where to get help."
+  },
+  {
+    "id": 7,
+    "question": "What is an example of gamification that respects the mission of a non-profit like Shield of Athena?",
+    "options": [
+      "Publicly ranking donors by how much money they give.",
+      "Creating gentle milestones and badges that celebrate continued support and learning.",
+      "Giving prizes only to the largest donors.",
+      "Making support conditional on reaching donation targets."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Milestones and badges that highlight learning, engagement, and ongoing support can motivate donors without turning impact into a competition."
+  },
+  {
+    "id": 8,
+    "question": "Which of these is an example of financial abuse?",
+    "options": [
+      "Not agreeing on which movie to watch.",
+      "Controlling all the money and not allowing a partner to access basic funds.",
+      "Asking a partner to talk about feelings.",
+      "Sharing household expenses equally."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Financial abuse can include controlling all income and denying a partner access to money needed for basic needs."
+  },
+  {
+    "id": 9,
+    "question": "Why is transparency important in a donation platform?",
+    "options": [
+      "It makes the website look more complex.",
+      "It allows donors to see how funds are used and builds trust.",
+      "It reduces the number of people who donate.",
+      "It hides how money is being spent."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Showing clearly how donations are used builds trust and encourages donors to stay engaged over time."
+  },
+  {
+    "id": 10,
+    "question": "What should you do if a website feature is not accessible to older users or users with disabilities?",
+    "options": [
+      "Ignore it because it only affects a small group.",
+      "Add an extra paywall for accessibility features.",
+      "Improve accessibility (for example, larger text, clear contrast, simple language).",
+      "Remove the feature entirely."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Improving accessibility ensures people of different ages and abilities can use the platform, which is part of making the experience inclusive."
+  }
+]
