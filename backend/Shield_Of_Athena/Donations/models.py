@@ -18,6 +18,8 @@ class Donation(models.Model):
         blank=True,
         default=get_anonymous_user,
     )
+    impact_pathway_slug = models.CharField(max_length= 200, null=True)
+    message = models.TextField(null= True)
 
 
     def __str__(self):
