@@ -1,0 +1,222 @@
+@use "./themes" as *;
+
+.athena-guide {
+  background: var(--color-card-bg-soft);
+  border-radius: $radius-lg;
+  border: 1px solid var(--color-card-border-soft);
+  box-shadow: $shadow-soft;
+  font-family: $font-sans;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  height: 520px;
+  margin: 0 auto;
+  padding: 1.2rem 1.4rem;
+  color: var(--color-text-main);
+
+  &-header {
+    margin-bottom: 0.75rem;
+  }
+
+  &-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.15rem 0.55rem;
+    border-radius: 3px;
+    background: var(--color-tag-bg);
+    color: var(--color-tag-text);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+
+  &-title {
+    margin: 0.4rem 0 0.15rem;
+    font-size: 1.2rem;
+    color: var(--color-text-main);
+  }
+
+  &-subtitle {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+
+  &-suggestions {
+    margin-bottom: 0.6rem;
+
+    &-label {
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-muted);
+      margin-bottom: 0.35rem;
+      margin-top: 1rem;
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      padding: 0.6rem 0;
+    }
+  }
+
+  &-suggestion-chip {
+    border-radius: 9px;
+    border: 1px solid var(--color-card-border-soft);
+    background: var(--color-card-bg-strong);
+    padding: 0.25rem 0.7rem;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    font-family: inherit;
+    cursor: pointer;
+    transition: $transition-soft;
+
+    &:hover {
+      background: var(--color-primary-soft);
+      border-color: var(--color-primary-chip-text);
+      color: var(--color-text-main);
+    }
+  }
+
+  &-messages {
+    flex: 1;
+    margin-top: 0.3rem;
+    margin-bottom: 0.7rem;
+    padding: 0.6rem 0.3rem;
+    border-radius: 0.75rem;
+    background: var(--color-card-bg-strong);
+    border: 1px solid var(--color-border-subtle);
+    overflow-y: auto;
+  }
+
+  &-message {
+    display: flex;
+    margin-bottom: 0.4rem;
+
+    &-user {
+      justify-content: flex-end;
+    }
+
+    &-bot {
+      justify-content: flex-start;
+    }
+
+    &-bubble {
+      max-width: 80%;
+      padding: 0.6rem 0.9rem;
+      min-width: 3rem;
+      border-radius: 0.9rem;
+      font-size: 0.88rem;
+      line-height: 1.45;
+      justify-items: center;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+      animation: messageSlideUp 0.18s ease-out;
+
+      &.is-crisis {
+        border: 1px solid rgba(248, 113, 113, 0.4);
+        background: #fef2f2;
+      }
+    }
+
+    &-user &-bubble {
+      background: var(--color-primary-soft);
+      color: var(--color-text-main);
+      border-bottom-right-radius: 0.2rem;
+      margin-right: 0.7rem;
+    }
+
+    &-bot &-bubble {
+      background: var(--color-soft-grey);
+      color: var(--color-text-main);
+      border-bottom-left-radius: 0.2rem;
+      margin-left: 0.7rem;
+    }
+  }
+
+  &-crisis-header {
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+    color: #b91c1c;
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &-input {
+    flex: 1;
+    border-radius: 9px;
+    border: 1px solid var(--color-border-subtle);
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    outline: none;
+    background: var(--color-card-bg-strong);
+    color: var(--color-text-main);
+
+    &:focus {
+      border-color: var(--color-primary-chip-text);
+      box-shadow: 0 0 0 1px var(--color-primary-soft);
+    }
+  }
+
+  &-send-button {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: $radius-pill;
+    border: none;
+    background: var(--color-primary);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: $shadow-button;
+    transition: $transition-soft;
+
+    &:disabled {
+      cursor: default;
+      box-shadow: none;
+    }
+
+    &:hover{
+        background: var(--color-primary-chip-text);
+    }
+
+    &:not(:disabled):hover {
+      background: var(--color-primary-chip-text);
+      transform: translateY(-1px);
+    }
+  }
+
+  &-send-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  @keyframes messageSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 640px) {
+    height: 480px;
+    padding: 1rem;
+
+    &-messages {
+      font-size: 0.85rem;
+    }
+  }
+}
