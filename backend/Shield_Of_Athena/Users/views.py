@@ -35,8 +35,18 @@ def get_user(request):
 
 @api_view(["GET"])
 @permission_classes([IsAuthenticated])
-def get_user_info(request):
+def get_donation_per_user (request):
     user = request.user
     donations = Donation.objects.filter(user = user)
+    serializer = DonationSerializer(donations, many=True)
+    return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+
+
+@api_view(["GET"])
+@permission_classes([AllowAny])
+def list_donations (request):
+    donations = Donation.objects.all()
     serializer = DonationSerializer(donations, many=True)
     return Response(serializer.data, status=status.HTTP_200_OK)

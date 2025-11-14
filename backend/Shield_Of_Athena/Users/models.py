@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Donation(models.Model):
-    amount = models.FloatField(verbose_name="amount donated")
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
     date = models.DateField()
     user = models.ForeignKey(
         User,
