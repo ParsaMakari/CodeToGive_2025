@@ -1,5 +1,5 @@
 import React, { useState,useContext,createContext } from 'react';
-import './css/DonationForm.css';
+import './css/DonationForm.scss';
 import DonationChooseAmount from './DonationChooseAmount';
 import DonationDetails from './DonationDetails';
 import DonationPayment from './DonationPayment';
