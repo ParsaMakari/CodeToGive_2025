@@ -4,27 +4,22 @@
     "subtitle": "Votre générosité change réellement des vies",
     "loading": "Nous chargeons votre impact...",
     "error": "Nous n’avons pas pu charger votre parcours d’impact.",
-
     "campaign": {
       "title": "Soutenir la campagne Second Step Housing",
       "subtitle": "Ensemble, nous pouvons atteindre l’objectif de 5 M$ pour les familles dans le besoin.",
       "raisedLabel": "Montant amassé",
       "goalLabel": "Objectif"
     },
-
     "actions": {
       "shareButton": "Partager",
       "shareCopied": "Lien copié! Partagez-le pour inspirer d’autres personnes."
     },
-
     "pathways": {
       "IMPACT_PATHWAY_EMERGENCY_SHELTER_SAFETY": "Programme d’hébergement d’urgence"
     },
-
     "programs": {
       "emergency-shelter-safety": "Programme d’hébergement d’urgence"
     },
-
     "steps": {
       "DONATION_RECEIVED": {
         "title": "Votre don a été reçu",
@@ -44,7 +39,258 @@
       }
     }
   },
-  "athenaGuide": {
+  "profile": {
+    "pageTitle": "Mon profil",
+    "header": {
+      "title": "Mon compte",
+      "subtitle": "Consultez vos dons, mettez vos informations à jour et suivez votre impact avec le Bouclier d’Athéna."
+    },
+    "user": {
+      "editProfile": "Modifier le profil",
+      "changePassword": "Changer le mot de passe"
+    },
+    "stats": {
+      "title": "Votre impact",
+      "totalDonated": {
+        "label": "Total des dons",
+        "helper": "Toutes campagnes confondues"
+      },
+      "monthlyGift": {
+        "label": "Don mensuel",
+        "perMonth": "mois",
+        "helper": "Don récurrent actif"
+      },
+      "yearsSupporting": {
+        "label": "Années de soutien",
+        "helper": "Merci de rester à nos côtés"
+      }
+    },
+    "preferences": {
+      "title": "Préférences",
+      "communication": {
+        "label": "Communication",
+        "helper": "Choisissez la fréquence de nos communications.",
+        "options": {
+          "monthlyUpdates": "Mises à jour mensuelles",
+          "impactReportsOnly": "Seulement les rapports d’impact",
+          "importantNewsOnly": "Seulement les nouvelles importantes"
+        }
+      },
+      "language": {
+        "label": "Langue",
+        "helper": "Interface et courriels.",
+        "options": {
+          "english": "Anglais",
+          "french": "Français"
+        }
+      },
+      "taxReceipts": {
+        "label": "Reçus fiscaux par courriel",
+        "helper": "Recevez un reçu après chaque don."
+      }
+    },
+    "timeline": {
+      "title": "Chronologie de votre impact",
+      "helper": "Suivez comment vos dons contribuent au fil du temps — campagnes, fonds d’urgence et soutien à long terme."
+    },
+    "history": {
+      "title": "Dons récents",
+      "helper": "Ceci est une liste d’exemple — vous pourrez la relier plus tard à la vraie API.",
+      "tableHeaders": {
+        "date": "Date",
+        "campaign": "Campagne",
+        "amount": "Montant",
+        "type": "Type"
+      },
+      "rows": {
+        "row1": {
+          "date": "10 nov. 2025",
+          "campaign": "Fonds pour l’hébergement d’urgence",
+          "amount": "50 $",
+          "type": "Don unique"
+        },
+        "row2": {
+          "date": "1er nov. 2025",
+          "campaign": "Don mensuel",
+          "amount": "25 $",
+          "type": "Mensuel"
+        },
+        "row3": {
+          "date": "1er oct. 2025",
+          "campaign": "Don mensuel",
+          "amount": "25 $",
+          "type": "Mensuel"
+        }
+      },
+      "viewFullHistory": "Voir tout l’historique des dons"
+    }
+  },
+  "donationPage": {
+    "giftTitle": "Votre don, leur liberté",
+    "description": "Le Bouclier d’Athéna aide les femmes et les enfants, ainsi que les communautés culturelles, à briser le cycle de la violence psychologique, verbale, économique, sexuelle et physique.",
+    "servicesFree": "Tous nos services sont",
+    "free": "gratuits",
+    "thankYou": "Merci pour votre générosité aujourd’hui !"
+  },
+  "home": {
+    "greetingLoggedIn": "Bon retour, {{name}}",
+    "greetingAnon": "Bienvenue au Bouclier d’Athéna",
+    "hero": {
+      "join": "Rejoignez-nous dès aujourd'hui et",
+      "title": {
+        "part1": "Dites",
+        "no": "non",
+        "part2": "à la violence"
+      },
+      "description": "Le Bouclier d’Athéna est un organisme sans but lucratif pour les victimes de violence familiale. Nous offrons un hébergement d'urgence et des services professionnels aux femmes et à leurs enfants.",
+      "donateCta": "Faire un don",
+      "victimQuestion": "Êtes-vous victime de violence?",
+      "getHelp": "Obtenir de l’aide",
+      "imageAlt": "Illustration de soutien, de sécurité et de bienveillance"
+    }
+  },
+  "layout": {
+    "nav": {
+      "logoAlt": "Logo du Bouclier d’Athéna",
+      "mobileToggle": "Ouvrir ou fermer le menu",
+      "actions": {
+        "donate": "Faire un don",
+        "login": "Connexion",
+        "logout": "Déconnexion",
+        "profile": "Mon profil"
+      }
+    },
+    "footer": {
+      "orgName": "Bouclier d’Athéna",
+      "rights": "Tous droits réservés.",
+      "links": {
+        "officialSite": "Site officiel",
+        "getHelp": "Obtenir de l’aide",
+        "contact": "Contact"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Témoignages de notre communauté",
+    "items": [
+      {
+        "text": "Le Bouclier d’Athéna a aidé ma famille à se sentir en sécurité et soutenue. Leur équipe était présente à chaque étape et s’est assurée que nous avions les ressources nécessaires.",
+        "name": "Mackie Clonts",
+        "role": "Ancienne cliente, maintenant bénévole"
+      },
+      {
+        "text": "Le soutien et l’accompagnement que j’ai reçus ont changé ma vie. Je n’aurais pas pu traverser cette période difficile sans leur équipe bienveillante.",
+        "name": "Sarah Johnson",
+        "role": "Membre de la communauté"
+      },
+      {
+        "text": "Professionnels, attentionnés et toujours disponibles. Ils vont vraiment au-delà pour aider les personnes dans le besoin.",
+        "name": "Michael Chen",
+        "role": "Militant local"
+      },
+      {
+        "text": "Leur dévouement envers les familles est remarquable. Je suis reconnaissante pour tout ce qu’ils ont fait pour notre communauté.",
+        "name": "Emily Rodriguez",
+        "role": "Coordonnatrice des bénévoles"
+      },
+      {
+        "text": "Une véritable lueur d’espoir dans des moments difficiles. Leurs services ont fait toute la différence pour ma famille.",
+        "name": "David Thompson",
+        "role": "Ancien client"
+      }
+    ]
+  },
+"donationForm": {
+    "common": {
+      "next": "Suivant",
+      "back": "Retour",
+      "cancel": "Annuler",
+      "donate": "Faire un don"
+    },
+    "steps": {
+      "amount": "Montant",
+      "details": "Détails",
+      "payment": "Paiement"
+    },
+    "amount": {
+      "title": "Choisissez un montant",
+      "type": {
+        "oneTime": "Don unique",
+        "monthly": "Don mensuel"
+      },
+      "validation": {
+        "noAmount": "Veuillez choisir ou entrer un montant."
+      },
+      "cancelMessage": "Don annulé.",
+      "aria": {
+        "amount": "Montant du don",
+        "currency": "Devise"
+      }
+    },
+    "details": {
+      "title": "Vos informations",
+      "labels": {
+        "firstName": "Prénom *",
+        "lastName": "Nom *",
+        "email": "Adresse courriel *",
+        "phone": "Numéro de téléphone *",
+        "address": "Adresse",
+        "city": "Ville",
+        "zip": "Code postal"
+      },
+      "placeholders": {
+        "firstName": "Jean",
+        "lastName": "Dupont",
+        "email": "jean.dupont@exemple.com",
+        "phone": "(555) 123-4567",
+        "address": "123 rue Principale",
+        "city": "Montréal",
+        "zip": "H2X 1Y4"
+      },
+      "taxReceipt": "Envoyez-moi les reçus fiscaux pour mes dons",
+      "stayAnonymous": "Rester anonyme",
+      "validation": {
+        "required": "Veuillez remplir tous les champs obligatoires."
+      }
+    },
+    "payment": {
+      "title": "Paramètres de paiement",
+      "methods": {
+        "creditCard": "Carte de crédit",
+        "paypal": "Payer avec PayPal",
+        "applePay": "Payer avec Apple Pay",
+        "googlePay": "Payer avec Google Pay"
+      },
+      "labels": {
+        "cardNumber": "Numéro de carte",
+        "cardholderName": "Nom du titulaire",
+        "expirationDate": "Date d’expiration",
+        "securityCode": "Code de sécurité"
+      },
+      "placeholders": {
+        "cardNumber": "1234 5678 9012 3456",
+        "cardholderName": "Tel qu’indiqué sur la carte",
+        "expirationDate": "MM / AA",
+        "securityCode": "CVV"
+      },
+      "validation": {
+        "required": "Veuillez remplir tous les détails de paiement."
+      },
+      "summary": {
+        "total": "Total :",
+        "type": "* Paiement {{type}}"
+      },
+      "type": {
+        "oneTime": "unique",
+        "monthly": "mensuel"
+      },
+      "alert": {
+        "success": "Merci pour votre don {{type}} de {{amount}} {{currency}} !\n\nRésumé du don :\nNom : {{name}}\nCourriel : {{email}}",
+        "error": "Nous n’avons pas pu traiter votre don. Veuillez réessayer plus tard."
+      }
+    }
+  },
+"athenaGuide": {
     "badge": "Athena Guide",
     "title": "Votre Assistante pour les Dons",
     "subtitle": "Posez vos questions sur les programmes, l’impact et les dons.",
@@ -53,18 +299,15 @@
     "sendLabel": "Envoyer",
     "fallbackReply": "Je ne suis pas certaine d’avoir bien compris, mais je suis là pour vous aider !",
     "errorReply": "Je rencontre actuellement un problème pour répondre. Veuillez réessayer bientôt.",
-
     "suggestions": {
       "title": "Questions suggérées"
     },
-
     "sampleQuestions": {
       "howDonationsUsed": "Comment mes dons sont-ils utilisés ?",
       "campaign": "Quelle campagne est en cours ?",
       "monthly": "Devrais-je choisir un don mensuel ?",
       "taxReceipt": "Vais-je recevoir un reçu d’impôt ?"
     },
-
     "crisisBox": {
       "title": "Aide Immédiate"
     }

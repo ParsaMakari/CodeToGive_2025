@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { HiUser } from "react-icons/hi2";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import logoShield from "../assets/logo-bilingual-1-Hasmik-Manucharyan.jpg";
 import "../css/Navbar.scss";
 import LanguageToggle from "./LanguageToggle";
@@ -8,6 +9,7 @@ import ThemeToggle from "./ThemeToggle";
 
 function NavBar({ user, onLogout }) {
     const navigate = useNavigate();
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
 
     const displayName = user?.username || "there";
@@ -26,7 +28,7 @@ function NavBar({ user, onLogout }) {
                 >
                     <img
                         src={logoShield}
-                        alt="Shield of Athena logo"
+                        alt={t("layout.nav.logoAlt")}
                         className="site-nav__logo"
                     />
                 </button>
@@ -36,6 +38,7 @@ function NavBar({ user, onLogout }) {
                     type="button"
                     className="site-nav__mobile-toggle"
                     onClick={() => setIsOpen((v) => !v)}
+                    aria-label={t("layout.nav.mobileToggle")}
                 >
                     <span className="site-nav__mobile-lines" />
                 </button>
@@ -54,7 +57,7 @@ function NavBar({ user, onLogout }) {
                             setIsOpen(false);
                         }}
                     >
-                        Donate
+                        {t("layout.nav.actions.donate")}
                     </button>
 
                     {/* Auth */}
@@ -66,7 +69,9 @@ function NavBar({ user, onLogout }) {
                                 onClick={() => setIsOpen(false)}
                             >
                                 <HiUser className="site-nav__auth-icon" size={20} />
-                                <span className="site-nav__auth-text">Profile</span>
+                                <span className="site-nav__auth-text">
+                  {t("layout.nav.actions.profile")}
+                </span>
                             </Link>
 
                             <button
@@ -77,12 +82,10 @@ function NavBar({ user, onLogout }) {
                                     setIsOpen(false);
                                 }}
                             >
-                                <span className="site-nav__auth-text">
-                                    Logout{" "}
-                                    <span className="site-nav__auth-username">
-                                        {displayName}
-                                    </span>
-                                </span>
+                <span className="site-nav__auth-text">
+                  {t("layout.nav.actions.logout")}{" "}
+                    <span className="site-nav__auth-username">{displayName}</span>
+                </span>
                             </button>
                         </>
                     ) : (
@@ -92,7 +95,9 @@ function NavBar({ user, onLogout }) {
                             onClick={() => setIsOpen(false)}
                         >
                             <HiUser className="site-nav__auth-icon" size={20} />
-                            <span className="site-nav__auth-text">Login</span>
+                            <span className="site-nav__auth-text">
+                {t("layout.nav.actions.login")}
+              </span>
                         </Link>
                     )}
                 </div>
