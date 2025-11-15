@@ -1,0 +1,47 @@
+{
+  "impactJourney": {
+    "title": "Your Impact Journey",
+    "subtitle": "Your generosity makes a real difference",
+    "loading": "Loading your impact...",
+    "error": "We couldn't load your impact journey. {{message}}",
+
+    "campaign": {
+      "title": "Support the Second Step Housing Campaign",
+      "subtitle": "Together, we can reach the $5M goal for families in need.",
+      "raisedLabel": "Raised so far",
+      "goalLabel": "Goal"
+    },
+
+    "actions": {
+      "shareButton": "Share your support",
+      "shareCopied": "Link copied! Share it to inspire others."
+    },
+
+    "pathways": {
+      "IMPACT_PATHWAY_EMERGENCY_SHELTER_SAFETY": "Emergency Shelter Program"
+    },
+
+    "programs": {
+      "emergency-shelter-safety": "Emergency Shelter Program"
+    },
+
+    "steps": {
+      "DONATION_RECEIVED": {
+        "title": "Your donation has been received",
+        "description": "Thank you for supporting women and children in need."
+      },
+      "FUNDS_ALLOCATED": {
+        "title": "Funds allocated to your chosen program",
+        "description": "Your contribution is directed toward programs that provide immediate safety and long-term support."
+      },
+      "IMMEDIATE_IMPACT": {
+        "title": "Your donation creates immediate impact",
+        "description": "Tonight, a woman and her children will sleep safely because of you."
+      },
+      "LONG_TERM_IMPACT": {
+        "title": "You're part of their long-term healing journey",
+        "description": "Your donation contributes to long-term stability, safety, and hope for families rebuilding their lives."
+      }
+    }
+  }
+}

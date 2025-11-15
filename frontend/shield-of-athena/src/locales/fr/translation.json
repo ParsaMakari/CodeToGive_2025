@@ -1,0 +1,47 @@
+{
+  "impactJourney": {
+    "title": "Votre parcours d’impact",
+    "subtitle": "Votre générosité change réellement des vies",
+    "loading": "Nous chargeons votre impact...",
+    "error": "Nous n’avons pas pu charger votre parcours d’impact.",
+
+    "campaign": {
+      "title": "Soutenir la campagne Second Step Housing",
+      "subtitle": "Ensemble, nous pouvons atteindre l’objectif de 5 M$ pour les familles dans le besoin.",
+      "raisedLabel": "Montant amassé",
+      "goalLabel": "Objectif"
+    },
+
+    "actions": {
+      "shareButton": "Partager votre soutien",
+      "shareCopied": "Lien copié! Partagez-le pour inspirer d’autres personnes."
+    },
+
+    "pathways": {
+      "IMPACT_PATHWAY_EMERGENCY_SHELTER_SAFETY": "Programme d’hébergement d’urgence"
+    },
+
+    "programs": {
+      "emergency-shelter-safety": "Programme d’hébergement d’urgence"
+    },
+
+    "steps": {
+      "DONATION_RECEIVED": {
+        "title": "Votre don a été reçu",
+        "description": "Merci de soutenir des femmes et des enfants en situation de violence."
+      },
+      "FUNDS_ALLOCATED": {
+        "title": "Les fonds sont alloués à votre programme",
+        "description": "Votre contribution est dirigée vers des programmes qui offrent sécurité immédiate et soutien à long terme."
+      },
+      "IMMEDIATE_IMPACT": {
+        "title": "Votre don a un impact immédiat",
+        "description": "Ce soir, une femme et ses enfants dormiront en sécurité grâce à vous."
+      },
+      "LONG_TERM_IMPACT": {
+        "title": "Vous faites partie de leur parcours de guérison",
+        "description": "Votre don contribue à la stabilité, la sécurité et l’espoir des familles qui se reconstruisent."
+      }
+    }
+  }
+}
