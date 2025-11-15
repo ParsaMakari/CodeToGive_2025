@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./css/TestimonialScroll.css";
+import "./css/TestimonialScroll.scss";
 import avatar from "../assets/avatar_picture.jpg"
 
 

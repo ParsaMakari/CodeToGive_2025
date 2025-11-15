@@ -1,8 +1,9 @@
-import "./css/HomePage.css"
+import "./css/HomePage.scss"
 import logo_shield from "../assets/logo-bilingual-1-Hasmik-Manucharyan.jpg"
 import hero_image from "../assets/hero_image.png"
 import {HiHandRaised, HiHeart, HiUser} from "react-icons/hi2"
 import { useNavigate } from "react-router"
+import {Link} from "react-router-dom";
 
 function HomePage() {
     const navigate = useNavigate();
@@ -23,7 +24,13 @@ function HomePage() {
                     </div>
                     <div className="home-page__headers-login">
                         <HiUser/>
-                        <p>Login</p>
+                        <Link
+                            to="/login"
+                            className="auth-button"
+                            style={{ textAlign: "center", textDecoration: "none" }}
+                        >
+                            Log in
+                        </Link>
                     </div>
                 </div>
             </header>

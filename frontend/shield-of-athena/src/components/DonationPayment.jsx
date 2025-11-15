@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './css/PaymentSettings.css';
+import './css/PaymentSettings.scss';
 import { FaApple, FaGoogle, FaMoneyBill, FaPaypal } from 'react-icons/fa';
 import { useDonation } from './DonationForm';
 

@@ -1,5 +1,5 @@
+@use "../../css/themes" as *;
 
-/* Payment Methods */
 .payment-methods {
   display: flex;
   gap: 12px;
@@ -8,27 +8,27 @@
 
 .method-btn {
   padding: 16px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid var(--color-border-subtle, #e5e7eb);
   border-radius: 12px;
-  background: #fff;
+  background: var(--color-card-bg-strong, #ffffff);
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #000;
+  color: var(--color-text-main, #111827);
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.method-btn:hover {
-  border-color: #0066FF;
-}
+  &:hover {
+    border-color: var(--color-primary, #4c1d95);
+  }
 
-.method-btn.active {
-  background: #0066FF;
-  border-color: #0066FF;
-  color: #fff;
+  &.active {
+    background: var(--color-primary, #4c1d95);
+    border-color: var(--color-primary, #4c1d95);
+    color: #ffffff;
+  }
 }
 
 .icon-btn {

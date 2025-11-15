@@ -1,0 +1,249 @@
+@use "../../css/themes" as *;
+
+.donation-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-bg-page);
+  color: var(--color-text-main);
+}
+
+.donation-page__main {
+  flex: 1;
+  width: 100%;
+  max-width: 1900px;
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+  padding: 15px;
+  margin: 0 auto;
+  background:
+          radial-gradient(
+                          circle at 0% 0%,
+                          var(--color-primary-soft) 0,
+                          #e7f3ff 35%,
+                          transparent 70%
+          ),
+          radial-gradient(
+                          circle at 95% 80%,
+                          #fff4d1 0,
+                          #ffe0f7 30%,
+                          #d9e4ff 65%
+          );
+}
+
+
+/* HEADER WRAPPER IF NEEDED */
+.donation-page__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* LEFT SIDE (FORM / IMPACT PANEL) */
+
+.donation-page__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  order: 1;
+  flex: 1;
+  z-index: 2;
+}
+
+/* STORIES / TESTIMONIALS PANEL */
+
+.donation-page__stories {
+  flex: 1;
+  order: 2;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.25rem 1rem 1rem;
+  margin-bottom: 5rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.05);
+  position: relative;
+  height: min-content;
+  overflow: hidden;
+}
+
+/* TITLES OVER VIDEO */
+
+.donation-page__stories-titles {
+  position: static;
+  width: 90%;
+  padding-top: 0.7rem;
+  padding-right: 0.5rem;
+  padding-left: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.donation-page__stories-title {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.donation-page__stories-subtitle {
+  width: 50%;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.donation-page__stories-subtitle-thank {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* TESTIMONIALS */
+
+.testimonial-bg {
+  width: 100%;
+  height: 100%;              // full height of the card
+  border-radius: 32px;
+  position: relative;
+  overflow: hidden;
+  background: var(--color-card-bg-strong);
+  display: flex;
+}
+.testimonials-wrapper {
+  width: 100%;
+  max-height: 220px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.testimonial-layout {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.testimonial-left {
+  flex: 1;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+}
+
+.testimonial-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.85);
+}
+
+.testimonial-right {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+.testimonial-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 1.25rem;
+  gap: 1.5rem;
+}
+
+/* ----- RESPONSIVE ----- */
+
+@media (max-width: 900px) {
+  .donation-page__main {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .donation-page__stories {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .testimonial-layout {
+    flex-direction: column;
+  }
+
+  .testimonial-bg {
+    height: auto;
+  }
+
+  .testimonial-left {
+    max-width: 100%;
+    max-height: 200px;
+  }
+
+  .testimonial-video {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .donation-page__left {
+    order: 2;
+    margin-top: -40px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .testimonial-bg {
+    padding: 1.8rem 1.4rem;
+  }
+
+  .testimonial-card {
+    padding: 2rem 1.6rem 1.7rem;
+  }
+
+  .donation-form-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .donation-form-wrapper {
+    margin-top: -60px; /* slightly less overlap on very small screens */
+  }
+}
+@media (max-width: 1200px) {
+  .donation-page__stories {
+    align-items: stretch;
+  }
+
+  .testimonial-bg {
+    height: auto;              // let content define height
+  }
+
+  .testimonial-layout {
+    height: auto;
+  }
+
+  .testimonial-left {
+    flex: 0 0 45%;
+    //max-width: 45%;
+  }
+
+  .testimonial-video {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    //max-height: 240px;
+  }
+}
+
+

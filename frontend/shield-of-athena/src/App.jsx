@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import {
     BrowserRouter as Router,
     Routes,
@@ -11,6 +11,8 @@ import Register from "./pages/Register";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Logout from "./components/Logout";
+import HomePage from "./pages/HomePage";
+import DonationPage from "./pages/DonationPage";
 
 function App() {
     const [user, setUser] = useState(null);
@@ -49,6 +51,8 @@ function App() {
                     path="/logout"
                     element={<Logout setUser={setUser} />}
                 />
+
+                <Route path='/donate' element={<DonationPage/>} />
             </Routes>
         </Router>
     );

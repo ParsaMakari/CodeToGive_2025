@@ -1,6 +1,7 @@
 import ImpactJourney from "../components/ImpactJourney";
 import Chat from "../components/Chat";
 import { Link } from "react-router-dom";
+import HomePage from "../pages/HomePage";
 
 // I know someone is working omn dashboard its just a temp for testing
 function Dashboard({ user }) {
@@ -18,6 +19,7 @@ function Dashboard({ user }) {
             <Link to="/logout" className="auth-logout">
                 <span>Log Out</span>
             </Link>
+            <HomePage />
             <ImpactJourney />
             <Chat/>
         </>
