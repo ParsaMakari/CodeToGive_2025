@@ -57,7 +57,6 @@ class EmailTokenObtainPairView(TokenObtainPairView):
                 status=status.HTTP_401_UNAUTHORIZED
             )
         
-        request.data._mutable = True
         request.data['username'] = user.username
         request.data['password'] = password
         
