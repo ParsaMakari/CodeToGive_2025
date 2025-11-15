@@ -3,9 +3,11 @@ import "./css/Profile.scss";
 import { useNavigate } from "react-router";
 import ChatFloating from "../components/ChatFloating";
 import ImpactJourney from "../components/ImpactJourney";
+import { useTranslation } from "react-i18next";
 
 function Profile({ user }) {
     const navigate = useNavigate();
+    const { t } = useTranslation();
 
     // Fake fallback user if nothing is passed
     const currentUser = user || {
@@ -20,18 +22,19 @@ function Profile({ user }) {
     }`.toUpperCase();
 
     useEffect(() => {
-        document.title = "My Profile";
-    }, []);
+        document.title = t("profile.pageTitle");
+    }, [t]);
 
     return (
         <div className="profile-page">
             {/* Top bar */}
             <header className="profile-page__header">
                 <div className="profile-page__title-group">
-                    <h1 className="profile-page__title">My account</h1>
+                    <h1 className="profile-page__title">
+                        {t("profile.header.title")}
+                    </h1>
                     <p className="profile-page__subtitle">
-                        View your donations, update your information, and follow your impact
-                        with Shield of Athena.
+                        {t("profile.header.subtitle")}
                     </p>
                 </div>
             </header>
@@ -61,89 +64,119 @@ function Profile({ user }) {
 
                         <div className="profile-page__user-actions">
                             <button type="button" className="profile-page__btn-secondary">
-                                Edit profile
+                                {t("profile.user.editProfile")}
                             </button>
                             <button type="button" className="profile-page__btn-ghost">
-                                Change password
+                                {t("profile.user.changePassword")}
                             </button>
                         </div>
                     </div>
 
                     {/* Stats */}
                     <div className="profile-page__card profile-page__card--stats">
-                        <h3 className="profile-page__section-title">Your impact</h3>
+                        <h3 className="profile-page__section-title">
+                            {t("profile.stats.title")}
+                        </h3>
                         <div className="profile-page__stats-grid">
                             <div className="profile-page__stat">
-                <span className="profile-page__stat-label">
-                  Total donated
-                </span>
-                                <span className="profile-page__stat-value">$420</span>
+                                <span className="profile-page__stat-label">
+                                    {t("profile.stats.totalDonated.label")}
+                                </span>
+                                <span className="profile-page__stat-value">
+                                    $420
+                                </span>
                                 <span className="profile-page__stat-helper">
-                  Across all campaigns
-                </span>
+                                    {t("profile.stats.totalDonated.helper")}
+                                </span>
                             </div>
                             <div className="profile-page__stat">
-                <span className="profile-page__stat-label">
-                  Monthly gift
-                </span>
-                                <span className="profile-page__stat-value">$25 / month</span>
+                                <span className="profile-page__stat-label">
+                                    {t("profile.stats.monthlyGift.label")}
+                                </span>
+                                <span className="profile-page__stat-value">
+                                    $25 / {t("profile.stats.monthlyGift.perMonth")}
+                                </span>
                                 <span className="profile-page__stat-helper">
-                  Active recurring donation
-                </span>
+                                    {t("profile.stats.monthlyGift.helper")}
+                                </span>
                             </div>
                             <div className="profile-page__stat">
-                <span className="profile-page__stat-label">
-                  Years supporting
-                </span>
+                                <span className="profile-page__stat-label">
+                                    {t("profile.stats.yearsSupporting.label")}
+                                </span>
                                 <span className="profile-page__stat-value">2</span>
                                 <span className="profile-page__stat-helper">
-                  Thank you for staying
-                </span>
+                                    {t("profile.stats.yearsSupporting.helper")}
+                                </span>
                             </div>
                         </div>
                     </div>
 
                     {/* Preferences */}
                     <div className="profile-page__card profile-page__card--preferences">
-                        <h3 className="profile-page__section-title">Preferences</h3>
+                        <h3 className="profile-page__section-title">
+                            {t("profile.preferences.title")}
+                        </h3>
 
                         <div className="profile-page__settings-group">
                             <div className="profile-page__settings-row">
                                 <div>
                                     <p className="profile-page__settings-label">
-                                        Communication
+                                        {t("profile.preferences.communication.label")}
                                     </p>
                                     <p className="profile-page__settings-helper">
-                                        Choose how often we contact you.
+                                        {t("profile.preferences.communication.helper")}
                                     </p>
                                 </div>
                                 <select className="profile-page__select">
-                                    <option>Monthly updates</option>
-                                    <option>Only impact reports</option>
-                                    <option>Important news only</option>
+                                    <option>
+                                        {t(
+                                            "profile.preferences.communication.options.monthlyUpdates"
+                                        )}
+                                    </option>
+                                    <option>
+                                        {t(
+                                            "profile.preferences.communication.options.impactReportsOnly"
+                                        )}
+                                    </option>
+                                    <option>
+                                        {t(
+                                            "profile.preferences.communication.options.importantNewsOnly"
+                                        )}
+                                    </option>
                                 </select>
                             </div>
 
                             <div className="profile-page__settings-row">
                                 <div>
-                                    <p className="profile-page__settings-label">Language</p>
+                                    <p className="profile-page__settings-label">
+                                        {t("profile.preferences.language.label")}
+                                    </p>
                                     <p className="profile-page__settings-helper">
-                                        Interface & emails.
+                                        {t("profile.preferences.language.helper")}
                                     </p>
                                 </div>
                                 <select className="profile-page__select">
-                                    <option>English</option>
-                                    <option>Français</option>
+                                    <option>
+                                        {t(
+                                            "profile.preferences.language.options.english"
+                                        )}
+                                    </option>
+                                    <option>
+                                        {t(
+                                            "profile.preferences.language.options.french"
+                                        )}
+                                    </option>
                                 </select>
                             </div>
 
                             <div className="profile-page__settings-row profile-page__settings-row--toggle">
                                 <div>
                                     <p className="profile-page__settings-label">
-                                        Tax receipt emails
+                                        {t("profile.preferences.taxReceipts.label")}
                                     </p>
                                     <p className="profile-page__settings-helper">
-                                        Receive receipts after each donation.
+                                        {t("profile.preferences.taxReceipts.helper")}
                                     </p>
                                 </div>
                                 <label className="profile-page__toggle">
@@ -160,10 +193,11 @@ function Profile({ user }) {
                     {/* Timeline */}
                     <div className="profile-page__card profile-page__card--timeline">
                         <div className="profile-page__panel-header">
-                            <h3 className="profile-page__section-title">Impact timeline</h3>
+                            <h3 className="profile-page__section-title">
+                                {t("profile.timeline.title")}
+                            </h3>
                             <p className="profile-page__panel-helper">
-                                Follow how your donations contribute over time — campaigns,
-                                emergency funds and long-term support.
+                                {t("profile.timeline.helper")}
                             </p>
                         </div>
                         <ImpactJourney />
@@ -172,39 +206,41 @@ function Profile({ user }) {
                     {/* Recent donations */}
                     <div className="profile-page__card profile-page__card--history">
                         <div className="profile-page__panel-header">
-                            <h3 className="profile-page__section-title">Recent donations</h3>
+                            <h3 className="profile-page__section-title">
+                                {t("profile.history.title")}
+                            </h3>
                             <p className="profile-page__panel-helper">
-                                This is a sample list NEED ENDPOINT
+                                {t("profile.history.helper")}
                             </p>
                         </div>
 
                         <div className="profile-page__table">
                             <div className="profile-page__table-row profile-page__table-row--header">
-                                <span>Date</span>
-                                <span>Campaign</span>
-                                <span>Amount</span>
-                                <span>Type</span>
+                                <span>{t("profile.history.tableHeaders.date")}</span>
+                                <span>{t("profile.history.tableHeaders.campaign")}</span>
+                                <span>{t("profile.history.tableHeaders.amount")}</span>
+                                <span>{t("profile.history.tableHeaders.type")}</span>
                             </div>
 
                             <div className="profile-page__table-row">
-                                <span>Nov 10, 2025</span>
-                                <span>Emergency Shelter Fund</span>
-                                <span>$50</span>
-                                <span>One-time</span>
+                                <span>{t("profile.history.rows.row1.date")}</span>
+                                <span>{t("profile.history.rows.row1.campaign")}</span>
+                                <span>{t("profile.history.rows.row1.amount")}</span>
+                                <span>{t("profile.history.rows.row1.type")}</span>
                             </div>
 
                             <div className="profile-page__table-row">
-                                <span>Nov 1, 2025</span>
-                                <span>Monthly Gift</span>
-                                <span>$25</span>
-                                <span>Monthly</span>
+                                <span>{t("profile.history.rows.row2.date")}</span>
+                                <span>{t("profile.history.rows.row2.campaign")}</span>
+                                <span>{t("profile.history.rows.row2.amount")}</span>
+                                <span>{t("profile.history.rows.row2.type")}</span>
                             </div>
 
                             <div className="profile-page__table-row">
-                                <span>Oct 1, 2025</span>
-                                <span>Monthly Gift</span>
-                                <span>$25</span>
-                                <span>Monthly</span>
+                                <span>{t("profile.history.rows.row3.date")}</span>
+                                <span>{t("profile.history.rows.row3.campaign")}</span>
+                                <span>{t("profile.history.rows.row3.amount")}</span>
+                                <span>{t("profile.history.rows.row3.type")}</span>
                             </div>
                         </div>
 
@@ -213,7 +249,7 @@ function Profile({ user }) {
                             className="profile-page__btn-link"
                             onClick={() => navigate("/donation")}
                         >
-                            View full donation history
+                            {t("profile.history.viewFullHistory")}
                         </button>
                     </div>
                 </section>
