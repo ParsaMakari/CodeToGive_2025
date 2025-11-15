@@ -6,7 +6,6 @@ function Dashboard({ user }) {
     return (
         <>
             <HomePage user={user} />
-            <ImpactJourney />
         </>
     );
 }
