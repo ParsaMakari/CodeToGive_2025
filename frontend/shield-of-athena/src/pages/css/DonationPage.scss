@@ -14,7 +14,7 @@
   max-width: 1900px;
   display: flex;
   gap: 1.5rem;
-  align-items: stretch;
+  align-items: center;
   padding: 15px;
   margin: 0 auto;
   background:
@@ -39,7 +39,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 /* LEFT SIDE (FORM / IMPACT PANEL) */
@@ -59,16 +59,14 @@
 .donation-page__stories {
   flex: 1;
   order: 2;
+  height: 100%;
   display: flex;
-  align-items: flex-end;
   padding: 1.25rem 1rem 1rem;
-  margin-bottom: 5rem;
   border-radius: 28px;
   background: rgba(255, 255, 255, 0.22);
   border: 1px solid rgba(255, 255, 255, 0.7);
   box-shadow: 0 18px 45px rgba(15, 23, 42, 0.05);
   position: relative;
-  height: min-content;
   overflow: hidden;
 }
 
