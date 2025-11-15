@@ -1,0 +1,68 @@
+@use "./themes" as *;
+
+.theme-toggle {
+  position: relative;
+  width: 3rem;
+  height: 1.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-card-bg-soft);
+  padding: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: $shadow-chip;
+  transition: $transition-soft;
+
+  &:hover {
+    border-color: var(--color-primary-chip-text);
+  }
+
+  &__thumb {
+    position: relative;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 999px;
+    background: var(--color-primary-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+      transform $transition-soft,
+      background-color $transition-soft;
+    box-shadow: $shadow-button;
+
+    &[data-theme-thumb="light"] {
+      transform: translateX(-0.55rem);
+    }
+
+    &[data-theme-thumb="dark"] {
+      transform: translateX(0.55rem);
+    }
+  }
+
+  &__icon {
+    width: 0.9rem;
+    height: 0.9rem;
+    position: absolute;
+    opacity: 0;
+    transition: opacity $transition-soft;
+
+    &--sun {
+      color: var(--color-primary-chip-text);
+    }
+
+    &--moon {
+      color: #e5e7eb;
+    }
+  }
+
+  &__thumb[data-theme-thumb="light"] &__icon--sun {
+    opacity: 1;
+  }
+
+  &__thumb[data-theme-thumb="dark"] &__icon--moon {
+    opacity: 1;
+  }
+}

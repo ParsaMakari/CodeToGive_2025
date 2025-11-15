@@ -43,5 +43,30 @@
         "description": "Votre don contribue à la stabilité, la sécurité et l’espoir des familles qui se reconstruisent."
       }
     }
+  },
+  "athenaGuide": {
+    "badge": "Athena Guide",
+    "title": "Votre Assistante pour les Dons",
+    "subtitle": "Posez vos questions sur les programmes, l’impact et les dons.",
+    "welcome": "Bonjour ! Je suis là pour vous aider à mieux comprendre l’impact de votre don. Comment puis-je vous assister aujourd’hui ?",
+    "inputPlaceholder": "Écrivez votre question...",
+    "sendLabel": "Envoyer",
+    "fallbackReply": "Je ne suis pas certaine d’avoir bien compris, mais je suis là pour vous aider !",
+    "errorReply": "Je rencontre actuellement un problème pour répondre. Veuillez réessayer bientôt.",
+
+    "suggestions": {
+      "title": "Questions suggérées"
+    },
+
+    "sampleQuestions": {
+      "howDonationsUsed": "Comment mes dons sont-ils utilisés ?",
+      "campaign": "Quelle campagne est en cours ?",
+      "monthly": "Devrais-je choisir un don mensuel ?",
+      "taxReceipt": "Vais-je recevoir un reçu d’impôt ?"
+    },
+
+    "crisisBox": {
+      "title": "Aide Immédiate"
+    }
   }
 }

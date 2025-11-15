@@ -8,20 +8,22 @@
     font-family: $font-sans;
     color: var(--color-text-main);
     background: var(--color-bg-page);
-
-    &-header{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
   }
 
   &-header {
     margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 
     h1 {
       font-size: 1.9rem;
       margin: 0.75rem 0 0.5rem;
+    }
+
+    &-toggles {
+      display: flex;
+      gap: 1rem;
     }
 
     p {
