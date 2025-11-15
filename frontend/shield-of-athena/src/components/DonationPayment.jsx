@@ -10,15 +10,46 @@ import { useDonation } from './DonationForm';
 export default function DonationPayment() {
   const { formData, updateFormData, prevStep } = useDonation();
 
-  const handleSubmit = () => {
-    if (!formData.cardNumber || !formData.cardholderName || !formData.expirationDate || !formData.securityCode) {
+  const handleSubmit = async () => {
+    if (!formData.isAnonymous && (!formData.cardNumber || !formData.cardholderName || !formData.expirationDate || !formData.securityCode)) {
       alert('Please fill in all payment details');
       return;
     }
-    
-    const finalAmount = formData.customAmount || formData.amount;
-    alert(`Thank you for your ${formData.donationType} donation of $${finalAmount} ${formData.currency}!\n\nDonation Summary:\nName: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nAmount: $${finalAmount} ${formData.currency}`);
+  
+    handleApiCall(formData);
   };
+
+
+  const handleApiCall = async(formData)=>{
+
+    // fields = ["id", "amount", "currency", "is_recurring", "date", "user", "impact_pathway_slug","message"]
+    try{
+      const finalAmount = formData.customAmount || formData.amount;
+
+      const payload = {
+        amount:finalAmount,
+        currency:formData.currency,
+        is_recurring:(formData.donationType),
+        message:"",
+      }
+
+      const response = await fetch("http://127.0.0.1:8000" + "/api/donations/",{
+          method:"POST",
+          body:JSON.stringify(payload),
+      });
+
+      if(response.ok){
+        console.log(response.message)
+
+        // Thak you message here
+        alert(`Thank you for your ${formData.donationType} donation of $${finalAmount} 
+          ${formData.currency}!\n\nDonation Summary:\nName: ${formData.firstName} 
+          ${formData.lastName}\nEmail: ${formData.email}\nAmount: $${finalAmount} ${formData.currency}`);        
+      }
+    }catch(err){
+      console.log(err.message)
+    }
+  }
 
   const formatCardNumber = (value) => {
     const cleaned = value.replace(/\s/g, '');
@@ -115,7 +146,7 @@ export default function DonationPayment() {
 
       <div className='bottom-btns'>
         <div className="amount-donation">
-          <p>Total: {formData.amount} {formData.currency}</p>
+          <p>Total: {formData.amount || formData.customAmount} {formData.currency}</p>
 
           <p className='payment-type'>
             * {formData.donationType[0].toUpperCase()+formData.donationType.substring(1)} Payment
