@@ -83,10 +83,6 @@ function ImpactJourney({
                     {t("impactJourney.subtitle")}
                 </p>
             </div>
-            <div className="impact-header-toggles">
-                <LanguageToggle />
-                <ThemeToggle />
-            </div>
         </div>
       </div>
 

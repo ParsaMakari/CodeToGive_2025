@@ -1,0 +1,97 @@
+.about-card {
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  background: var(--color-card-bg-soft);
+  border: 1px solid var(--color-card-border-soft);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+}
+
+.about-card .card-header {
+  font-weight: 900;
+  background: linear-gradient(90deg, var(--color-gradient-icon-start), var(--color-gradient-bar-start));
+  color: var(--color-text-main);
+  border-bottom: 1px solid var(--color-card-border-soft);
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.about-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  color: var(--color-text-main);
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: color 0.2s ease;
+}
+
+.about-nav-link:hover {
+  color: var(--color-gradient-bar-start);
+}
+
+.about-nav-link::before {
+  content: '>>';
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+
+/* Left and right nav links inside the card body */
+.about-card .card-body a.about-nav-left,
+.about-card .card-body a.about-nav-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 16px;
+  color: var(--color-text-main);
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: color 0.2s ease;
+}
+
+.about-card .card-body a.about-nav-left {
+  float: left;
+}
+.about-card .card-body a.about-nav-left::before {
+  /* show left indicator after the text */
+  content: ' <<';
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+
+.about-card .card-body a.about-nav-right {
+  float: right;
+}
+.about-card .card-body a.about-nav-right::after {
+  content: '>>';
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+
+.about-card .card-body a.about-nav-left:hover,
+.about-card .card-body a.about-nav-right:hover {
+  color: var(--color-gradient-bar-start);
+}
+
+.faq-container {
+  max-height: 500px; /* Adjust height to roughly fit 6 items */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  padding-right: 8px; /* Optional: add padding to prevent scrollbar overlay */
+  scrollbar-width: thin; /* For Firefox */
+}
+
+/* Optional: style the scrollbar for Webkit browsers */
+.faq-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.faq-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}

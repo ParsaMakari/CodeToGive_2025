@@ -9,85 +9,22 @@ import {Link} from "react-router-dom";
 import { Phone, ChevronDown, Menu, X } from 'lucide-react';
 import { FaArrowUpRightDots, FaChevronRight, FaPhone } from "react-icons/fa6"
 import ActionCard from "../components/ActionCard"
+import { useTranslation } from "react-i18next"
 
-function HomePage() {
+function HomePage({ user }) {
     const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     
-    
-    return(
+    const { t } = useTranslation();
+
+    const displayName = user?.username || "";
+    const isLoggedIn = Boolean(user);
+    const greetingKey = isLoggedIn
+        ? "home.greetingLoggedIn"
+        : "home.greetingAnon";
+
+    return (
         <div className="home-page">
-            <header className="home-page__headers">
-                <img src={logo_shield} alt="Logo" className="home-page__headers-logo"/>
-
-                <nav className="nav-menu">         
-                    {/* Desktop Menu */}
-                    <div className="desktop-menu">
-                        <a href="#" className="nav-link">WHO WE ARE</a>
-                        <a href="#" className="nav-link">WHAT WE DO</a>
-                        <a href="#" className="nav-link">NEWS & EVENTS</a>
-                        <a href="#" className="nav-link">GET INVOLVED</a>
-                    </div>
-
-
-                    {/* Mobile Menu Button */}
-                    <button 
-                        className="mobile-menu-btn"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >
-                        {isMenuOpen ? <X className="menu-icon" /> : <Menu className="menu-icon" />}
-                    </button>
-                    </nav>      
-                          {/* Mobile Menu */}
-                    {isMenuOpen && (
-                        <div className="mobile-menu">
-                        <div className="mobile-menu-content">
-                            <a href="#" className="mobile-nav-link">WHO WE ARE</a>
-                            <a href="#" className="mobile-nav-link">WHAT WE DO</a>
-                            <a href="#" className="mobile-nav-link">NEWS & EVENTS</a>
-                            <a href="#" className="mobile-nav-link">GET INVOLVED</a>
-                            <div className="mobile-actions">
-                            <button className="phone-btn">
-                                <Phone className="phone-icon" />
-                            </button>
-                            <button className="donate-btn mobile-donate">
-                                DONATE
-                            </button>
-                            </div>
-                        </div>
-                        </div>
-                    )}          
-                <div className="home-page__headers-right">
-
-                    <p className="home-page__headers-lang">
-                        EN
-                    </p>
-
-                    {/* Desktop Actions */}
-                    <div className="nav-actions desktop-actions">
-                        <button className="phone-btn">
-                            <FaPhone size={16}/>
-                        </button>
-                    </div>
-
-                    <div className="home-page__headers-donate" onClick={()=>navigate("/donate")}>
-                         <HiHeart/>
-                        <span>
-                            Donate
-                        </span>
-                    </div>
-                    <div className="home-page__headers-login">
-                        <HiUser/>
-                        <Link
-                            to="/login"
-                            className="auth-button"
-                            style={{ textAlign: "center", textDecoration: "none" }}
-                        >
-                            Log in
-                        </Link>
-                    </div>
-                </div>
-            </header>
             <div className="home-page__hero-section">
                 <div className="home-page__hero-main">
                     <span className="home-page__hero-join">
@@ -111,31 +48,28 @@ function HomePage() {
                                 Violence !                              
                         </h1>
                     </div>
+
                     <p className="home-page__hero-descript">
-                        The Shield of Athena is a non-profit organization for victims of family violence. 
-                        We offer emergency shelter and professional services to women and their children.                     
-                    </p>                  
-                </div>
+                        {t("home.hero.description")}
+                    </p>
 
+                    <div className="home-page__hero-buttons">
+                        <button
+                            type="button"
+                            title={t("home.hero.donateCta")}
+                            className="home-page__hero-donate"
+                            onClick={() => navigate("/donate")}
+                        >
+                            {t("home.hero.donateCta")}
+                        </button>
 
-                <div className="home-page__hero-buttons">
-                    <button type="button" title="donate" 
-                        className="home-page__hero-donate"
-                        onClick={()=>navigate("/donate")}>
-                        Donate
-                    </button>
-                    <div className="home-page__hero-help-container">
-                        <span>
-                            Are you a victim ?
-                        </span> 
-                        <div className="home-page__hero-getHelp">
-                            <button className="home-page__hero-getHelp-btn">
-                                <HiHandRaised/>
-                                Get help
-                            </button>    
-                            <FaArrowUpRightDots/>
-                        </div>                           
-
+                        <div className="home-page__hero-help-container">
+                            <span>{t("home.hero.victimQuestion")}</span>
+                            <button className="home-page__hero-getHelp">
+                                <HiHandRaised />
+                                {t("home.hero.getHelp")}
+                            </button>
+                        </div>
                     </div>
                 </div> 
 
@@ -166,9 +100,9 @@ function HomePage() {
                         actionText="Join Our Team"
                         actionType="avatars"
                         avatars={[
-                        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
-                        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
-                        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
+                            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+                            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+                            "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
                         ]}
                         link="#volunteer"
                     />

@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
+import "../css/Auth.scss";
+import { Link } from "react-router-dom";
 
 export default function Login({ setUser }) {
   useEffect(() => {
@@ -26,7 +28,11 @@ export default function Login({ setUser }) {
         localStorage.setItem("refresh", tokens.refresh);
 
         const decoded = jwtDecode(tokens.token);
-        setUser(decoded.username); // or { username: decoded.username } if you prefer
+          setUser({
+              username: decoded.username || decoded.user_name || decoded.email,
+              email: decoded.email,
+              id: decoded.user_id || decoded.id,
+          });
         setMessage("");
         navigate("/dashboard");
       } else {
@@ -68,9 +74,9 @@ export default function Login({ setUser }) {
             <p className="auth-footer-text">
               Don&apos;t have an account?
               <br />
-              <a href="/register" className="auth-link">
+                <Link to="/register" className="auth-link">
                 Register here
-              </a>
+              </Link>
             </p>
           </div>
         </form>

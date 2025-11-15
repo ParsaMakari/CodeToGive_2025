@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Register() {
     const [firstName, setFirstName] = useState("");
@@ -94,9 +95,9 @@ function Register() {
                         <p className="auth-footer-text">
                             Have an account?
                             <br />
-                            <a href="/login" className="auth-link">
+                            <Link to="/login" className="auth-link">
                                 Login here
-                            </a>
+                            </Link>
                         </p>
                     </div>
                 </form>

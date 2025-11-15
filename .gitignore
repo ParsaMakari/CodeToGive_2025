@@ -4,12 +4,15 @@
 /node_modules
 /.pnp
 .pnp.js
+/package-lock.json
 
 # testing
 /coverage
 
 # production
 /build
+
+.env
 
 # misc
 .DS_Store
@@ -25,8 +28,6 @@ yarn-error.log*
 # Python
 __pycache__/
 *.py[cod]
-*.pyc
-db.sqlite3
 
 # IDE
 .idea/
