@@ -3,11 +3,29 @@ import { Share2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import "../css/CampaignProgress.scss";
 
-function formatCurrency(amount) {
-    return `$${amount.toLocaleString("en-CA", {
-        maximumFractionDigits: 0,
-    })}`;
+function formatCompactCurrency(amount, decimals = 2, currency = '$') {
+    if (amount == null || Number.isNaN(Number(amount))) return '';
+    const sign = amount < 0 ? '-' : '';
+    const abs = Math.abs(Number(amount));
+    const units = [
+        { value: 1e9, suffix: 'B' },
+        { value: 1e6, suffix: 'M' },
+        { value: 1e3, suffix: 'K' },
+    ];
+
+    for (const u of units) {
+        if (abs >= u.value) {
+            let num = (abs / u.value).toFixed(decimals);
+            // remove trailing zeros and optional trailing dot
+            num = num.replace(/\.0+$|(\.[0-9]*[1-9])0+$/, '$1');
+            return `${sign}${currency}${num}${u.suffix}`;
+        }
+    }
+
+    // below 1000: show no decimals and localized thousands separator
+    return `${sign}${currency}${abs.toLocaleString('en-CA', { maximumFractionDigits: 0 })}`;
 }
+
 
 function CampaignProgress({
                               titleKey,
@@ -43,7 +61,7 @@ function CampaignProgress({
             {t(raisedLabelKey)}
           </span>
                     <span className="impact-progress-value">
-            {formatCurrency(currentAmount)}
+            {formatCompactCurrency(currentAmount)}
           </span>
                 </div>
                 <div>
@@ -51,7 +69,7 @@ function CampaignProgress({
             {t(goalLabelKey)}
           </span>
                     <span className="impact-progress-value">
-            {formatCurrency(goalAmount)}
+            {formatCompactCurrency(goalAmount)}
           </span>
                 </div>
             </div>

@@ -11,24 +11,6 @@ function DonationPage() {
     const navigate = useNavigate()
     return(
         <div className="donation-page">
-            <header className="donation-page__header">
-                <img src={logo_shield} alt="Logo" 
-                    className="home-page__headers-logo"
-                    onClick={()=>{navigate("/")}}/>
-                <div className="home-page__headers-right">
-                    <p className="home-page__headers-lang">
-                        EN
-                    </p>
-                    <div className="home-page__headers-login">
-                        <HiUser size={24}/>
-                        <Link
-                            to="/login"
-                        >
-                            Log in
-                        </Link>
-                    </div>
-                </div>                
-            </header>
             <div className="donation-page__main">
                 <section className="donation-page__left">
                     <DonationForm/>                
