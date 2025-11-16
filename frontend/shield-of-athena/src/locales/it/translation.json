@@ -403,7 +403,20 @@
       "story": "Non ho affrontato il tribunale da sola."
     }
   },
-
+  "eventsCalendar": {
+    "pill": "Eventi e notizie",
+    "title": "Prossimi eventi di Shield of Athena",
+    "subtitle": "Rimani in contatto con le nostre attività comunitarie, raccolte fondi ed eventi di sensibilizzazione.",
+    "prevMonth": "Mese precedente",
+    "nextMonth": "Mese successivo",
+    "empty": "Nessun evento in questa giornata. Controlla altre date o torna più tardi.",
+    "types": {
+      "Fundraiser": "Raccolta fondi",
+      "Volunteer": "Volontariato",
+      "Workshop": "Workshop",
+      "Community": "Comunitario"
+    }
+  },
   "athenaGuide": {
     "badge": "Guida Athena",
     "title": "Assistente alle donazioni",

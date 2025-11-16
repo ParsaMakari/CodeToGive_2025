@@ -404,7 +404,20 @@
       "story": "No tuve que enfrentar la corte sola; alguien estuvo conmigo en todo momento."
     }
   },
-
+  "eventsCalendar": {
+    "pill": "Eventos y noticias",
+    "title": "Próximos eventos de Shield of Athena",
+    "subtitle": "Mantente en contacto con nuestras actividades comunitarias, recaudaciones de fondos y eventos de sensibilización.",
+    "prevMonth": "Mes anterior",
+    "nextMonth": "Mes siguiente",
+    "empty": "No hay eventos este día. Revisa otras fechas o vuelve pronto.",
+    "types": {
+      "Fundraiser": "Recaudación de fondos",
+      "Volunteer": "Voluntariado",
+      "Workshop": "Taller",
+      "Community": "Comunitario"
+    }
+  },
   "athenaGuide": {
     "badge": "Guía Athena",
     "title": "Tu asistente de donaciones",

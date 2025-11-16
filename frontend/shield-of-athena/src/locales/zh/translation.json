@@ -419,7 +419,20 @@
       "story": "我曾非常害怕走进法庭。有人坐在我身边，向我解释每一步，并在我说不出话时替我发声——这一切改变了我的人生。"
     }
   },
-
+  "eventsCalendar": {
+    "pill": "活动与资讯",
+    "title": "Shield of Athena 即将举行的活动",
+    "subtitle": "了解我们的社区活动、募款行动和宣传活动。",
+    "prevMonth": "上个月",
+    "nextMonth": "下个月",
+    "empty": "这一天暂时没有活动。可以查看其他日期或稍后再来。",
+    "types": {
+      "Fundraiser": "募款活动",
+      "Volunteer": "志愿服务",
+      "Workshop": "工作坊",
+      "Community": "社区活动"
+    }
+  },
   "athenaGuide": {
     "badge": "Athena 向导",
     "title": "你的捐赠助手",

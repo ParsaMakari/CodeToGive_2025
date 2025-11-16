@@ -54,6 +54,8 @@ $transition-soft: 0.15s ease-in-out;
   --color-share-bg-hover: #f1e6ff;
   --color-share-border-hover: #c4b5fd;
   --color-soft-grey: #f9fafb;
+
+  --color-primary-dark: #2a0450;
 }
 
 [data-theme="dark"] {
@@ -90,6 +92,8 @@ $transition-soft: 0.15s ease-in-out;
   --color-soft-grey: #313039;
   --color-error: #b91c1c;
   --color-success: #15803d;
+
+  --color-primary-dark: #ebe1f5;
 
   --elevate-1: 0 4px 10px rgba(0,0,0,0.25);
   --elevate-2: 0 6px 14px rgba(0,0,0,0.35);
