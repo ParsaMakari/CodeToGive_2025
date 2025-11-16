@@ -55,14 +55,17 @@ function HomePage({ user }) {
                                 type="button"
                                 title={t("home.hero.donateCta")}
                                 className="home-page__hero-donate"
-                                onClick={() => navigate("/donate")}
+                                onClick={() => navigate("/role-select")}
                             >
                                 {t("home.hero.donateCta")}
                             </button>
 
                             <div className="home-page__hero-help-container">
                                 <span>{t("home.hero.victimQuestion")}</span>
-                                <button className="home-page__hero-getHelp">
+                                <button
+                                    className="home-page__hero-getHelp"
+                                    onClick={() => navigate("/role-select")}
+                                >
                                     <HiHandRaised />
                                     {t("home.hero.getHelp")}
                                 </button>

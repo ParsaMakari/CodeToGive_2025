@@ -71,13 +71,34 @@ export default function Login({ setUser }) {
           </button>
 
           <div className="auth-footer">
-            <p className="auth-footer-text">
-              Don&apos;t have an account?
-              <br />
+            <div style={{ 
+              display: 'flex', 
+              justifyContent: 'space-between', 
+              alignItems: 'flex-start',
+              width: '100%',
+              gap: '60px'
+            }}>
+              <p className="auth-footer-text" style={{ margin: 0 }}>
+                Don&apos;t have an account?
+                <br />
                 <Link to="/register" className="auth-link">
-                Register here
+                  Register here
+                </Link>
+              </p>
+              
+              <Link 
+                to="/admin/login" 
+                className="auth-link"
+                style={{ 
+                  fontSize: '14px',
+                  textDecoration: 'none',
+                  whiteSpace: 'nowrap',
+                  marginTop: '0'
+                }}
+              >
+                Admin Portal
               </Link>
-            </p>
+            </div>
           </div>
         </form>
 
