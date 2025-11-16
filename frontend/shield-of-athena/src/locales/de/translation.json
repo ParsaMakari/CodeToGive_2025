@@ -419,7 +419,20 @@
       "story": "Ich hatte große Angst vor dem Gericht. Jemanden an meiner Seite zu haben, der jeden Schritt erklärt und für mich spricht, wenn ich es nicht konnte, hat alles verändert."
     }
   },
-
+  "eventsCalendar": {
+    "pill": "Veranstaltungen & Neuigkeiten",
+    "title": "Bevorstehende Veranstaltungen bei Shield of Athena",
+    "subtitle": "Bleiben Sie mit unseren Gemeinschaftsaktivitäten, Spendenaktionen und Aufklärungsveranstaltungen verbunden.",
+    "prevMonth": "Voriger Monat",
+    "nextMonth": "Nächster Monat",
+    "empty": "Für diesen Tag sind noch keine Veranstaltungen geplant. Prüfen Sie andere Tage oder schauen Sie später wieder vorbei.",
+    "types": {
+      "Fundraiser": "Spendenaktion",
+      "Volunteer": "Ehrenamt",
+      "Workshop": "Workshop",
+      "Community": "Gemeindeveranstaltung"
+    }
+  },
   "athenaGuide": {
     "badge": "Athena-Assistentin",
     "title": "Deine Spendenassistentin",

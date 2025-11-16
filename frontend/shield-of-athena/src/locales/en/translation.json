@@ -64,6 +64,20 @@
       "imageAlt": "A supportive illustration representing safety and care"
     }
   },
+  "eventsCalendar": {
+    "pill": "Events & News",
+    "title": "Upcoming events at Shield of Athena",
+    "subtitle": "Stay connected with our community activities, fundraisers, and awareness events.",
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month",
+    "empty": "No events on this day yet. Check other dates or come back soon!",
+    "types": {
+      "Fundraiser": "Fundraiser",
+      "Volunteer": "Volunteer",
+      "Workshop": "Workshop",
+      "Community": "Community"
+    }
+  },
   "layout": {
     "nav": {
       "logoAlt": "Shield of Athena logo",

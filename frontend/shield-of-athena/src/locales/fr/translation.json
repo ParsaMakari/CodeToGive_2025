@@ -59,6 +59,20 @@
       "imageAlt": "Illustration de soutien, de sécurité et de bienveillance"
     }
   },
+  "eventsCalendar": {
+    "pill": "Événements & nouvelles",
+    "title": "Événements à venir au Bouclier d’Athéna",
+    "subtitle": "Restez connecté·e à nos activités communautaires, campagnes de financement et événements de sensibilisation.",
+    "prevMonth": "Mois précédent",
+    "nextMonth": "Mois suivant",
+    "empty": "Aucun événement prévu pour cette journée. Consultez d’autres dates ou revenez bientôt !",
+    "types": {
+      "Fundraiser": "Levée de fonds",
+      "Volunteer": "Bénévolat",
+      "Workshop": "Atelier",
+      "Community": "Communautaire"
+    }
+  },
   "layout": {
     "nav": {
       "logoAlt": "Logo du Bouclier d’Athéna",

@@ -1,32 +1,23 @@
 import "./css/HomePage.scss"
 import { useState } from "react"
-
-import logo_shield from "../assets/logo-bilingual-1-Hasmik-Manucharyan.jpg"
+import EventsCalendar from "../components/EventsCalendar"
 import hero_image from "../assets/hero_image.png"
 import {HiHandRaised, HiHeart, HiOutlinePhone, HiPhone, HiUser} from "react-icons/hi2"
 import { useNavigate } from "react-router"
 import {Link} from "react-router-dom";
-import { Phone, ChevronDown, Menu, X } from 'lucide-react';
-import { FaArrowUpRightDots, FaChevronRight, FaPhone } from "react-icons/fa6"
 import ActionCard from "../components/ActionCard"
 import { useTranslation } from "react-i18next"
-import TestiomonialScroll from "../components/TestiomonialScroll"
+import {sampleEvents} from "../api/events";
+import Matcher from "../components/Matcher"
 
 function HomePage({ user }) {
     const navigate = useNavigate();
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
     
     const { t } = useTranslation();
 
-    const displayName = user?.username || "";
     const isLoggedIn = Boolean(user);
-    const greetingKey = isLoggedIn
-        ? "home.greetingLoggedIn"
-        : "home.greetingAnon";
-
     return (
         <div className="home-page">
-            <Link to="/matcher">Go to Matcher Example</Link>
             <div className="home-page__hero-section">
                 <div className="home-page__hero-titles_testimonials">
                     <div className="home-page__hero-main">
@@ -84,6 +75,7 @@ function HomePage({ user }) {
 
                 </div>                         
             </div>
+            <EventsCalendar events={sampleEvents} />
             <div className="action-cards-grid">
                 <ActionCard
                     icon="donation"
@@ -117,7 +109,8 @@ function HomePage({ user }) {
                     ]}
                     link="#volunteer"
                 />
-                </div>               
+                </div>
+            <Matcher/>
         </div>
             
     )

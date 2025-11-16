@@ -419,7 +419,20 @@
       "story": "Eu tinha muito medo de ir ao tribunal. Ter alguém ao meu lado, explicando cada passo e falando quando eu não conseguia, mudou tudo."
     }
   },
-
+  "eventsCalendar": {
+    "pill": "Eventos e novidades",
+    "title": "Próximos eventos da Shield of Athena",
+    "subtitle": "Fique por dentro das nossas atividades comunitárias, campanhas de arrecadação e eventos de conscientização.",
+    "prevMonth": "Mês anterior",
+    "nextMonth": "Próximo mês",
+    "empty": "Nenhum evento neste dia por enquanto. Confira outras datas ou volte em breve.",
+    "types": {
+      "Fundraiser": "Arrecadação de fundos",
+      "Volunteer": "Voluntariado",
+      "Workshop": "Oficina",
+      "Community": "Evento comunitário"
+    }
+  },
   "athenaGuide": {
     "badge": "Guia Athena",
     "title": "Seu assistente de doações",

@@ -403,7 +403,20 @@
       "story": "Ik stond er in de rechtbank niet alleen voor."
     }
   },
-
+  "eventsCalendar": {
+    "pill": "Evenementen & nieuws",
+    "title": "Aankomende evenementen bij Shield of Athena",
+    "subtitle": "Blijf verbonden met onze gemeenschapsactiviteiten, benefietevenementen en bewustmakingsacties.",
+    "prevMonth": "Vorige maand",
+    "nextMonth": "Volgende maand",
+    "empty": "Er zijn nog geen evenementen op deze dag. Bekijk andere data of kom later terug.",
+    "types": {
+      "Fundraiser": "Benefiet",
+      "Volunteer": "Vrijwilligerswerk",
+      "Workshop": "Workshop",
+      "Community": "Gemeenschapsevenement"
+    }
+  },
   "athenaGuide": {
     "badge": "Athena-Gids",
     "title": "Je donatieassistent",
