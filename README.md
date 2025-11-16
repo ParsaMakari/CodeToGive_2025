@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # CodeToGive_2025
-=======
 # Athena Donor Chatbot Backend
 
 Multilingual, safety‑first donor‑facing chatbot backend built with **FastAPI** and a lightweight **RAG + intent detection** pipeline.
@@ -360,4 +358,3 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000
 ---
 
 You now have a complete backend that you can drop into your project, wire to your React frontend, and extend as your donor experience evolves.
->>>>>>> dd1a30d (Add donor chatbot backend)
