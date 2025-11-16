@@ -15,6 +15,7 @@ import HomePage from "./pages/HomePage";
 import DonationPage from "./pages/DonationPage";
 import Profile from "./pages/Profile";
 import {jwtDecode} from "jwt-decode";
+import Matcher from "./components/Matcher.jsx";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -85,6 +86,7 @@ function App() {
                 user ? <Profile user={user} /> : <Navigate to="/login" replace />
             }
         />
+            <Route path="/matcher" element={<Matcher />} />
         </Routes>
 
       </Layout>

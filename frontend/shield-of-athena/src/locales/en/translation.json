@@ -68,6 +68,7 @@
     "nav": {
       "logoAlt": "Shield of Athena logo",
       "mobileToggle": "Toggle navigation menu",
+      "languageLabel": "Lang",
       "actions": {
         "donate": "Donate",
         "login": "Login",
@@ -311,6 +312,100 @@
         "success": "Thank you for your {{type}} donation of {{amount}} {{currency}}!\n\nDonation summary:\nName: {{name}}\nEmail: {{email}}",
         "error": "We couldn't process your donation. Please try again later."
       }
+    }
+  },
+ "welcome": {
+    "pill": "AI-Powered Impact Matching",
+    "title": "Athena Impact Matcher",
+    "subtitle": "Find the most meaningful way you can help today. Answer a few questions and let our AI match you with the Shield of Athena program where your support will make the greatest impact.",
+    "footer": "Takes only 2 minutes • Free • Confidential",
+    "primaryCta": "Start Your Journey",
+    "secondaryCta": "Learn About Our Mission"
+  },
+  "values": {
+    "title": "What matters most to you?",
+    "subtitle": "Select all impact areas that resonate with your values."
+  },
+  "preferences": {
+    "title": "How would you like to help?",
+    "subtitle": "Choose your preferred ways to contribute."
+  },
+  "buttons": {
+    "back": "Back",
+    "continue": "Continue",
+    "findMatch": "Find My Match",
+    "startOver": "Start over and explore other options",
+    "donateNow": "Donate Now",
+    "learnMore": "Learn More"
+  },
+  "steps": {
+    "values": "Values",
+    "preferences": "Preferences",
+    "match": "Match"
+  },
+  "loading": {
+    "title": "Finding your perfect match...",
+    "subtitle": "Our AI is analyzing your values and preferences."
+  },
+  "results": {
+    "pill": "Personalized recommendation",
+    "title": "We found your match!",
+    "subtitle": "Based on your values and preferences, this program is where your support can make a powerful difference today.",
+    "yourImpact": "Your Impact",
+    "storyFromField": "Story from the field"
+  },
+  "impactAreas": {
+    "children": {
+      "title": "Children's Emotional Support",
+      "description": "Counseling, art therapy, and trauma-informed care for children."
+    },
+    "housing": {
+      "title": "Emergency Housing",
+      "description": "Safe shelter and transitional housing for families in crisis."
+    },
+    "legal": {
+      "title": "Legal & Advocacy",
+      "description": "Legal aid, court support, and advocacy services."
+    },
+    "essentials": {
+      "title": "Essential Needs",
+      "description": "Food, clothing, and basic necessities for survivors."
+    },
+    "mothers": {
+      "title": "Support for Mothers",
+      "description": "Parenting resources and maternal mental health support."
+    },
+    "newcomers": {
+      "title": "Newcomer Family Support",
+      "description": "Culturally sensitive services for immigrant families."
+    }
+  },
+  "givingPreferences": {
+    "onetime": "One-time donation",
+    "monthly": "Monthly giving",
+    "adopt": "Adopt-a-Family",
+    "inkind": "In-kind donations",
+    "volunteer": "Volunteer opportunities",
+    "advocacy": "Awareness & advocacy"
+  },
+  "matches": {
+    "children_program": {
+      "name": "Children's Therapeutic Support Program",
+      "description": "Your values align perfectly with our comprehensive program providing trauma-informed counseling, art therapy, and emotional support for children affected by domestic violence.",
+      "impactMetric": "$150 provides 3 therapy sessions for one child",
+      "story": "Through art therapy, I finally found a way to express feelings I couldn't put into words. Now I know I'm not alone, and it's okay to heal at my own pace."
+    },
+    "housing_program": {
+      "name": "Emergency Family Housing & Stabilization",
+      "description": "This program offers safe emergency shelter, transitional apartments, and wrap-around support to help families rebuild their lives after violence.",
+      "impactMetric": "$250 funds 2 nights of safe emergency housing for a family",
+      "story": "Having a safe place to sleep gave us space to breathe. It was the first time in months that I saw my kids sleep peacefully."
+    },
+    "legal_program": {
+      "name": "Legal & Court Support for Survivors",
+      "description": "We provide legal information, accompaniment to court, and advocacy so survivors are not alone when navigating complex legal systems.",
+      "impactMetric": "$100 supports one full day of legal accompaniment",
+      "story": "I was terrified of going to court. Having someone sit beside me, explain each step, and speak up when I couldn’t changed everything."
     }
   },
 "athenaGuide": {

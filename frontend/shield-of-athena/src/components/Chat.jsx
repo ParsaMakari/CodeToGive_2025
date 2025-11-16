@@ -18,12 +18,14 @@ function Chat() {
     const [isLoading, setIsLoading] = useState(false);
     const messagesEndRef = useRef(null);
 
+    // Auto-scroll to bottom when messages change
     useEffect(() => {
         if (messagesEndRef.current) {
             messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
         }
     }, [messages]);
 
+    // Update welcome message when language changes
     useEffect(() => {
         setMessages((prev) =>
             prev.map((msg) =>
@@ -34,7 +36,7 @@ function Chat() {
         );
     }, [i18n.language, t]);
 
-
+    // Static suggested questions (you can later plug backend suggestions if you want)
     const suggestedQuestions = [
         t("athenaGuide.sampleQuestions.howDonationsUsed"),
         t("athenaGuide.sampleQuestions.campaign"),
@@ -59,13 +61,18 @@ function Chat() {
 
         try {
             const lang = i18n.language || "en";
-            const response = await sendAthenaMessage({ message: text, lang });
+
+            // 🔗 Call backend with `language` (FastAPI expects this key)
+            const response = await sendAthenaMessage({
+                message: text,
+                language: lang,
+            });
 
             const botMessage = {
                 id: `bot-${Date.now()}`,
                 sender: "bot",
                 text: response.reply || t("athenaGuide.fallbackReply"),
-                type: response.type || "NORMAL",
+                type: response.type || "NORMAL", // "CRISIS_REDIRECT" or "NORMAL"
             };
 
             setMessages((prev) => [...prev, botMessage]);

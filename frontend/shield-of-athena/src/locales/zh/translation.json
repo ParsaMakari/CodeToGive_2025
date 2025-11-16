@@ -1,0 +1,445 @@
+{
+  "impactJourney": {
+    "title": "你的影响之旅",
+    "subtitle": "你的慷慨正在带来真实的改变",
+    "loading": "正在加载你的影响...",
+    "error": "无法加载你的影响之旅。{{message}}",
+    "campaign": {
+      "title": "支持 Second Step Housing 募捐活动",
+      "subtitle": "让我们一起为有需要的家庭筹集 500 万美元。",
+      "raisedLabel": "已筹金额",
+      "goalLabel": "目标"
+    },
+    "actions": {
+      "shareButton": "分享",
+      "shareCopied": "链接已复制！分享它来鼓励更多人。"
+    },
+    "pathways": {
+      "IMPACT_PATHWAY_EMERGENCY_SHELTER_SAFETY": "紧急庇护项目"
+    },
+    "programs": {
+      "emergency-shelter-safety": "紧急庇护项目"
+    },
+    "steps": {
+      "DONATION_RECEIVED": {
+        "title": "已收到你的捐款",
+        "description": "感谢你支持处于困境中的妇女和儿童。"
+      },
+      "FUNDS_ALLOCATED": {
+        "title": "资金已分配至你选择的项目",
+        "description": "你的捐款将用于提供即时安全与长期支持的项目。"
+      },
+      "IMMEDIATE_IMPACT": {
+        "title": "你的捐款产生了立刻的影响",
+        "description": "今晚，一位母亲和她的孩子将因为你而安全入睡。"
+      },
+      "LONG_TERM_IMPACT": {
+        "title": "你是她们长期康复旅程的一部分",
+        "description": "你的捐款为正在重建生活的家庭带来稳定、安全与希望。"
+      }
+    }
+  },
+
+  "home": {
+    "greetingLoggedIn": "欢迎回来，{{name}}",
+    "greetingAnon": "欢迎来到 Shield of Athena",
+    "hero": {
+      "join": "今天就加入我们，",
+      "title": {
+        "say": "对",
+        "no": "暴力",
+        "noLeft": "说",
+        "noRight": "不",
+        "to": "",
+        "violence": "！"
+      },
+      "description": "Shield of Athena 是一家帮助家庭暴力受害者的非营利组织，我们为妇女及其子女提供紧急庇护和专业服务。",
+      "donateCta": "立即捐款",
+      "victimQuestion": "你是受害者吗？",
+      "getHelp": "获取帮助",
+      "imageAlt": "象征安全与关怀的支持性插画"
+    }
+  },
+
+  "layout": {
+    "nav": {
+      "logoAlt": "Shield of Athena 标志",
+      "mobileToggle": "切换导航菜单",
+      "languageLabel": "语言",
+      "actions": {
+        "donate": "捐款",
+        "login": "登录",
+        "logout": "退出",
+        "profile": "我的资料"
+      },
+      "options": {
+        "whoWeAre": "关于我们",
+        "whatWeDo": "我们的工作",
+        "newsAndEvents": "新闻与活动",
+        "getInvolved": "参与我们"
+      }
+    },
+    "footer": {
+      "orgName": "Shield of Athena",
+      "rights": "版权所有。",
+      "links": {
+        "officialSite": "官方网站",
+        "getHelp": "获取帮助",
+        "contact": "联系我们"
+      }
+    }
+  },
+
+  "testimonials": {
+    "title": "来自社区的故事",
+    "items": [
+      {
+        "text": "Shield of Athena 让我的家庭重新感到安全与被支持，他们在每一步都陪伴着我们。",
+        "name": "Mackie Clonts",
+        "role": "前服务对象，现志愿者"
+      },
+      {
+        "text": "我获得的支持与指引改变了我的人生。",
+        "name": "Sarah Johnson",
+        "role": "社区成员"
+      },
+      {
+        "text": "专业、关怀、随时在场，他们为需要帮助的人付出超乎想象。",
+        "name": "Michael Chen",
+        "role": "本地倡导者"
+      },
+      {
+        "text": "他们对家庭的投入令人敬佩，我非常感激他们为我们的社区所做的一切。",
+        "name": "Emily Rodriguez",
+        "role": "志愿者协调员"
+      },
+      {
+        "text": "在最艰难的时刻，他们是希望的灯塔。",
+        "name": "David Thompson",
+        "role": "前服务对象"
+      }
+    ]
+  },
+
+  "profile": {
+    "pageTitle": "我的资料",
+    "header": {
+      "title": "我的账户",
+      "subtitle": "查看你的捐款、更新个人信息，并在 Shield of Athena 平台上追踪你的影响力。"
+    },
+    "user": {
+      "editProfile": "编辑资料",
+      "changePassword": "修改密码"
+    },
+    "stats": {
+      "title": "你的影响力",
+      "totalDonated": {
+        "label": "累计捐款",
+        "helper": "覆盖所有募捐活动"
+      },
+      "monthlyGift": {
+        "label": "每月定期捐款",
+        "perMonth": "每月",
+        "helper": "当前生效的定期捐赠"
+      },
+      "yearsSupporting": {
+        "label": "支持年数",
+        "helper": "感谢你一直陪伴"
+      }
+    },
+    "preferences": {
+      "title": "偏好设置",
+      "communication": {
+        "label": "沟通频率",
+        "helper": "选择我们联系你的频率。",
+        "options": {
+          "monthlyUpdates": "每月更新",
+          "impactReportsOnly": "仅发送影响报告",
+          "importantNewsOnly": "仅发送重要消息"
+        }
+      },
+      "language": {
+        "label": "语言",
+        "helper": "界面与电子邮件语言。",
+        "options": {
+          "english": "英语",
+          "french": "法语"
+        }
+      },
+      "taxReceipts": {
+        "label": "税务收据邮件",
+        "helper": "每次捐款后发送税务收据。"
+      }
+    },
+    "timeline": {
+      "title": "影响时间线",
+      "helper": "跟踪你的捐款如何随着时间持续发挥作用——包括募捐活动、应急资金和长期支持。"
+    },
+    "history": {
+      "title": "最近捐款记录",
+      "helper": "这是示例列表——未来你可以接入真实 API。",
+      "tableHeaders": {
+        "date": "日期",
+        "campaign": "项目",
+        "amount": "金额",
+        "type": "类型"
+      },
+      "rows": {
+        "row1": {
+          "date": "2025年11月10日",
+          "campaign": "紧急庇护基金",
+          "amount": "¥50",
+          "type": "一次性"
+        },
+        "row2": {
+          "date": "2025年11月1日",
+          "campaign": "每月捐赠",
+          "amount": "¥25",
+          "type": "每月"
+        },
+        "row3": {
+          "date": "2025年10月1日",
+          "campaign": "每月捐赠",
+          "amount": "¥25",
+          "type": "每月"
+        }
+      },
+      "viewFullHistory": "查看全部捐款历史"
+    }
+  },
+
+  "donationPage": {
+    "giftTitle": "你的礼物，她们的自由",
+    "description": "Shield 帮助妇女、儿童以及多元文化社区打破心理、语言、经济、性与身体暴力的循环。",
+    "servicesFree": "我们所有的服务均为",
+    "free": "免费",
+    "thankYou": "感谢你今天的捐赠！"
+  },
+
+  "donationForm": {
+    "common": {
+      "next": "下一步",
+      "back": "返回",
+      "cancel": "取消",
+      "donate": "捐款"
+    },
+    "steps": {
+      "amount": "选择金额",
+      "details": "填写信息",
+      "payment": "支付"
+    },
+    "amount": {
+      "title": "选择捐款金额",
+      "type": {
+        "oneTime": "一次性捐款",
+        "monthly": "每月捐款"
+      },
+      "goodCauses": {
+        "title": "支持一项有意义的项目",
+        "causes": {
+          "emergencyAndSafety": "紧急庇护与安全",
+          "counsel&Healing": "心理辅导与康复",
+          "childrenAndYouth": "儿童与青少年支持",
+          "communityEducation": "社区教育与预防"
+        }
+      },
+      "validation": {
+        "noAmount": "请选择或输入捐款金额。"
+      },
+      "cancelMessage": "捐款已取消。",
+      "aria": {
+        "amount": "捐款金额",
+        "currency": "货币"
+      }
+    },
+    "details": {
+      "title": "你的信息",
+      "labels": {
+        "firstName": "名字 *",
+        "lastName": "姓氏 *",
+        "email": "电子邮箱 *",
+        "phone": "电话号码 *",
+        "address": "街道地址",
+        "city": "城市",
+        "zip": "邮政编码"
+      },
+      "placeholders": {
+        "firstName": "小明",
+        "lastName": "张",
+        "email": "xiaoming.zhang@example.com",
+        "phone": "+1 (555) 123-4567",
+        "address": "示例路 123 号",
+        "city": "蒙特利尔",
+        "zip": "H2X 1Y4"
+      },
+      "taxReceipt": "通过电子邮件发送捐款税务收据",
+      "stayAnonymous": "保持匿名",
+      "validation": {
+        "required": "请填写所有必填字段。"
+      }
+    },
+    "payment": {
+      "title": "支付设置",
+      "methods": {
+        "creditCard": "信用卡",
+        "paypal": "通过 PayPal 支付",
+        "applePay": "通过 Apple Pay 支付",
+        "googlePay": "通过 Google Pay 支付"
+      },
+      "labels": {
+        "cardNumber": "卡号",
+        "cardholderName": "持卡人姓名",
+        "expirationDate": "到期日期",
+        "securityCode": "安全码"
+      },
+      "placeholders": {
+        "cardNumber": "1234 5678 9012 3456",
+        "cardholderName": "与银行卡一致",
+        "expirationDate": "MM / YY",
+        "securityCode": "CVV"
+      },
+      "validation": {
+        "required": "请填写所有支付信息。"
+      },
+      "summary": {
+        "total": "合计：",
+        "type": "* {{type}} 支付"
+      },
+      "type": {
+        "oneTime": "一次性",
+        "monthly": "每月"
+      },
+      "alert": {
+        "success": "感谢你完成{{type}}捐款，金额为 {{amount}} {{currency}}！\n\n捐款摘要：\n姓名：{{name}}\n邮箱：{{email}}",
+        "error": "我们暂时无法处理你的捐款，请稍后再试。"
+      }
+    }
+  },
+
+  "welcome": {
+    "pill": "AI 智能匹配捐赠影响",
+    "title": "Athena Impact Matcher",
+    "subtitle": "找到你今天最适合的帮助方式。回答几个简单问题，我们的 AI 将为你匹配最合适的 Shield of Athena 项目。",
+    "footer": "仅需 2 分钟 • 免费 • 完全保密",
+    "primaryCta": "开始你的旅程",
+    "secondaryCta": "了解我们的使命"
+  },
+
+  "values": {
+    "title": "对你来说，什么最重要？",
+    "subtitle": "请选择所有与你价值观契合的影响领域。"
+  },
+
+  "preferences": {
+    "title": "你希望如何提供帮助？",
+    "subtitle": "选择你偏好的参与方式。"
+  },
+
+  "buttons": {
+    "back": "返回",
+    "continue": "继续",
+    "findMatch": "为我匹配项目",
+    "startOver": "重新开始并探索更多选项",
+    "donateNow": "立即捐款",
+    "learnMore": "了解更多"
+  },
+
+  "steps": {
+    "values": "价值观",
+    "preferences": "偏好",
+    "match": "匹配结果"
+  },
+
+  "loading": {
+    "title": "正在为你寻找最合适的项目...",
+    "subtitle": "我们的 AI 正在分析你的价值观与偏好。"
+  },
+
+  "results": {
+    "pill": "个性化推荐",
+    "title": "我们为你找到了匹配的项目！",
+    "subtitle": "根据你的价值观与偏好，这个项目是你今天最能产生强大影响的地方。",
+    "yourImpact": "你的影响",
+    "storyFromField": "一线故事"
+  },
+
+  "impactAreas": {
+    "children": {
+      "title": "儿童情感支持",
+      "description": "为受暴儿童提供心理辅导、艺术治疗与创伤知情关怀。"
+    },
+    "housing": {
+      "title": "紧急住房",
+      "description": "为身处危机的家庭提供安全庇护及过渡性住房。"
+    },
+    "legal": {
+      "title": "法律援助与倡导",
+      "description": "提供法律资讯、出庭陪同与权益倡导。"
+    },
+    "essentials": {
+      "title": "基本生活需求",
+      "description": "为幸存者提供食物、衣物与日常必需品。"
+    },
+    "mothers": {
+      "title": "母亲支持",
+      "description": "提供育儿资源与母亲心理健康支持。"
+    },
+    "newcomers": {
+      "title": "新移民家庭支持",
+      "description": "为移民家庭提供具文化敏感度的服务。"
+    }
+  },
+
+  "givingPreferences": {
+    "onetime": "一次性捐款",
+    "monthly": "每月定期捐款",
+    "adopt": "认助一户家庭",
+    "inkind": "实物捐赠",
+    "volunteer": "志愿服务",
+    "advocacy": "宣传与倡导"
+  },
+
+  "matches": {
+    "children_program": {
+      "name": "儿童治疗支持项目",
+      "description": "你的价值观与我们的综合项目高度契合，该项目为受家庭暴力影响的儿童提供创伤知情的心理辅导、艺术治疗和情感支持。",
+      "impactMetric": "捐赠 150 元即可为一名儿童提供 3 次治疗课程",
+      "story": "通过艺术治疗，我终于找到了表达自己感受的方式。现在我知道自己并不孤单，也可以按照自己的节奏慢慢康复。"
+    },
+    "housing_program": {
+      "name": "紧急家庭住房与稳定计划",
+      "description": "项目提供安全的紧急庇护、过渡性公寓以及全方位支持，帮助家庭在暴力经历之后重建生活。",
+      "impactMetric": "捐赠 250 元即可资助一户家庭 2 晚安全住房",
+      "story": "有了安全的落脚点，我们才能真正松一口气。那是几个月来，我第一次看到孩子们安心熟睡。"
+    },
+    "legal_program": {
+      "name": "法律援助与法庭陪同项目",
+      "description": "我们提供法律信息、陪同出庭与倡导服务，确保幸存者在面对复杂的法律体系时不再孤身一人。",
+      "impactMetric": "捐赠 100 元即可支持一整天的法律陪同服务",
+      "story": "我曾非常害怕走进法庭。有人坐在我身边，向我解释每一步，并在我说不出话时替我发声——这一切改变了我的人生。"
+    }
+  },
+
+  "athenaGuide": {
+    "badge": "Athena 向导",
+    "title": "你的捐赠助手",
+    "subtitle": "就项目、影响与捐赠方式向我提问。",
+    "welcome": "你好！我在这里帮助你更好地了解你的捐款如何产生影响。今天我能为你做些什么？",
+    "inputPlaceholder": "输入你的问题……",
+    "sendLabel": "发送",
+    "fallbackReply": "我不太确定是否完全理解，但我会尽力帮助你！",
+    "errorReply": "目前无法回复，请稍后再试。",
+    "suggestions": {
+      "title": "推荐问题"
+    },
+    "sampleQuestions": {
+      "howDonationsUsed": "我的捐款会被如何使用？",
+      "campaign": "当前正在进行的募捐活动是什么？",
+      "monthly": "我是否应该选择每月捐款？",
+      "taxReceipt": "我会收到捐款税务收据吗？"
+    },
+    "crisisBox": {
+      "title": "紧急帮助"
+    }
+  }
+}
