@@ -265,10 +265,12 @@
 
 .desktop-menu {
   display: none;
+  font-size: 0.9rem;
 }
 
 @media (min-width: 1024px) {
   .desktop-menu {
+    font-size: 0.9rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -277,7 +279,6 @@
 }
 
 .nav-link {
-  font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none;
   color: inherit;

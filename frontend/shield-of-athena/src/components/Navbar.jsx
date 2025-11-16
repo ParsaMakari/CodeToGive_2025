@@ -74,13 +74,7 @@ function NavBar({ user, onLogout }) {
                 {/* Right side */}
                 <div className="site-nav__right">
                    
-                    <LanguageToggle />
-                    {/* Contact more accessible */}
-                    <div className="nav-actions desktop-actions">
-                        <button className="phone-btn">
-                            <FaPhone size={14}/>
-                        </button>
-                    </div>   
+                    <LanguageToggle /> 
 
                     {/* Donate */}
                     <button

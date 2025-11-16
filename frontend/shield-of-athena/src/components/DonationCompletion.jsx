@@ -48,7 +48,7 @@ export default function DonationCompletion({onClose}){
       <div className="ty-card">
             <ConfettiEffect trigger={true}/>
             <button type="button" className="ty-close" onClick={onClose}>
-                <FaX/>
+                <FaX size={15} />
             </button>
             <div className="ty-left">
             <p className="ty-overline">Thank you</p>
@@ -67,16 +67,16 @@ export default function DonationCompletion({onClose}){
 
             <div className="ty-stats-row">
                 <div className="ty-stat">
-                <span className="ty-stat-value">92%</span>
-                <span className="ty-stat-label">to direct services</span>
+                    <span className="ty-stat-value">92%</span>
+                    <span className="ty-stat-label">to direct services</span>
                 </div>
                 <div className="ty-stat">
-                <span className="ty-stat-value">4,312</span>
-                <span className="ty-stat-label">people helped this year</span>
+                    <span className="ty-stat-value">4,312</span>
+                    <span className="ty-stat-label">people helped this year</span>
                 </div>
                 <div className="ty-stat">
-                <span className="ty-stat-value">1</span>
-                <span className="ty-stat-label">life changed by you</span>
+                    <span className="ty-stat-value">1</span>
+                    <span className="ty-stat-label">life changed by you</span>
                 </div>
             </div>
 

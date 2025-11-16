@@ -9,6 +9,7 @@ import ActionCard from "../components/ActionCard"
 import { useTranslation } from "react-i18next"
 import {sampleEvents} from "../api/events";
 import Matcher from "../components/Matcher"
+import Stats from "../components/Stats"
 
 function HomePage({ user }) {
     const navigate = useNavigate();
@@ -75,6 +76,7 @@ function HomePage({ user }) {
 
                 </div>                         
             </div>
+            <Stats/>
             <EventsCalendar events={sampleEvents} />
             <div className="action-cards-grid">
                 <ActionCard
