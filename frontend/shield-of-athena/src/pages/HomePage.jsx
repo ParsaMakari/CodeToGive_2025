@@ -26,6 +26,7 @@ function HomePage({ user }) {
 
     return (
         <div className="home-page">
+            <Link to="/matcher">Go to Matcher Example</Link>
             <div className="home-page__hero-section">
                 <div className="home-page__hero-titles_testimonials">
                     <div className="home-page__hero-main">

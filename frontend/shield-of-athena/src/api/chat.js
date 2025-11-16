@@ -1,33 +1,44 @@
-export async function sendAthenaMessage({ message, lang = "en" }) {
-    console.log("[Mock AthenaGuide] message:", message, "lang:", lang);
+const BASE_URL = "http://localhost:8001";
 
-    // en gros simulate a tiny delay like a real API
-    await new Promise((resolve) => setTimeout(resolve, 600));
+export async function sendAthenaMessage({ message, language }) {
+    // Reuse a session id so the backend can keep context
+    let sessionId = localStorage.getItem("athena_session_id") || undefined;
 
-    // simple mock logic: if the user seems in crisis, return CRISIS_REDIRECT
-    const lower = message.toLowerCase();
-    if (
-        lower.includes("danger") ||
-        lower.includes("help") ||
-        lower.includes("violence")
-    ) {
-        return {
-            reply:
-                lang === "fr"
-                    ? "Si vous êtes en danger immédiat, veuillez contacter les services d’urgence ou une ressource d’aide immédiatement. Ce chatbot ne remplace pas une intervention d’urgence."
-                    : "If you are in immediate danger, please contact emergency services or a crisis helpline right away. This chatbot cannot replace emergency support.",
-            type: "CRISIS_REDIRECT",
-            suggestions: [],
-        };
+    const res = await fetch(`${BASE_URL}/chat`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            message,
+            language: language || undefined,
+            session_id: sessionId,
+        }),
+    });
+
+    if (!res.ok) {
+        // Try to parse backend error, otherwise throw generic
+        let errBody = {};
+        try {
+            errBody = await res.json();
+        } catch {
+            // ignore parse error
+        }
+        throw new Error(errBody.detail || "Chat API error");
     }
 
-    // normal answer
+    const data = await res.json();
+
+    if (data.session_id && data.session_id !== sessionId) {
+        localStorage.setItem("athena_session_id", data.session_id);
+    }
+
+    const isCrisis = data.intent === "crisis_override";
+
     return {
-        reply:
-            lang === "fr"
-                ? "Merci pour votre question. Dans un vrai déploiement, Athena Guide utiliserait les informations du Bouclier d’Athéna pour vous donner une réponse précise sur les dons, les programmes et l’impact."
-                : "Thank you for your question. In a real deployment, Athena Guide would use Shield of Athena’s information to give you a precise answer about donations, programs, and impact.",
-        type: "NORMAL",
-        suggestions: [],
+        reply: data.response,
+        type: isCrisis ? "CRISIS_REDIRECT" : "NORMAL",
+        intent: data.intent,
+        confidence: data.confidence,
+        suggestions: data.suggestions || [],
+        language: data.language,
     };
 }
