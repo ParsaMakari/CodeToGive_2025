@@ -1,0 +1,100 @@
+[
+  {
+    "id": "donation_methods",
+    "title": "Ways to donate",
+    "content_en": "You can donate online by credit card or Interac, set up a monthly donation, or give by cheque or bank transfer. Online donations receive an instant email receipt. Cheques can be mailed to the organization's main office with your contact details so a tax receipt can be issued.",
+    "content_fr": "Vous pouvez faire un don en ligne par carte de crédit ou Interac, mettre en place un don mensuel, ou donner par chèque ou virement bancaire. Les dons en ligne donnent droit à un reçu instantané par courriel. Les chèques peuvent être envoyés au bureau principal de l'organisme avec vos coordonnées afin qu'un reçu fiscal soit émis.",
+    "tags": [
+      "donation_help",
+      "pathway_explanation",
+      "general_info"
+    ]
+  },
+  {
+    "id": "current_projects",
+    "title": "Priority projects this year",
+    "content_en": "Key initiatives include expanding the emergency shelter by 8 beds, funding a mobile counselling team for rural communities, piloting a legal clinic for survivors navigating family court, and launching a bilingual prevention curriculum for youth. Each project is funded through a mix of monthly donors and special campaigns so progress continues even when emergency cases surge.",
+    "content_fr": "Les priorités comprennent l’ajout de 8 places en hébergement d’urgence, le financement d’une équipe mobile de soutien psychosocial pour les communautés rurales, un projet pilote de clinique juridique pour les survivantes devant la cour familiale, ainsi que le lancement d’un programme de prévention bilingue pour les jeunes. Chaque projet est soutenu par des dons mensuels et des campagnes spéciales afin de rester en cours même lorsque les situations d’urgence augmentent.",
+    "tags": [
+      "general_info",
+      "transparency_inquiry"
+    ]
+  },
+  {
+    "id": "monthly_donations",
+    "title": "Monthly donations and flexible amounts",
+    "content_en": "Monthly donations provide stable, predictable funding that helps plan services throughout the year. You can choose the amount and change or cancel at any time. Even small monthly gifts add up to a strong, long‑term impact.",
+    "content_fr": "Les dons mensuels offrent un financement stable et prévisible qui permet de planifier les services toute l'année. Vous choisissez le montant et vous pouvez le modifier ou l'annuler en tout temps. Même un petit don mensuel peut avoir un impact important à long terme.",
+    "tags": [
+      "amount_guidance",
+      "donation_help"
+    ]
+  },
+  {
+    "id": "impact_and_transparency",
+    "title": "How donations are used",
+    "content_en": "Donations are used to maintain shelters and safe spaces, fund counselling and intervention services, and support prevention and outreach programs. A portion may cover essential administrative costs so that frontline services remain sustainable and accountable.",
+    "content_fr": "Les dons servent à maintenir les maisons d'hébergement et les lieux sécuritaires, à financer les services de soutien et d'intervention, ainsi qu'à soutenir les programmes de prévention et de sensibilisation. Une partie couvre des frais administratifs essentiels afin d'assurer la pérennité et la reddition de comptes des services.",
+    "tags": [
+      "transparency_inquiry",
+      "general_info"
+    ]
+  },
+  {
+    "id": "program_outcomes",
+    "title": "Examples of program outcomes",
+    "content_en": "A typical donation directly supports frontline work: a night of emergency shelter, a trauma counselling session, transportation or childcare for someone attending court, outreach workshops in schools, or culturally specific support circles. Teams log these outcomes every month so donors can see how gifts translate into concrete help.",
+    "content_fr": "Un don typique soutient directement le travail de première ligne : une nuit d'hébergement d'urgence, une séance de soutien psychosocial, le transport ou la garde des enfants pour une personne qui doit se présenter en cour, des ateliers de sensibilisation dans les écoles ou des cercles de soutien culturellement adaptés. Les équipes consignent ces résultats chaque mois afin que les donateurs voient comment leurs contributions se traduisent en aide concrète.",
+    "tags": [
+      "transparency_inquiry",
+      "general_info"
+    ]
+  },
+  {
+    "id": "financial_controls",
+    "title": "Transparency and financial controls",
+    "content_en": "Budgets are reviewed quarterly by the board finance committee, and annual statements are audited by an independent CPA firm. Designated funds for shelters, counselling, or prevention are tracked separately so restricted donations stay in the promised program. Expense ratios are published each year, and administrative costs are capped to keep at least 80% of donations in direct services.",
+    "content_fr": "Les budgets sont revus chaque trimestre par le comité des finances du conseil, et les états annuels sont vérifiés par un cabinet comptable indépendant. Les fonds destinés aux maisons d'hébergement, au soutien ou à la prévention sont suivis séparément afin que les dons affectés demeurent dans le programme promis. Les ratios de dépenses sont publiés chaque année et les frais administratifs sont plafonnés pour que plus de 80 % des dons soient consacrés aux services directs.",
+    "tags": [
+      "transparency_inquiry"
+    ]
+  },
+  {
+    "id": "reports",
+    "title": "Reports and accountability",
+    "content_en": "The organization publishes annual reports and financial statements that summarize activities, outcomes, and how donations were allocated. These documents are usually available on the website or on request from the administrative team.",
+    "content_fr": "L'organisme publie des rapports annuels et des états financiers qui résument les activités, les résultats et la façon dont les dons ont été utilisés. Ces documents sont généralement disponibles sur le site web ou sur demande auprès de l'équipe administrative.",
+    "tags": [
+      "transparency_inquiry"
+    ]
+  },
+  {
+    "id": "about_org",
+    "title": "Mission and services overview",
+    "content_en": "The mission is to support women, children, and families affected by violence through shelter, counselling, and prevention programs. Services may include emergency housing, crisis intervention, legal and social support, and community education.",
+    "content_fr": "La mission est de soutenir les femmes, les enfants et les familles touchées par la violence grâce à l'hébergement, au soutien psychosocial et aux programmes de prévention. Les services peuvent comprendre l'hébergement d'urgence, l'intervention en situation de crise, le soutien juridique et social, ainsi que la sensibilisation du public.",
+    "tags": [
+      "general_info"
+    ]
+  },
+  {
+    "id": "victim_support_services",
+    "title": "Support services for victims and survivors",
+    "content_en": "If you are experiencing violence or supporting someone who is, our team can connect you with emergency shelter, counselling, accompaniment to medical or legal appointments, and safety planning. Conversations are confidential and can happen in person, online, or over the phone. You can reach out even if you are unsure about reporting to authorities.",
+    "content_fr": "Si vous vivez de la violence ou soutenez une personne concernée, notre équipe peut vous orienter vers un hébergement d'urgence, du soutien psychosocial, un accompagnement à des rendez-vous médicaux ou juridiques, et de la planification de sécurité. Les échanges sont confidentiels et peuvent se faire en personne, en ligne ou par téléphone. Vous pouvez nous contacter même si vous n’êtes pas prêt·e à faire un signalement.",
+    "tags": [
+      "victim_support",
+      "general_info"
+    ]
+  },
+  {
+    "id": "safety_planning",
+    "title": "Immediate safety and helplines",
+    "content_en": "If you are in immediate danger, contact emergency services or a trusted crisis hotline. You can also use a quick exit or private browsing when researching help. Keep a small bag with essentials, copies of IDs, and important phone numbers somewhere safe. Our counsellors can help you build a personalized safety plan and reach out to shelters or legal resources with you.",
+    "content_fr": "Si vous êtes en danger immédiat, communiquez avec les services d’urgence ou une ligne d’écoute de confiance. Utilisez un bouton de fermeture rapide ou la navigation privée lorsque vous cherchez de l’aide. Gardez un petit sac avec l’essentiel, des copies de vos pièces d’identité et des numéros importants dans un endroit sûr. Nos intervenant·e·s peuvent vous aider à préparer un plan de sécurité personnalisé et à contacter, avec vous, des maisons d’hébergement ou des ressources juridiques.",
+    "tags": [
+      "victim_support",
+      "emotional_distress"
+    ]
+  }
+]
