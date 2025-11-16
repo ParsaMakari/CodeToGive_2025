@@ -9,22 +9,10 @@
       "It only happens between married people."
     ],
     "correctOptionIndex": 1,
-    "explanation": "Family violence in Canada includes physical, sexual, verbal, emotional, and financial abuse.  [oai_citation:0‡Canada](https://www.canada.ca/en/public-health/services/health-promotion/stop-family-violence/family-violence.html?utm_source=chatgpt.com)"
+    "explanation": "Family violence in Canada includes physical, sexual, verbal, emotional, and financial abuse."
   },
   {
     "id": 2,
-    "question": "What is ‘intimate partner violence’ (IPV)?",
-    "options": [
-      "Only physical or sexual violence between spouses.",
-      "Any behaviour meant to control or harm a current or former intimate partner, including emotional or financial abuse.",
-      "Violence only when partners live together.",
-      "Violence in dating relationships, but not in long-term partnerships."
-    ],
-    "correctOptionIndex": 1,
-    "explanation": "IPV refers to physical, sexual or psychological harm by a current or former partner or spouse.  [oai_citation:1‡Canada](https://www.canada.ca/en/public-health/services/health-promotion/stop-family-violence/family-violence.html?utm_source=chatgpt.com)"
-  },
-  {
-    "id": 3,
     "question": "Roughly what percentage of ever-partnered women in Canada have reported experiencing IPV in their lifetime?",
     "options": [
       "About 20%",
@@ -33,10 +21,10 @@
       "Over 80%"
     ],
     "correctOptionIndex": 1,
-    "explanation": "About 44% of ever-partnered women in Canada reported experiencing psychological, physical or sexual IPV in their lifetime.  [oai_citation:2‡Statistics Canada](https://www150.statcan.gc.ca/n1/pub/85-002-x/2021001/article/00003-eng.htm?utm_source=chatgpt.com)"
+    "explanation": "About 44% of ever-partnered women in Canada reported experiencing psychological, physical or sexual IPV in their lifetime."
   },
   {
-    "id": 4,
+    "id": 3,
     "question": "Which type of IPV is the most common in Canada, according to surveys?",
     "options": [
       "Sexual violence",
@@ -45,10 +33,10 @@
       "Homicide"
     ],
     "correctOptionIndex": 2,
-    "explanation": "Psychological abuse (emotional, financial) was the most commonly reported form of IPV in Canada.  [oai_citation:3‡Statistics Canada](https://www150.statcan.gc.ca/n1/pub/85-002-x/2021001/article/00003-eng.htm?utm_source=chatgpt.com)"
+    "explanation": "Psychological abuse (emotional, financial) was the most commonly reported form of IPV in Canada."  
   },
   {
-    "id": 5,
+    "id": 4,
     "question": "According to police‑reported data in 2022, what proportion of IPV victims were women and girls in Canada?",
     "options": [
       "Less than half",
@@ -57,58 +45,10 @@
       "Over 90%"
     ],
     "correctOptionIndex": 2,
-    "explanation": "In 2022, 78% of police‑reported IPV victims were women and girls.  [oai_citation:4‡Canada](https://www.canada.ca/en/women-gender-equality/gender-based-violence/intimate-partner-violence.html?utm_source=chatgpt.com)"
+    "explanation": "In 2022, 78% of police‑reported IPV victims were women and girls."
   },
   {
-    "id": 6,
-    "question": "Between 2014 and 2022, how did police‑reported IPV rates change in Canada?",
-    "options": [
-      "They stayed about the same.",
-      "They dropped significantly.",
-      "They increased for both men and women.",
-      "They only increased for men."
-    ],
-    "correctOptionIndex": 2,
-    "explanation": "From 2014 to 2022, police‑reported intimate partner violence rates increased 19% for women and girls and 21% for men and boys.  [oai_citation:5‡Canada](https://www.canada.ca/en/women-gender-equality/gender-based-violence/intimate-partner-violence.html?utm_source=chatgpt.com)"
-  },
-  {
-    "id": 7,
-    "question": "Which group reports higher-than-average rates of IPV in Canada according to a government snapshot?",
-    "options": [
-      "Women with disabilities",
-      "Heterosexual men",
-      "People over 80 years old",
-      "People living in cities only"
-    ],
-    "correctOptionIndex": 0,
-    "explanation": "Women with disabilities report higher-than-average rates of IPV.  [oai_citation:6‡Canada](https://www.canada.ca/en/women-gender-equality/gender-based-violence/intergovernmental-collaboration/gbv-snapshot.html?utm_source=chatgpt.com)"
-  },
-  {
-    "id": 8,
-    "question": "What was the rate of police-reported IPV victims per 100,000 population in 2023 for Canada?",
-    "options": [
-      "About 200 per 100,000",
-      "About 300 per 100,000",
-      "About 354 per 100,000",
-      "Over 500 per 100,000"
-    ],
-    "correctOptionIndex": 2,
-    "explanation": "In 2023, the rate of police-reported intimate partner violence was about 354 victims per 100,000.  [oai_citation:7‡Statistics Canada](https://www150.statcan.gc.ca/n1/daily-quotidien/241024/dq241024b-eng.htm?utm_source=chatgpt.com)"
-  },
-  {
-    "id": 9,
-    "question": "Which age‑group of women had the highest rate of police‑reported IPV in 2023?",
-    "options": [
-      "Women aged 12–24",
-      "Women aged 25–64",
-      "Women aged 65 and older",
-      "Women aged 30–40 only"
-    ],
-    "correctOptionIndex": 0,
-    "explanation": "In 2023, women and girls aged 12–24 had the highest rate of police-reported IPV (752 per 100,000).  [oai_citation:8‡Statistics Canada](https://www150.statcan.gc.ca/n1/daily-quotidien/241024/dq241024b-eng.htm?utm_source=chatgpt.com)"
-  },
-  {
-    "id": 10,
+    "id": 5,
     "question": "Why are IPV incidents often under-counted in Canada?",
     "options": [
       "All incidents are always reported to police.",
@@ -117,6 +57,6 @@
       "The police never record IPV incidents."
     ],
     "correctOptionIndex": 1,
-    "explanation": "Many IPV incidents are under‑reported because people may fear reporting, feel shame, or face stigma.  [oai_citation:9‡Canada](https://www.canada.ca/en/women-gender-equality/gender-based-violence/facts-stats.html?utm_source=chatgpt.com)"
+    "explanation": "Many IPV incidents are under‑reported because people may fear reporting, feel shame, or face stigma."
   }
 ]
