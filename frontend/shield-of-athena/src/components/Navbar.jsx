@@ -2,19 +2,22 @@ import { Link, useNavigate } from "react-router-dom";
 import { HiUser } from "react-icons/hi2";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useAuth } from "../context/AuthContext";
 import logoShield from "../assets/logo-bilingual-1-Hasmik-Manucharyan.jpg";
 import "../css/Navbar.scss";
 import LanguageToggle from "./LanguageToggle";
 import ThemeToggle from "./ThemeToggle";
 import { FaPhone } from "react-icons/fa6";
-import { Phone } from "lucide-react";
+import { Phone, Shield } from "lucide-react";
 
 function NavBar({ user, onLogout }) {
     const navigate = useNavigate();
     const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
+    const { user: authUser, isAuthenticated, isAdmin, logout } = useAuth();
 
-    const displayName = user?.username || "there";
+    const displayName = user?.username || authUser?.name || "there";
+    const currentUser = authUser || user;
 
     return (
         <header className={`site-nav ${isOpen ? "site-nav--open" : ""}`}>
@@ -96,31 +99,45 @@ function NavBar({ user, onLogout }) {
                     </button>
 
                     {/* Auth */}
-                    {user ? (
+                    {isAuthenticated ? (
                         <>
-                            <Link
-                                to="/profile"
-                                className="site-nav__auth site-nav__auth--link"
-                                onClick={() => setIsOpen(false)}
+                            {/* Go to Portal Button */}
+                            <button
+                                type="button"
+                                className="site-nav__auth site-nav__auth--portal"
+                                onClick={() => {
+                                    navigate(isAdmin ? '/admin/dashboard' : '/portal/home');
+                                    setIsOpen(false);
+                                }}
+                                style={{
+                                    background: 'linear-gradient(135deg, #9333EA 0%, #EC4899 100%)',
+                                    color: 'white',
+                                    border: 'none',
+                                    padding: '8px 16px',
+                                    borderRadius: '8px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '6px',
+                                    fontWeight: '600'
+                                }}
                             >
-                                <HiUser className="site-nav__auth-icon" size={20} />
-                                <span className="site-nav__auth-text">
-                  {t("layout.nav.actions.profile")}
-                </span>
-                            </Link>
+                                <Shield size={18} />
+                                <span>{isAdmin ? 'Admin Portal' : 'Donor Portal'}</span>
+                            </button>
 
                             <button
                                 type="button"
                                 className="site-nav__auth"
                                 onClick={() => {
-                                    onLogout();
+                                    logout();
+                                    if (onLogout) onLogout();
                                     setIsOpen(false);
                                 }}
                             >
-                <span className="site-nav__auth-text">
-                  {t("layout.nav.actions.logout")}{" "}
-                    <span className="site-nav__auth-username">{displayName}</span>
-                </span>
+                                <span className="site-nav__auth-text">
+                                    {t("layout.nav.actions.logout")}{" "}
+                                    <span className="site-nav__auth-username">{displayName}</span>
+                                </span>
                             </button>
                         </>
                     ) : (
@@ -131,8 +148,8 @@ function NavBar({ user, onLogout }) {
                         >
                             <HiUser className="site-nav__auth-icon" size={20} />
                             <span className="site-nav__auth-text">
-                {t("layout.nav.actions.login")}
-              </span>
+                                {t("layout.nav.actions.login")}
+                            </span>
                         </Link>
                     )}
                     <ThemeToggle />
