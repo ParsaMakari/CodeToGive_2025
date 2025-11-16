@@ -40,7 +40,7 @@
     right: 2%;
   width: 90%;
   max-width: 300px;
-  height: clamp(220px, 40vh, 320px);
+  height: clamp(220px, 50vh, 320px);
   overflow: hidden;
   -webkit-mask-image:
   linear-gradient(
@@ -160,7 +160,8 @@
 }
 
 .home-page__hero-descript {
-    width: 30vw;
+  margin: unset;
+    width: 40vw;
     text-overflow: ellipsis;
     text-align: center;
     color: var(--color-text-muted);
@@ -181,8 +182,8 @@
     font-size: larger;
     font-weight: 600;
     background-color: var(--color-primary);
-    min-width: 8vw;
-    max-width: -webkit-fill-available;
+    min-width: 8rem;
+    max-width: 10rem;
     height: 5vh;
     padding: 2vh;
     border-radius: 5rem;
@@ -203,6 +204,7 @@
 .home-page__hero-help-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .home-page__hero-getHelp-btn{
@@ -210,24 +212,28 @@
     height: inherit;
     display: flex;
     align-items: center;
-    gap: 1vw;
 }
 
 .home-page__hero-getHelp {
     display: flex;
     align-items: center;
-    height: 10vh;
-    width: 15vw;
-    padding: 25px;
-    justify-content: space-between;
+    min-width: 10rem;
+    max-width: 15rem;
+    height: 4rem;
+    padding: 1rem;
+    gap: 1rem;
+
+    justify-content: center;
     color: var(--color-primary);
     font-size: larger;
     font-weight: 600;
-    border: 2px solid #3a1a801c;
+    border: 2px solid var(--color-share-border-hover);
     border-radius: 5rem;
     cursor: pointer;
+    background-color:var(--color-card-bg-soft);
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-    border-color 0.2s ease-in-out;
+    border-color 0.2s ease-in-out;  
+
 }
 
 .home-page__hero-getHelp:hover {
@@ -319,15 +325,22 @@
     }
 
     .home-page__hero-donate {
-        width: 60%;
-        padding: 15px;
-        font-size: 4vw;
+      max-width: 20rem;
+      width: 60%;
+      height: 3vh;
+      padding: 1rem;
+      font-size: 4vw;
     }
-
+    
+    .home-page__hero-help-container {
+      width: 100%;
+    }
     .home-page__hero-getHelp {
+        max-width: 20rem;
         width: 60%;
-        padding: 15px;
-        font-size: 4vw;
+        height: 3rem;
+        padding: 1rem;      
+        font-size: 4vw; 
     }
 
     .home-page__hero-right {

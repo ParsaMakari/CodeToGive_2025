@@ -1,12 +1,15 @@
-import "./css/Quiz.css";
+import "./css/Quiz.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import { useState, useEffect } from "react";
+import { LucideX } from "lucide-react";
 
-export default function Quiz() {
+export default function Quiz({onClose}) {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [isAnswerCorrect,setIsAnswerCorrect] = useState(null);
+
 
   useEffect(() => {
     const fetchQuiz = async () => {
@@ -29,6 +32,16 @@ export default function Quiz() {
     }
   };
 
+  const checkAnswer =(selected)=>{
+    if (selectedAnswer === null) {
+      const q = questions.at(currentIndex);
+      if (selected !== null) {
+        if (selected === q.correctOptionIndex) setIsAnswerCorrect(true); 
+        else setIsAnswerCorrect(false);        
+      }    
+    }
+  }
+
   const handleNext = () => {
     setSelectedAnswer(null);
     if (currentIndex < questions.length - 1) {
@@ -41,55 +54,78 @@ export default function Quiz() {
   return (
     <div className="container">
       <Card className="quiz-card">
-        <Card.Header>Quiz</Card.Header>
-        <Card.Body>
+        <Card.Header className="quiz-header">
+          Learn about family violence
+          <div className="quiz-panel-close-btn" onClick={onClose}>
+            <LucideX size={20}/>
+          </div>
+        </Card.Header>
+      
+        <div className="question-number">
+          <span className="label">Question: <b>{currentIndex + 1}</b> of <b>{questions.length}</b></span>
+        </div>
+
+        <Card.Body className="quiz-content">
           {questions.map((q, idx) => (
             <div
               key={q.id}
               style={{ display: idx === currentIndex ? "block" : "none" }}
             >
-              <Card.Title>{q.question}</Card.Title>
+            
+              {/* <Card.Title> </Card.Title> */}
+            <div className="question-card">
+              <h2 className="question-text">
+                {q.question}
+              </h2>
+              <div className="question-icon">?</div>  
+            </div> 
+
               <hr />
-              <Card.Text>
-                <ul>
-                  {q.options.map((option, i) => {
-                    let bgColor = "";
-                    if (selectedAnswer !== null) {
-                      if (i === q.correctOptionIndex) bgColor = "#8fd19e"; 
-                      else if (i === selectedAnswer) bgColor = "#f5a3a3"; 
-                    }
+              <div className="quiz-answer-checker">
+                { selectedAnswer !== null &&
 
-                    return (
-                      <li
-                        key={i}
-                        onClick={() => handleSelect(i)}
-                        style={{
-                          backgroundColor: bgColor,
-                          cursor: selectedAnswer === null ? "pointer" : "default",
-                        }}
-                      >
-                        {option}
-                      </li>
-                    );
-                  })}
-                </ul>
-                <div className="index">
-                  {currentIndex + 1} of {questions.length} Questions
+                <div className="quiz-answer-status">
+
+                    {isAnswerCorrect!==null && isAnswerCorrect ?
+                      <span className="correct-answer">
+                        Correct
+                      </span>
+                      :
+                      <span className="incorrect-answer">
+                        Incorrect
+                      </span>
+                      }
+                    <p style={{ marginTop: "1rem", fontStyle: "italic", color: "#333" }}>
+                      {q.explanation}
+                    </p>                      
+
                 </div>
-              </Card.Text>
-              <button
-                className="next-button"
-                onClick={handleNext}
-                disabled={selectedAnswer === null}
-              >
-                Next
-              </button>
+                }
+              </div>
 
-              {selectedAnswer !== null && (
-                <p style={{ marginTop: "1rem", fontStyle: "italic", color: "#333" }}>
-                  {q.explanation}
-                </p>
-              )}
+            <div className="options-container">
+              {q.options.map((option,i) => (
+                <div
+                  key={i}
+                  className={`option ${selectedAnswer === i ? 'selected' : ''}`}
+                  onClick={() => {
+                    handleSelect(i);
+                    checkAnswer(i)
+                  }
+                  }
+                >
+                  <span className="option-letter">{i+1}</span>
+                  <span className="option-text">{option}</span>
+                </div>
+              ))}
+            </div>              
+            <button
+              className="next-button"
+              onClick={handleNext}
+              disabled={selectedAnswer === null}
+            >
+              Next
+            </button>
             </div>
           ))}
         </Card.Body>

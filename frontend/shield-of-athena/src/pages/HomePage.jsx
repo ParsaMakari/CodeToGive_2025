@@ -10,6 +10,8 @@ import { useTranslation } from "react-i18next"
 import {sampleEvents} from "../api/events";
 import Matcher from "../components/Matcher"
 import Stats from "../components/Stats"
+import TestiomonialScroll from "../components/TestiomonialScroll"
+import QuizPopup from "../components/QuizPopup"
 
 function HomePage({ user }) {
     const navigate = useNavigate();
@@ -19,6 +21,7 @@ function HomePage({ user }) {
     const isLoggedIn = Boolean(user);
     return (
         <div className="home-page">
+            <QuizPopup/>
             <div className="home-page__hero-section">
                 <div className="home-page__hero-titles_testimonials">
                     <div className="home-page__hero-main">
@@ -71,7 +74,7 @@ function HomePage({ user }) {
                         </div>
                     </div>
                     {/* <div className="home_page-testimonials-wrapper">
-                        <TestiomonialScroll />
+                        <TestiomonialScroll/>
                     </div>                     */}
 
                 </div>                         

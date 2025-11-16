@@ -55,6 +55,15 @@ $transition-soft: 0.15s ease-in-out;
   --color-share-border-hover: #c4b5fd;
   --color-soft-grey: #f9fafb;
 
+  /* Quiz response choices*/
+  --color-quiz-res-bg: #f9fafb;
+  --color-quiz-res-text:  #4c1d95;
+  --color-quiz-res-border:  #c4b5fd;
+  --color-quiz-res-border-hover:  #4c1d95;
+  --color-quiz-res-bg-hover:  #f1e6ff;
+  --color-quiz-res-true-bg:rgb(0, 185, 0);
+  --color-quiz-res-false-bg:rgb(228, 0, 0);
+
   --color-primary-dark: #2a0450;
 }
 
