@@ -1,12 +1,13 @@
 import { Apple, ArrowUpRight, DollarSign, DollarSignIcon, Heart, Users } from "lucide-react";
 import "./css/ActionCard.scss"
+import { FaApple, FaGoogle, FaPaypal } from "react-icons/fa6";
 
 // Payment icons component
 const PaymentIcons = () => (
   <div className="payment-icons">
-    <Apple className="payment-icon" />
-    <span className="payment-icon google-icon">G</span>
-    <span className="payment-icon paypal-icon">P</span>
+    <FaApple size={15} className="payment-icon"/>
+    <FaGoogle size={15} className= "payment-icon google-icon"/>
+    <FaPaypal size={15} className="payment-icon paypal-icon"/>
   </div>
 );
 
