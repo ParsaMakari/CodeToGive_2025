@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "default_suggestions": [
+      "How can I donate?",
+      "What impact does my donation have?",
+      "I need help choosing an amount"
+    ]
+  },
+  "errors": {
+    "empty_input": "I didn’t catch anything in your message. Could you tell me a bit more about what you need or how you’d like to help?",
+    "generic_error": "Something went wrong on our side. Please try again in a moment.",
+    "too_long": "Your message is quite long. I’ve read the beginning, but you can also try sending it in smaller parts if you want to go into detail."
+  },
+  "safety": {
+    "crisis_text": "I’m really glad you reached out. It sounds like you may be going through a very difficult moment, and your safety matters more than anything.\n\nI’m not able to provide the kind of urgent help you deserve in a crisis. Please contact {hotline} right away, or your local emergency services. If you can, you may also reach out to someone you trust.\n\nFor non‑urgent questions about donations or our services, you can contact us at {support_email}.",
+    "emotional_text": "Thank you for sharing how you feel. I’m here to talk about ways you can support the organization, but your wellbeing matters too. If you feel overwhelmed, it might help to talk with someone you trust or a health professional."
+  },
+  "profanity": {
+    "notice": "I’ll do my best to help. Let’s keep our conversation respectful so I can support you as clearly as possible."
+  },
+  "rag": {
+    "intro": "Here is a quick overview based on our official information:"
+  },
+  "intents": {
+    "donation_help": {
+      "base_text": "I can definitely help you donate. Here are the main ways you can support us:",
+      "suggestions": [
+        "Show me step‑by‑step how to donate online",
+        "What are the other ways to give?",
+        "Can I make a monthly donation?"
+      ]
+    },
+    "amount_guidance": {
+      "base_text": "Choosing an amount depends entirely on your comfort and situation. Any contribution helps. Here are a few ways to think about it:",
+      "suggestions": [
+        "Give me examples of typical donation amounts",
+        "Explain the impact of a small monthly gift",
+        "What if I can only give once?"
+      ]
+    },
+    "pathway_explanation": {
+      "base_text": "Here’s how the main donation pathways usually work:",
+      "suggestions": [
+        "Explain how to donate by credit card",
+        "Can I donate by Interac or bank transfer?",
+        "How do I get a tax receipt?"
+      ]
+    },
+    "transparency_inquiry": {
+      "base_text": "It’s completely reasonable to want to know how your donation is used. Here’s a summary:",
+      "suggestions": [
+        "Show me how donations are distributed",
+        "Where can I find your annual report?",
+        "What proportion goes to administration?",
+        "Send me the detailed financial report"
+      ],
+      "snapshot_title": "Transparency snapshot (last fiscal year)",
+      "snapshot_lines": [
+        "81% -> direct services like emergency shelter, 24/7 crisis counselling, legal accompaniment, and safety planning",
+        "12% -> prevention campaigns, youth workshops, and outreach teams working in rural communities",
+        "7% -> administration, secure donation infrastructure, staff training, and independent audits to keep programs accountable",
+        "2,100+ women and children received direct support and 430 individualized safety plans were created last year"
+      ],
+      "snapshot_cta": "Want the full financial brief by email? Just reply \"send me the report\" and I’ll show you how to access the detailed breakdown."
+    },
+    "general_info": {
+      "base_text": "Here’s a brief overview of our mission and services:",
+      "suggestions": [
+        "Tell me more about your mission",
+        "What services do you offer?",
+        "How do you support women and children?"
+      ]
+    },
+    "victim_support": {
+      "base_text": "If you or someone close to you is looking for safety or support, here are ways we can help right now. Everything you share is confidential and you can reach us even if you’re unsure about next steps.",
+      "suggestions": [
+        "How can I speak with someone confidentially?",
+        "What support is there if I need to leave quickly?",
+        "Can you help a friend who is being abused?"
+      ]
+    },
+    "unclear": {
+      "base_text": "I’m here to help you explore how you’d like to support us.",
+      "clarify": "Could you tell me if you’re more interested in understanding our mission, making a donation now, or learning about other ways to help?",
+      "suggestions": [
+        "I want to make a donation",
+        "I’d like to understand your impact",
+        "I want to know other ways to help"
+      ]
+    },
+    "emotional_distress": {
+      "base_text": "If you’d still like to talk about how you can help, I can walk you through simple ways to support us at your own pace.",
+      "suggestions": [
+        "Explain the different ways to donate",
+        "Tell me how my donation helps",
+        "I just want basic information for now"
+      ]
+    }
+  },
+  "victim_support_flow": {
+    "ask_contact": "If you’d like a trained staff member to reach you discreetly, you can reply with a safe phone number, email, or a good time to connect. Only share what feels safe—message “not safe” any time and I’ll keep to low-risk info.",
+    "confirm_contact": "Thank you. I’ve passed this to our on-call support worker and they’ll reach out as soon as it’s safe. If you ever feel in immediate danger, please contact {hotline} or local emergency services.",
+    "not_safe": "Totally understood. I’ll keep this chat focused on resources you can open safely. You can reach our confidential hotline at {hotline} or email {support_email} whenever you have a safe moment.",
+    "confirm_suggestions": [
+      "I need help planning for safety",
+      "Share info I can send to a friend",
+      "Show me donation options instead"
+    ]
+  }
+}
