@@ -1,122 +1,122 @@
 [
   {
     "id": 1,
-    "question": "Which statement best describes domestic and family violence?",
+    "question": "Which statement best describes family violence in Canada?",
     "options": [
-      "It only happens in certain neighborhoods or cultures.",
-      "It can affect anyone, regardless of age, culture, or income.",
-      "It is always physical and never emotional or psychological.",
-      "It is a private matter that should stay inside the family."
+      "It only involves physical abuse between spouses.",
+      "It can include physical, emotional, financial, and sexual abuse.",
+      "It only affects low-income families.",
+      "It only happens between married people."
     ],
     "correctOptionIndex": 1,
-    "explanation": "Domestic and family violence can affect anyone and can take many forms, including physical, emotional, psychological, financial, and verbal abuse."
+    "explanation": "Family violence in Canada includes physical, sexual, verbal, emotional, and financial abuse.  [oai_citation:0‡Canada](https://www.canada.ca/en/public-health/services/health-promotion/stop-family-violence/family-violence.html?utm_source=chatgpt.com)"
   },
   {
     "id": 2,
-    "question": "What is one key goal of Shield of Athena?",
+    "question": "What is ‘intimate partner violence’ (IPV)?",
     "options": [
-      "To replace government services.",
-      "To support women and children affected by domestic and family violence.",
-      "To provide financial loans to families.",
-      "To run a general community centre for sports."
+      "Only physical or sexual violence between spouses.",
+      "Any behaviour meant to control or harm a current or former intimate partner, including emotional or financial abuse.",
+      "Violence only when partners live together.",
+      "Violence in dating relationships, but not in long-term partnerships."
     ],
     "correctOptionIndex": 1,
-    "explanation": "Shield of Athena focuses on supporting women and children affected by domestic and family violence through shelter, counselling, and related services."
+    "explanation": "IPV refers to physical, sexual or psychological harm by a current or former partner or spouse.  [oai_citation:1‡Canada](https://www.canada.ca/en/public-health/services/health-promotion/stop-family-violence/family-violence.html?utm_source=chatgpt.com)"
   },
   {
     "id": 3,
-    "question": "Why is it important to share anonymized survivor stories?",
+    "question": "Roughly what percentage of ever-partnered women in Canada have reported experiencing IPV in their lifetime?",
     "options": [
-      "To entertain donors with dramatic stories.",
-      "To expose the personal details of survivors.",
-      "To raise awareness and show the real impact while protecting privacy.",
-      "To rank survivors based on how difficult their experience was."
+      "About 20%",
+      "About 44%",
+      "About 60%",
+      "Over 80%"
     ],
-    "correctOptionIndex": 2,
-    "explanation": "Anonymized stories help people understand the impact of their donations while respecting the safety and privacy of survivors."
+    "correctOptionIndex": 1,
+    "explanation": "About 44% of ever-partnered women in Canada reported experiencing psychological, physical or sexual IPV in their lifetime.  [oai_citation:2‡Statistics Canada](https://www150.statcan.gc.ca/n1/pub/85-002-x/2021001/article/00003-eng.htm?utm_source=chatgpt.com)"
   },
   {
     "id": 4,
-    "question": "Which of the following is a safe way to support someone who might be experiencing domestic violence?",
+    "question": "Which type of IPV is the most common in Canada, according to surveys?",
     "options": [
-      "Telling them what to do and pressuring them to leave immediately.",
-      "Listening without judgment and sharing information about support services.",
-      "Posting about their situation on social media to get help.",
-      "Confronting the person who is abusive directly."
+      "Sexual violence",
+      "Physical violence",
+      "Psychological (emotional or financial) abuse",
+      "Homicide"
     ],
-    "correctOptionIndex": 1,
-    "explanation": "Listening, believing the person, and gently sharing information about support services is safer than pressuring them or confronting the abuser."
+    "correctOptionIndex": 2,
+    "explanation": "Psychological abuse (emotional, financial) was the most commonly reported form of IPV in Canada.  [oai_citation:3‡Statistics Canada](https://www150.statcan.gc.ca/n1/pub/85-002-x/2021001/article/00003-eng.htm?utm_source=chatgpt.com)"
   },
   {
     "id": 5,
-    "question": "What is one advantage of making a recurring monthly donation?",
+    "question": "According to police‑reported data in 2022, what proportion of IPV victims were women and girls in Canada?",
     "options": [
-      "It is less secure than a one-time donation.",
-      "It helps the organization plan long-term support and services.",
-      "It cannot be cancelled once started.",
-      "It does not qualify for a tax receipt."
+      "Less than half",
+      "About 60%",
+      "About 78%",
+      "Over 90%"
     ],
-    "correctOptionIndex": 1,
-    "explanation": "Recurring donations provide stable, predictable funding, which helps the organization plan and maintain essential services."
+    "correctOptionIndex": 2,
+    "explanation": "In 2022, 78% of police‑reported IPV victims were women and girls.  [oai_citation:4‡Canada](https://www.canada.ca/en/women-gender-equality/gender-based-violence/intimate-partner-violence.html?utm_source=chatgpt.com)"
   },
   {
     "id": 6,
-    "question": "Which action can increase awareness about domestic violence and available support?",
+    "question": "Between 2014 and 2022, how did police‑reported IPV rates change in Canada?",
     "options": [
-      "Ignoring campaigns because the topic is uncomfortable.",
-      "Sharing reliable information or official campaigns on social media.",
-      "Spreading unverified stories to create fear.",
-      "Discouraging others from talking about violence."
+      "They stayed about the same.",
+      "They dropped significantly.",
+      "They increased for both men and women.",
+      "They only increased for men."
     ],
-    "correctOptionIndex": 1,
-    "explanation": "Sharing reliable information and official campaigns helps others learn about the issue and where to get help."
+    "correctOptionIndex": 2,
+    "explanation": "From 2014 to 2022, police‑reported intimate partner violence rates increased 19% for women and girls and 21% for men and boys.  [oai_citation:5‡Canada](https://www.canada.ca/en/women-gender-equality/gender-based-violence/intimate-partner-violence.html?utm_source=chatgpt.com)"
   },
   {
     "id": 7,
-    "question": "What is an example of gamification that respects the mission of a non-profit like Shield of Athena?",
+    "question": "Which group reports higher-than-average rates of IPV in Canada according to a government snapshot?",
     "options": [
-      "Publicly ranking donors by how much money they give.",
-      "Creating gentle milestones and badges that celebrate continued support and learning.",
-      "Giving prizes only to the largest donors.",
-      "Making support conditional on reaching donation targets."
+      "Women with disabilities",
+      "Heterosexual men",
+      "People over 80 years old",
+      "People living in cities only"
     ],
-    "correctOptionIndex": 1,
-    "explanation": "Milestones and badges that highlight learning, engagement, and ongoing support can motivate donors without turning impact into a competition."
+    "correctOptionIndex": 0,
+    "explanation": "Women with disabilities report higher-than-average rates of IPV.  [oai_citation:6‡Canada](https://www.canada.ca/en/women-gender-equality/gender-based-violence/intergovernmental-collaboration/gbv-snapshot.html?utm_source=chatgpt.com)"
   },
   {
     "id": 8,
-    "question": "Which of these is an example of financial abuse?",
+    "question": "What was the rate of police-reported IPV victims per 100,000 population in 2023 for Canada?",
     "options": [
-      "Not agreeing on which movie to watch.",
-      "Controlling all the money and not allowing a partner to access basic funds.",
-      "Asking a partner to talk about feelings.",
-      "Sharing household expenses equally."
+      "About 200 per 100,000",
+      "About 300 per 100,000",
+      "About 354 per 100,000",
+      "Over 500 per 100,000"
     ],
-    "correctOptionIndex": 1,
-    "explanation": "Financial abuse can include controlling all income and denying a partner access to money needed for basic needs."
+    "correctOptionIndex": 2,
+    "explanation": "In 2023, the rate of police-reported intimate partner violence was about 354 victims per 100,000.  [oai_citation:7‡Statistics Canada](https://www150.statcan.gc.ca/n1/daily-quotidien/241024/dq241024b-eng.htm?utm_source=chatgpt.com)"
   },
   {
     "id": 9,
-    "question": "Why is transparency important in a donation platform?",
+    "question": "Which age‑group of women had the highest rate of police‑reported IPV in 2023?",
     "options": [
-      "It makes the website look more complex.",
-      "It allows donors to see how funds are used and builds trust.",
-      "It reduces the number of people who donate.",
-      "It hides how money is being spent."
+      "Women aged 12–24",
+      "Women aged 25–64",
+      "Women aged 65 and older",
+      "Women aged 30–40 only"
     ],
-    "correctOptionIndex": 1,
-    "explanation": "Showing clearly how donations are used builds trust and encourages donors to stay engaged over time."
+    "correctOptionIndex": 0,
+    "explanation": "In 2023, women and girls aged 12–24 had the highest rate of police-reported IPV (752 per 100,000).  [oai_citation:8‡Statistics Canada](https://www150.statcan.gc.ca/n1/daily-quotidien/241024/dq241024b-eng.htm?utm_source=chatgpt.com)"
   },
   {
     "id": 10,
-    "question": "What should you do if a website feature is not accessible to older users or users with disabilities?",
+    "question": "Why are IPV incidents often under-counted in Canada?",
     "options": [
-      "Ignore it because it only affects a small group.",
-      "Add an extra paywall for accessibility features.",
-      "Improve accessibility (for example, larger text, clear contrast, simple language).",
-      "Remove the feature entirely."
+      "All incidents are always reported to police.",
+      "Many people do not report them because of fear, shame or stigma.",
+      "IPV is not considered a crime.",
+      "The police never record IPV incidents."
     ],
-    "correctOptionIndex": 2,
-    "explanation": "Improving accessibility ensures people of different ages and abilities can use the platform, which is part of making the experience inclusive."
+    "correctOptionIndex": 1,
+    "explanation": "Many IPV incidents are under‑reported because people may fear reporting, feel shame, or face stigma.  [oai_citation:9‡Canada](https://www.canada.ca/en/women-gender-equality/gender-based-violence/facts-stats.html?utm_source=chatgpt.com)"
   }
 ]
