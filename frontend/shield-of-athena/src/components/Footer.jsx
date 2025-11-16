@@ -14,7 +14,7 @@ function Footer() {
 
                 <div className="site-footer__links">
                     <a
-                        href="https://shieldofathena.com"
+                        href="http://shieldofathena.com"
                         target="_blank"
                         rel="noreferrer"
                     >

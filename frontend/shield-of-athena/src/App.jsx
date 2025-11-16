@@ -15,6 +15,7 @@ import HomePage from "./pages/HomePage";
 import DonationPage from "./pages/DonationPage";
 import Profile from "./pages/Profile";
 import {jwtDecode} from "jwt-decode";
+import NeedHelp from "./components/NeedHelp";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -79,7 +80,11 @@ function App() {
 
           <Route path="/logout" element={<Logout setUser={setUser} />} />
 
-          <Route path="/donate" element={<DonationPage />} /><Route
+          <Route path="/donate" element={<DonationPage />} />
+          
+          <Route path="/get-help" element={<NeedHelp />} />
+
+          <Route
             path="/profile"
             element={
                 user ? <Profile user={user} /> : <Navigate to="/login" replace />

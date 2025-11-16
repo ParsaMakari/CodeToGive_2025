@@ -32,7 +32,7 @@ export default function DonationDetails() {
     useEffect(() => {
         // default isAnonymous to false when entering step
         updateFormData({ isAnonymous: false });
-    }, [updateFormData]);
+    }, []);
 
     return (
         <>

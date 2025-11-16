@@ -243,4 +243,13 @@
   }
 }
 
+@media (min-width:1000px) {
+  .testimonial-video{
+    display: hidden;
+  }
+  .testimonial-left {
+    display: hidden;
+  }  
+}
+
 

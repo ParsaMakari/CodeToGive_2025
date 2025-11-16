@@ -232,6 +232,12 @@
     color: var(--color-text-main, #111827);
 }
 
+.impact-label{
+    font-weight: 400;
+    color: #4c1d95;
+    margin-bottom: 0%;
+}
+
 .form-input {
     width: 100%;
     padding: 15px 20px;
@@ -326,26 +332,35 @@
 }
 
 /*============= Selection grid for Causes ============*/
-.form-selection-grid{
-    display: grid;
-    grid-template-rows:auto;
-    grid-template-columns: 50% 50%;
+.form-selection{
+    background-color: transparent;
+    border: none;
+
+    padding: 10px 15px;
+    border: 2px solid #e5e7eb;
+    font-size: 0.9rem;
+    background-color: white;
+    border-radius: 0.5rem;
+
     column-gap: 20px;
     row-gap: 15px;
     grid-column: 2;
 }
 
+select option {
+  padding: 12px;
+  font-size: 0.9rem;
+  background: #ffffff;
+  color: #111827;
+  cursor: pointer;
+}
+
 .form-selection-grid-item{
-    font-size: 0.9rem;
-    background-color: white;
-    border-radius: 0.5rem;
     display: flex;
     flex-direction: row;
     gap:10px;
     align-items: center;
     text-align: start;
-    padding: 10px 15px;
-    border: 2px solid #e5e7eb;
     cursor: pointer;
 }
 .form-selection-grid-item:hover{
@@ -358,11 +373,22 @@
 }
 
 .form-selection-grid-icon{
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0.6rem;
     border-radius: 5rem;
-    background-color: #f3f4f6;
+    color: var(--color-primary, #4c1d95)
+
+}
+
+.form-group.impact-goup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:100%;
+    justify-content: center;
+    gap:0.1rem;
 }
 
 /* --- Buttons --- */

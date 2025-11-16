@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDonation } from "./DonationForm";
 import { useTranslation } from "react-i18next";
-import { MdHealthAndSafety, MdOutlineCastForEducation, MdOutlineChildCare, MdOutlineEmergency, MdOutlineHealthAndSafety } from "react-icons/md";
+import { MdEmergency, MdNightShelter} from "react-icons/md";
+import { FaChildReaching, FaGraduationCap } from "react-icons/fa6";
 
 export default function DonationChooseAmount() {
     const { t } = useTranslation();
-    const { formData, updateFormData, nextStep } = useDonation();
-
+    const { formData, updateFormData, clearFormData, nextStep } = useDonation();
     const presetAmounts = ["10", "25", "50", "100"];
 
     const [currency, setCurrency] = useState(0);
@@ -16,23 +16,38 @@ export default function DonationChooseAmount() {
         { name: "EUR", sign: "€" },
         { name: "GBP", sign: "£" }
     ];
+    const [resultMetric,setResultMetric] = useState(1);
+
 
     const goodCauses = [
         {
             title:t("donationForm.amount.goodCauses.causes.emergencyAndSafety"),
-            icon:<MdOutlineEmergency/>
+            icon:<MdNightShelter/>,
+            baseMonthyAmounImpact:4,
+            baseUniqueAmounImpact:2,
+            rephrase:"a shelter",
         },
         {
             title:t("donationForm.amount.goodCauses.causes.counsel&Healing"),
-            icon:<MdOutlineHealthAndSafety/>
+            icon:<MdEmergency/>,
+            baseMonthyAmounImpact:2,
+            baseUniqueAmounImpact:1,
+            rephrase:"healthcare",
         },
         {
             title:t("donationForm.amount.goodCauses.causes.childrenAndYouth"),
-            icon:<MdOutlineChildCare/>
+            icon:<FaChildReaching/>,
+            baseMonthyAmounImpact:5,
+            baseUniqueAmounImpact:3,
+            rephrase:"secutity",
+            
         },
         {
             title:t("donationForm.amount.goodCauses.causes.communityEducation"),
-            icon:<MdOutlineCastForEducation/>
+            icon:<FaGraduationCap/>,
+            baseMonthyAmounImpact:4,
+            baseUniqueAmounImpact:2,
+            rephrase:"education",
         }                
     ]
 
@@ -44,6 +59,25 @@ export default function DonationChooseAmount() {
         }
         nextStep();
     };
+
+    const calculateResultMetric= ()=>{
+
+        const amount = formData.amount || formData.customAmount;
+        let baseAmountImpact = 1;
+
+        if(formData.donationType === "monthly"){
+            baseAmountImpact = goodCauses.find((cause)=>cause.title===formData.selectedCause)?.baseMonthyAmounImpact
+        }else{
+            baseAmountImpact = goodCauses.find((cause)=>cause.title===formData.selectedCause)?.baseUniqueAmounImpact;
+        }
+        
+        return Math.floor((amount*baseAmountImpact)/10)
+    }
+
+    useEffect(()=>{
+        const result_metric = calculateResultMetric();
+        setResultMetric(result_metric);
+    },[formData])
 
     return (
         <>
@@ -135,25 +169,56 @@ export default function DonationChooseAmount() {
                     <label className="form-label">
                         {t("donationForm.amount.goodCauses.title")}
                     </label>
-                    <div className="form-selection-grid">
+                    <select 
+                        value={formData.selectedCause}
+                        onChange={(e) => {updateFormData({ selectedCause: e.target.value })}}
+                        className="form-selection"
+                        >
+                        <option value={""} >
+                            Select an option
+                        </option>
                         {goodCauses.map((cause,i)=>(
-                            <button key={cause.title} 
+                            <option value={cause.title} 
+                                    key = {i}
                                     type="button"
                                 className={`form-selection-grid-item ${
                                 formData.selectedCause === cause.title
                                     ? "item-selected"
                                     : ""
                             }`}
-                            onClick={() => {updateFormData({ selectedCause: cause.title }) ; console.log(cause.title)}}
                             >
-                                <div className="form-selection-grid-icon">
-                                    {cause.icon}
-                                </div>
                                 {cause.title}
-                            </button>
+                            </option>
                         ))}
-                    </div>
+                    </select>
                 </div>
+
+                {  formData.selectedCause != "" &&
+                    <div className="form-group impact-goup">
+                        <div className="form-selection-grid-icon">
+                            {goodCauses.find((c)=>c.title === formData.selectedCause).icon}
+                        </div>
+                        <label className="form-label impact-label">
+                            Give 
+                            <b>
+                            {" " + resultMetric.toString() + " " }
+                            {
+                            formData.selectedCause===t("donationForm.amount.goodCauses.causes.childrenAndYouth")?
+                                "young people "
+                            :
+                                "people "
+                            }                            
+                            </b>
+
+                            Access to 
+                            {
+                                " " + goodCauses.find((c)=>c.title === formData.selectedCause).rephrase
+                            }
+                            
+                        </label>                    
+                    </div>
+                }
+
             </div>
 
             {/* Bottom buttons */}
@@ -161,7 +226,10 @@ export default function DonationChooseAmount() {
                 <button
                     className="btn-cancel"
                     type="button"
-                    onClick={() => alert(t("donationForm.amount.cancelMessage"))}
+                    onClick={() => {
+                        alert(t("donationForm.amount.cancelMessage"));
+                        clearFormData();
+                    }}
                 >
                     {t("donationForm.common.cancel")}
                 </button>

@@ -104,8 +104,8 @@
 }
 
 .action-button:hover {
-  background-color: #111827;
-  border-color: #111827;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
   transform: rotate(45deg);
 }
 

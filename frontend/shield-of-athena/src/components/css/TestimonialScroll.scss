@@ -6,7 +6,13 @@
   max-width: 500px;
   height: clamp(220px, 40vh, 320px);
   overflow: hidden;
-
+  -webkit-mask-image:linear-gradient(
+                  to bottom,
+                  transparent,
+                  black 20%,
+                  black 80%,
+                  transparent
+  );
   mask-image: linear-gradient(
                   to bottom,
                   transparent,

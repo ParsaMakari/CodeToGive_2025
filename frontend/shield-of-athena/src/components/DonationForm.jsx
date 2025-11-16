@@ -17,7 +17,7 @@ export const useDonation = () => {
 };
 
 export default function DonationForm() {
-    const [formData, setFormData] = useState({
+    const initialFormData = {
         // Step 1: Amount
         donationType: "monthly",
         amount: "50",
@@ -46,7 +46,8 @@ export default function DonationForm() {
         expirationDate: "",
         securityCode: "",
         saveCard: true
-    });
+    }
+    const [formData, setFormData] = useState(initialFormData);
 
     const [currentStep, setCurrentStep] = useState(1);
 
@@ -66,6 +67,10 @@ export default function DonationForm() {
         if (step >= 1 && step <= 3) setCurrentStep(step);
     };
 
+    const clearFormData = () =>{
+        setFormData(initialFormData)
+    }
+
     return (
         <DonationContext.Provider
             value={{
@@ -74,6 +79,7 @@ export default function DonationForm() {
                 nextStep,
                 prevStep,
                 goToStep,
+                clearFormData,
                 currentStep
             }}
         >

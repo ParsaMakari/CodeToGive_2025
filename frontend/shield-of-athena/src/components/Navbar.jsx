@@ -7,7 +7,6 @@ import "../css/Navbar.scss";
 import LanguageToggle from "./LanguageToggle";
 import ThemeToggle from "./ThemeToggle";
 import { FaPhone } from "react-icons/fa6";
-import { Phone } from "lucide-react";
 
 function NavBar({ user, onLogout }) {
     const navigate = useNavigate();
@@ -99,16 +98,17 @@ function NavBar({ user, onLogout }) {
                     {/* Auth */}
                     {user ? (
                         <>
-                            <Link
-                                to="/profile"
+                            <div
                                 className="site-nav__auth site-nav__auth--link"
-                                onClick={() => setIsOpen(false)}
+                                onClick={() =>{
+                                        navigate("/profile");
+                                     setIsOpen(false)}}
                             >
                                 <HiUser className="site-nav__auth-icon" size={20} />
                                 <span className="site-nav__auth-text">
                   {t("layout.nav.actions.profile")}
                 </span>
-                            </Link>
+                            </div>
 
                             <button
                                 type="button"
