@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDonation } from "./DonationForm";
 import { useTranslation } from "react-i18next";
+import { MdHealthAndSafety, MdOutlineCastForEducation, MdOutlineChildCare, MdOutlineEmergency, MdOutlineHealthAndSafety } from "react-icons/md";
 
 export default function DonationChooseAmount() {
     const { t } = useTranslation();
@@ -15,6 +16,25 @@ export default function DonationChooseAmount() {
         { name: "EUR", sign: "€" },
         { name: "GBP", sign: "£" }
     ];
+
+    const goodCauses = [
+        {
+            title:t("donationForm.amount.goodCauses.causes.emergencyAndSafety"),
+            icon:<MdOutlineEmergency/>
+        },
+        {
+            title:t("donationForm.amount.goodCauses.causes.counsel&Healing"),
+            icon:<MdOutlineHealthAndSafety/>
+        },
+        {
+            title:t("donationForm.amount.goodCauses.causes.childrenAndYouth"),
+            icon:<MdOutlineChildCare/>
+        },
+        {
+            title:t("donationForm.amount.goodCauses.causes.communityEducation"),
+            icon:<MdOutlineCastForEducation/>
+        }                
+    ]
 
     const handleNext = () => {
         const finalAmount = formData.customAmount || formData.amount;
@@ -110,6 +130,29 @@ export default function DonationChooseAmount() {
                             {currencies.at(currency).sign} {preset}
                         </button>
                     ))}
+                </div>
+                <div className="form-group">
+                    <label className="form-label">
+                        {t("donationForm.amount.goodCauses.title")}
+                    </label>
+                    <div className="form-selection-grid">
+                        {goodCauses.map((cause,i)=>(
+                            <button key={cause.title} 
+                                    type="button"
+                                className={`form-selection-grid-item ${
+                                formData.selectedCause === cause.title
+                                    ? "item-selected"
+                                    : ""
+                            }`}
+                            onClick={() => {updateFormData({ selectedCause: cause.title }) ; console.log(cause.title)}}
+                            >
+                                <div className="form-selection-grid-icon">
+                                    {cause.icon}
+                                </div>
+                                {cause.title}
+                            </button>
+                        ))}
+                    </div>
                 </div>
             </div>
 

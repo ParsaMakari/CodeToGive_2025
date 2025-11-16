@@ -41,27 +41,21 @@ function NavBar({ user, onLogout }) {
                 <div className="nav-menu">
                     {/* Desktop Menu */}
                     <div className="desktop-menu">
-                        <a href="#" className="nav-link">WHO WE ARE</a>
-                        <a href="#" className="nav-link">WHAT WE DO</a>
-                        <a href="#" className="nav-link">NEWS & EVENTS</a>
-                        <a href="#" className="nav-link">GET INVOLVED</a>
+                        <a href="#" className="nav-link">{t("layout.nav.options.whoWeAre")}</a>
+                        <a href="#" className="nav-link">{t("layout.nav.options.whatWeDo")}</a>
+                        <a href="#" className="nav-link">{t("layout.nav.options.newsAndEvents")}</a>
+                        <a href="#" className="nav-link">{t("layout.nav.options.getInvolved")}</a>
                     </div>
                 </div>
                         {/* Mobile Menu */}
                 {isOpen && (
                     <div className="mobile-menu">
                     <div className="mobile-menu-content">
-                        <a href="#" className="mobile-nav-link">WHO WE ARE</a>
-                        <a href="#" className="mobile-nav-link">WHAT WE DO</a>
-                        <a href="#" className="mobile-nav-link">NEWS & EVENTS</a>
-                        <a href="#" className="mobile-nav-link">GET INVOLVED</a>
+                        <a href="#" className="mobile-nav-link">{t("layout.nav.options.whoWeAre")}</a>
+                        <a href="#" className="mobile-nav-link">{t("layout.nav.options.whatWeDo")}</a>
+                        <a href="#" className="mobile-nav-link">{t("layout.nav.options.newsAndEvents")}</a>
+                        <a href="#" className="mobile-nav-link">{t("layout.nav.options.getInvolved")}</a>
                         <div className="mobile-actions">
-                        <button className="phone-btn">
-                            <Phone className="phone-icon" />
-                        </button>
-                        <button className="donate-btn mobile-donate">
-                            DONATE
-                        </button>
                         </div>
                     </div>
                     </div>

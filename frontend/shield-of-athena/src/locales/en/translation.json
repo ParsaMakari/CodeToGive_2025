@@ -50,9 +50,12 @@
     "hero": {
       "join": "Join us today and",
       "title": {
-        "part1": "Say",
-        "no": "no",
-        "part2": "to violence"
+        "say": "Say",
+        "no":"no",
+        "noLeft": "n",
+        "noRight": "",
+        "to":"to",
+        "violence":"Violence !"
       },
       "description": "The Shield of Athena is a non-profit organization for victims of family violence. We offer emergency shelter and professional services to women and their children.",
       "donateCta": "Donate",
@@ -70,6 +73,12 @@
         "login": "Login",
         "logout": "Logout",
         "profile": "My profile"
+      },
+      "options":{
+        "whoWeAre": "WHO WE ARE",
+        "whatWeDo": "WHAT WE DO",
+        "newsAndEvents": "NEWS & EVENTS",
+        "getInvolved": "GET INVOLVED"
       }
     },
     "footer": {
@@ -222,6 +231,15 @@
       "type": {
         "oneTime": "One-time",
         "monthly": "Monthly"
+      },
+      "goodCauses":{
+        "title":"Support A Good Cause",
+        "causes":{
+          "emergencyAndSafety":"Emergency Shelter & Safety",
+          "counsel&Healing" :"Counselling & Healing",
+          "childrenAndYouth":"Children & Youth Support",
+          "communityEducation":"Community Education & Prevention"
+        }
       },
       "validation": {
         "noAmount": "Please select or enter an amount."

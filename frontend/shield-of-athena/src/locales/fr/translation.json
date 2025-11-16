@@ -138,9 +138,12 @@
     "hero": {
       "join": "Rejoignez-nous dès aujourd'hui et",
       "title": {
-        "part1": "Dites",
+        "say": "Dites",
+        "noLeft": "n",
+        "noRight": "n",        
         "no": "non",
-        "part2": "à la violence"
+        "to": "à la",
+        "violence":"Violence !"
       },
       "description": "Le Bouclier d’Athéna est un organisme sans but lucratif pour les victimes de violence familiale. Nous offrons un hébergement d'urgence et des services professionnels aux femmes et à leurs enfants.",
       "donateCta": "Faire un don",
@@ -158,6 +161,12 @@
         "login": "Connexion",
         "logout": "Déconnexion",
         "profile": "Mon profil"
+      },
+      "options":{
+        "whoWeAre": "QUI NOUS SOMMES",
+        "whatWeDo": "CE QUE NOUS FAISONS",
+        "newsAndEvents": "NOUVELLES & ÉVÉNEMENTS",
+        "getInvolved": "S'IMPLIQUER"  
       }
     },
     "footer": {
@@ -218,6 +227,15 @@
         "oneTime": "Don unique",
         "monthly": "Don mensuel"
       },
+      "goodCauses":{
+        "title":"Supportez une Bonne Cause",
+        "causes":{
+          "emergencyAndSafety": "Refuges d'urgence et sécurité",
+          "counsel&Healing": "Counseils et guérison",
+          "childrenAndYouth": "Soutien aux enfants et aux jeunes",
+          "communityEducation": "Éducation communautaire et prévention"
+        }
+      },      
       "validation": {
         "noAmount": "Veuillez choisir ou entrer un montant."
       },

@@ -23,8 +23,7 @@ export default function DonationForm() {
         amount: "50",
         customAmount: "",
         currency: "USD",
-        isAnonymous: false,
-        donorName: "",
+        selectedCause:"",
 
         // Step 2: Details
         donorType: "individual",
@@ -38,6 +37,7 @@ export default function DonationForm() {
         donationFrequency: "monthly",
         newsletter: true,
         taxReceipt: true,
+        isAnonymous: false,
 
         // Step 3: Payment
         paymentMethod: "credit-card",

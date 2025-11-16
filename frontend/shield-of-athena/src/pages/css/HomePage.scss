@@ -27,9 +27,45 @@
             );
 }
 
+.home-page__hero-titles_testimonials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.home_page-testimonials-wrapper{
+    position: absolute;
+    right: 2%;
+  width: 90%;
+  max-width: 300px;
+  height: clamp(220px, 40vh, 320px);
+  overflow: hidden;
+  -webkit-mask-image:
+  linear-gradient(
+                  to bottom,
+                  transparent,
+                  black 20%,
+                  black 80%,
+                  transparent
+  );
+  mask-image: linear-gradient(
+                  to bottom,
+                  transparent,
+                  black 20%,
+                  black 80%,
+                  transparent
+  );
+  scale: 80%;;
+}
+
+
 .home-page__hero-main{
     display: flex;
     flex-direction: column;
+    align-self: center;
+    justify-self: center;
     align-items:center ;
     gap:1vh
 }
@@ -79,7 +115,6 @@
   border-radius: 2.5rem;
   overflow: hidden;
   vertical-align: middle;
-  margin: 0 0.5rem;
   border: 5px solid #ffffff;
 }
 
@@ -88,8 +123,7 @@
     width: 5.25rem;
     height: 3.45rem;
     border-radius: 3.75rem;
-    margin: 0 0rem;
-    margin-right: 0.4rem;    
+    margin: 0 0rem; 
   }
 }
 
@@ -99,8 +133,6 @@
     height: 2.3rem;
     border-radius: 4.375rem;
     margin: 0 0rem;
-    margin-right: 1rem;
-
   }
 }
 
@@ -109,8 +141,7 @@
     width: 10rem;
     height: 5.5rem;
     border-radius: 5rem;
-    margin: 0 0rem;
-    margin-right: 1rem;    
+    margin: 0 0rem;  
     box-shadow: 0 2px 5px rgba(79, 70, 229, 0.25);
   }
 }
