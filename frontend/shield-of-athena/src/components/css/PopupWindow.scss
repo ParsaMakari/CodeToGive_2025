@@ -1,0 +1,25 @@
+@use "../../css/themes" as *;
+
+.popup-window__backdrop{
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+  -webkit-backdrop-filter: blur(4px);  
+  backdrop-filter: blur(4px);
+}
+
+.popup-window__container {
+  background: #ffffff;
+  border-radius: 8px;
+  max-width: 880px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.35);
+  overflow: hidden;
+
+}
+

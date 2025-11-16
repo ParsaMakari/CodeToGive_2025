@@ -47,6 +47,13 @@ function Profile({ user }) {
                     <div className="profile-page__card profile-page__card--user">
                         <div className="profile-page__user-header">
                             <div className="profile-page__avatar">
+                                <img
+                                    style={{ width: "60px", height: "60px", borderRadius: "50%" }}
+                                    src={`https://img.freepik.com/premium-photo/portrait-young-woman-with-bob-haircut-leather-jacket-brunette-girl-with-round-face-shape_134398-13553.jpg?w=1480`}
+                                    alt={`${currentUser.firstName} ${currentUser.lastName}`}
+                                    className="profile-page__avatar-img"
+                                    onError={(e) => { e.currentTarget.style.display = "none"; }}
+                                />
                                 <span>{initials}</span>
                             </div>
                             <div className="profile-page__user-info">

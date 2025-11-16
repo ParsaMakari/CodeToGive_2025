@@ -232,7 +232,7 @@
     color: var(--color-text-main, #111827);
 }
 
-.impact-label{
+.form-label.impact-label{
     font-weight: 400;
     color: #4c1d95;
     margin-bottom: 0%;
@@ -251,7 +251,7 @@
 }
 
 .form-input::placeholder {
-    color: var(--color-text-muted, #9ca3af);
+    color: var(--color-text-muted, #d0d0d0);
 }
 
 .form-input:focus {

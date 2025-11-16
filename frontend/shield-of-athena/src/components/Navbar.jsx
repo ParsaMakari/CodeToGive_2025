@@ -75,7 +75,6 @@ function NavBar({ user, onLogout }) {
                 <div className="site-nav__right">
                    
                     <LanguageToggle />
-                    <ThemeToggle />
                     {/* Contact more accessible */}
                     <div className="nav-actions desktop-actions">
                         <button className="phone-btn">
@@ -136,6 +135,7 @@ function NavBar({ user, onLogout }) {
               </span>
                         </Link>
                     )}
+                    <ThemeToggle />
                 </div>
             </div>
         </header>

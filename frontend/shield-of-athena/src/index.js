@@ -8,10 +8,10 @@ import Quiz from './components/Quiz'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    // <React.StrictMode>
-    //     <App />
-    // </React.StrictMode>
-    <Quiz></Quiz>
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+    // <Quiz></Quiz>
 );
 
 // If you want to start measuring performance in your app, pass a function

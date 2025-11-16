@@ -182,7 +182,7 @@ export default function DonationDetails() {
                         nextStep();
                     }}
                 >
-                    <p>{t("donationForm.details.stayAnonymous")}</p>
+                    <span>{t("donationForm.details.stayAnonymous")}</span>
                     <FaAnglesRight size={12} />
                 </button>
 

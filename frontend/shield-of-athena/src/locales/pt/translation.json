@@ -1,0 +1,445 @@
+{
+  "impactJourney": {
+    "title": "Sua jornada de impacto",
+    "subtitle": "Sua generosidade faz uma diferença real",
+    "loading": "Carregando o seu impacto...",
+    "error": "Não foi possível carregar a sua jornada de impacto. {{message}}",
+    "campaign": {
+      "title": "Apoie a campanha Second Step Housing",
+      "subtitle": "Juntos, podemos alcançar a meta de R$ 5 milhões para famílias em situação de vulnerabilidade.",
+      "raisedLabel": "Arrecadado até agora",
+      "goalLabel": "Meta"
+    },
+    "actions": {
+      "shareButton": "Compartilhar",
+      "shareCopied": "Link copiado! Compartilhe para inspirar outras pessoas."
+    },
+    "pathways": {
+      "IMPACT_PATHWAY_EMERGENCY_SHELTER_SAFETY": "Programa de Abrigo de Emergência"
+    },
+    "programs": {
+      "emergency-shelter-safety": "Programa de Abrigo de Emergência"
+    },
+    "steps": {
+      "DONATION_RECEIVED": {
+        "title": "Sua doação foi recebida",
+        "description": "Obrigado por apoiar mulheres e crianças em situação de violência."
+      },
+      "FUNDS_ALLOCATED": {
+        "title": "Fundos destinados ao programa escolhido",
+        "description": "Sua contribuição é direcionada para programas que oferecem segurança imediata e apoio de longo prazo."
+      },
+      "IMMEDIATE_IMPACT": {
+        "title": "Sua doação gera impacto imediato",
+        "description": "Hoje à noite, uma mulher e seus filhos dormirão em segurança por sua causa."
+      },
+      "LONG_TERM_IMPACT": {
+        "title": "Você faz parte da jornada de cura delas",
+        "description": "Sua doação contribui para a estabilidade, segurança e esperança de famílias que estão reconstruindo suas vidas."
+      }
+    }
+  },
+
+  "home": {
+    "greetingLoggedIn": "Bem-vindo de volta, {{name}}",
+    "greetingAnon": "Bem-vindo à Shield of Athena",
+    "hero": {
+      "join": "Junte-se a nós hoje e",
+      "title": {
+        "say": "Diga",
+        "no": "não",
+        "noLeft": "n",
+        "noRight": "ão",
+        "to": "à",
+        "violence": "Violência!"
+      },
+      "description": "A Shield of Athena é uma organização sem fins lucrativos para vítimas de violência familiar. Oferecemos abrigo emergencial e serviços profissionais para mulheres e seus filhos.",
+      "donateCta": "Doar",
+      "victimQuestion": "Você é vítima?",
+      "getHelp": "Obter ajuda",
+      "imageAlt": "Ilustração representando segurança, cuidado e apoio"
+    }
+  },
+
+  "layout": {
+    "nav": {
+      "logoAlt": "Logo da Shield of Athena",
+      "mobileToggle": "Alternar menu de navegação",
+      "languageLabel": "Idioma",
+      "actions": {
+        "donate": "Doar",
+        "login": "Entrar",
+        "logout": "Sair",
+        "profile": "Meu perfil"
+      },
+      "options": {
+        "whoWeAre": "QUEM SOMOS",
+        "whatWeDo": "O QUE FAZEMOS",
+        "newsAndEvents": "NOTÍCIAS E EVENTOS",
+        "getInvolved": "ENVOLVA-SE"
+      }
+    },
+    "footer": {
+      "orgName": "Shield of Athena",
+      "rights": "Todos os direitos reservados.",
+      "links": {
+        "officialSite": "Site oficial",
+        "getHelp": "Obter ajuda",
+        "contact": "Contato"
+      }
+    }
+  },
+
+  "testimonials": {
+    "title": "Histórias da nossa comunidade",
+    "items": [
+      {
+        "text": "A Shield of Athena ajudou minha família a se sentir segura e acolhida. A equipe esteve presente em cada etapa.",
+        "name": "Mackie Clonts",
+        "role": "Ex-cliente, agora voluntária"
+      },
+      {
+        "text": "O apoio e a orientação que recebi mudaram minha vida.",
+        "name": "Sarah Johnson",
+        "role": "Membro da comunidade"
+      },
+      {
+        "text": "Profissionais, atenciosos e sempre disponíveis.",
+        "name": "Michael Chen",
+        "role": "Defensor local"
+      },
+      {
+        "text": "A dedicação deles às famílias é impressionante.",
+        "name": "Emily Rodriguez",
+        "role": "Coordenadora de voluntários"
+      },
+      {
+        "text": "Um farol de esperança em tempos desafiadores.",
+        "name": "David Thompson",
+        "role": "Ex-cliente"
+      }
+    ]
+  },
+
+  "profile": {
+    "pageTitle": "Meu perfil",
+    "header": {
+      "title": "Minha conta",
+      "subtitle": "Veja suas doações, atualize suas informações e acompanhe seu impacto com a Shield of Athena."
+    },
+    "user": {
+      "editProfile": "Editar perfil",
+      "changePassword": "Alterar senha"
+    },
+    "stats": {
+      "title": "Seu impacto",
+      "totalDonated": {
+        "label": "Total doado",
+        "helper": "Em todas as campanhas"
+      },
+      "monthlyGift": {
+        "label": "Doação mensal",
+        "perMonth": "mês",
+        "helper": "Doação recorrente ativa"
+      },
+      "yearsSupporting": {
+        "label": "Anos de apoio",
+        "helper": "Obrigado por permanecer conosco"
+      }
+    },
+    "preferences": {
+      "title": "Preferências",
+      "communication": {
+        "label": "Comunicação",
+        "helper": "Escolha com que frequência entramos em contato.",
+        "options": {
+          "monthlyUpdates": "Atualizações mensais",
+          "impactReportsOnly": "Apenas relatórios de impacto",
+          "importantNewsOnly": "Apenas notícias importantes"
+        }
+      },
+      "language": {
+        "label": "Idioma",
+        "helper": "Interface e e-mails.",
+        "options": {
+          "english": "Inglês",
+          "french": "Francês"
+        }
+      },
+      "taxReceipts": {
+        "label": "Recibos fiscais por e-mail",
+        "helper": "Receba recibos após cada doação."
+      }
+    },
+    "timeline": {
+      "title": "Linha do tempo de impacto",
+      "helper": "Acompanhe como suas doações contribuem ao longo do tempo — campanhas, fundos de emergência e apoio de longo prazo."
+    },
+    "history": {
+      "title": "Doações recentes",
+      "helper": "Esta é uma lista de exemplo — você pode conectar depois à API real.",
+      "tableHeaders": {
+        "date": "Data",
+        "campaign": "Campanha",
+        "amount": "Valor",
+        "type": "Tipo"
+      },
+      "rows": {
+        "row1": {
+          "date": "10 nov 2025",
+          "campaign": "Fundo de Abrigo de Emergência",
+          "amount": "R$50",
+          "type": "Única"
+        },
+        "row2": {
+          "date": "1 nov 2025",
+          "campaign": "Doação Mensal",
+          "amount": "R$25",
+          "type": "Mensal"
+        },
+        "row3": {
+          "date": "1 out 2025",
+          "campaign": "Doação Mensal",
+          "amount": "R$25",
+          "type": "Mensal"
+        }
+      },
+      "viewFullHistory": "Ver histórico completo"
+    }
+  },
+
+  "donationPage": {
+    "giftTitle": "Seu presente, a liberdade delas",
+    "description": "A Shield ajuda mulheres, crianças e comunidades culturais a quebrar o ciclo de violência psicológica, verbal, econômica, sexual e física.",
+    "servicesFree": "Todos os nossos serviços são",
+    "free": "gratuitos",
+    "thankYou": "Obrigado por doar hoje!"
+  },
+
+  "donationForm": {
+    "common": {
+      "next": "Próximo",
+      "back": "Voltar",
+      "cancel": "Cancelar",
+      "donate": "Doar"
+    },
+    "steps": {
+      "amount": "Escolher valor",
+      "details": "Detalhes",
+      "payment": "Pagamento"
+    },
+    "amount": {
+      "title": "Escolha o valor",
+      "type": {
+        "oneTime": "Única",
+        "monthly": "Mensal"
+      },
+      "goodCauses": {
+        "title": "Apoie uma boa causa",
+        "causes": {
+          "emergencyAndSafety": "Abrigo de emergência e segurança",
+          "counsel&Healing": "Aconselhamento e cura",
+          "childrenAndYouth": "Apoio a crianças e jovens",
+          "communityEducation": "Educação comunitária e prevenção"
+        }
+      },
+      "validation": {
+        "noAmount": "Selecione ou insira um valor."
+      },
+      "cancelMessage": "Doação cancelada.",
+      "aria": {
+        "amount": "Valor da doação",
+        "currency": "Moeda"
+      }
+    },
+    "details": {
+      "title": "Suas informações",
+      "labels": {
+        "firstName": "Nome *",
+        "lastName": "Sobrenome *",
+        "email": "E-mail *",
+        "phone": "Telefone *",
+        "address": "Endereço",
+        "city": "Cidade",
+        "zip": "CEP"
+      },
+      "placeholders": {
+        "firstName": "João",
+        "lastName": "Silva",
+        "email": "joao.silva@example.com",
+        "phone": "(11) 99999-9999",
+        "address": "Rua Principal, 123",
+        "city": "Montreal",
+        "zip": "H2X 1Y4"
+      },
+      "taxReceipt": "Enviar recibos fiscais das doações",
+      "stayAnonymous": "Permanecer anônimo",
+      "validation": {
+        "required": "Preencha todos os campos obrigatórios."
+      }
+    },
+    "payment": {
+      "title": "Configurações de pagamento",
+      "methods": {
+        "creditCard": "Cartão de crédito",
+        "paypal": "Pagar com PayPal",
+        "applePay": "Pagar com Apple Pay",
+        "googlePay": "Pagar com Google Pay"
+      },
+      "labels": {
+        "cardNumber": "Número do cartão",
+        "cardholderName": "Nome no cartão",
+        "expirationDate": "Data de validade",
+        "securityCode": "Código de segurança"
+      },
+      "placeholders": {
+        "cardNumber": "1234 5678 9012 3456",
+        "cardholderName": "Como impresso no cartão",
+        "expirationDate": "MM / AA",
+        "securityCode": "CVV"
+      },
+      "validation": {
+        "required": "Preencha todos os dados de pagamento."
+      },
+      "summary": {
+        "total": "Total:",
+        "type": "* pagamento {{type}}"
+      },
+      "type": {
+        "oneTime": "único",
+        "monthly": "mensal"
+      },
+      "alert": {
+        "success": "Obrigado pela sua doação {{type}} de {{amount}} {{currency}}!\n\nResumo da doação:\nNome: {{name}}\nE-mail: {{email}}",
+        "error": "Não foi possível processar sua doação. Tente novamente mais tarde."
+      }
+    }
+  },
+
+  "welcome": {
+    "pill": "Correspondência de impacto com IA",
+    "title": "Athena Impact Matcher",
+    "subtitle": "Encontre a forma mais significativa de ajudar hoje. Responda a algumas perguntas e deixe nossa IA combinar você com o programa ideal da Shield of Athena.",
+    "footer": "Leva só 2 minutos • Gratuito • Confidencial",
+    "primaryCta": "Começar agora",
+    "secondaryCta": "Conhecer nossa missão"
+  },
+
+  "values": {
+    "title": "O que é mais importante para você?",
+    "subtitle": "Selecione todas as áreas de impacto que ressoam com seus valores."
+  },
+
+  "preferences": {
+    "title": "Como você gostaria de ajudar?",
+    "subtitle": "Escolha suas formas preferidas de contribuir."
+  },
+
+  "buttons": {
+    "back": "Voltar",
+    "continue": "Continuar",
+    "findMatch": "Encontrar meu match",
+    "startOver": "Recomeçar e explorar outras opções",
+    "donateNow": "Doar agora",
+    "learnMore": "Saiba mais"
+  },
+
+  "steps": {
+    "values": "Valores",
+    "preferences": "Preferências",
+    "match": "Match"
+  },
+
+  "loading": {
+    "title": "Encontrando o melhor match para você...",
+    "subtitle": "Nossa IA está analisando seus valores e preferências."
+  },
+
+  "results": {
+    "pill": "Recomendação personalizada",
+    "title": "Encontramos seu match!",
+    "subtitle": "Com base em seus valores e preferências, este programa é onde seu apoio terá o maior impacto hoje.",
+    "yourImpact": "Seu impacto",
+    "storyFromField": "História de campo"
+  },
+
+  "impactAreas": {
+    "children": {
+      "title": "Apoio emocional às crianças",
+      "description": "Aconselhamento, arteterapia e cuidado com foco em trauma."
+    },
+    "housing": {
+      "title": "Moradia de emergência",
+      "description": "Abrigo seguro e moradia transitória para famílias em crise."
+    },
+    "legal": {
+      "title": "Apoio jurídico e defesa",
+      "description": "Ajuda jurídica, acompanhamento em tribunais e serviços de defesa."
+    },
+    "essentials": {
+      "title": "Necessidades básicas",
+      "description": "Alimentos, roupas e itens essenciais para sobreviventes."
+    },
+    "mothers": {
+      "title": "Suporte às mães",
+      "description": "Recursos para parentalidade e saúde mental materna."
+    },
+    "newcomers": {
+      "title": "Apoio a famílias imigrantes",
+      "description": "Serviços culturalmente sensíveis para famílias recém-chegadas."
+    }
+  },
+
+  "givingPreferences": {
+    "onetime": "Doação única",
+    "monthly": "Doação mensal",
+    "adopt": "Adotar uma família",
+    "inkind": "Doações em bens",
+    "volunteer": "Voluntariado",
+    "advocacy": "Conscientização e advocacy"
+  },
+
+  "matches": {
+    "children_program": {
+      "name": "Programa de Suporte Terapêutico Infantil",
+      "description": "Seus valores se alinham com nosso programa que oferece aconselhamento, arteterapia e apoio emocional para crianças afetadas pela violência doméstica.",
+      "impactMetric": "R$150 fornecem 3 sessões de terapia para uma criança",
+      "story": "Por meio da arteterapia, consegui expressar sentimentos que não conseguia colocar em palavras. Agora sei que não estou sozinha e que posso me curar no meu tempo."
+    },
+    "housing_program": {
+      "name": "Programa de Moradia Familiar de Emergência e Estabilização",
+      "description": "Este programa oferece abrigo seguro, apartamentos de transição e suporte contínuo para ajudar famílias a reconstruírem suas vidas após a violência.",
+      "impactMetric": "R$250 custeiam 2 noites de abrigo seguro para uma família",
+      "story": "Ter um lugar seguro para dormir nos deu espaço para respirar. Foi a primeira vez em meses que vi meus filhos dormindo em paz."
+    },
+    "legal_program": {
+      "name": "Apoio Jurídico e Acompanhamento em Tribunais",
+      "description": "Fornecemos informações jurídicas, acompanhamento em audiências e advocacy para que sobreviventes não enfrentem o sistema sozinhos.",
+      "impactMetric": "R$100 apoiam um dia inteiro de acompanhamento jurídico",
+      "story": "Eu tinha muito medo de ir ao tribunal. Ter alguém ao meu lado, explicando cada passo e falando quando eu não conseguia, mudou tudo."
+    }
+  },
+
+  "athenaGuide": {
+    "badge": "Guia Athena",
+    "title": "Seu assistente de doações",
+    "subtitle": "Tire dúvidas sobre programas, impacto e formas de contribuir.",
+    "welcome": "Olá! Estou aqui para ajudar você a entender melhor o impacto da sua doação. Como posso ajudar hoje?",
+    "inputPlaceholder": "Digite sua pergunta...",
+    "sendLabel": "Enviar",
+    "fallbackReply": "Não tenho certeza se entendi, mas estou aqui para ajudar!",
+    "errorReply": "Estou com dificuldade para responder agora. Tente novamente em alguns instantes.",
+    "suggestions": {
+      "title": "Perguntas sugeridas"
+    },
+    "sampleQuestions": {
+      "howDonationsUsed": "Como as minhas doações são usadas?",
+      "campaign": "Qual campanha está ativa agora?",
+      "monthly": "Devo escolher doação mensal?",
+      "taxReceipt": "Vou receber recibo fiscal?"
+    },
+    "crisisBox": {
+      "title": "Ajuda imediata"
+    }
+  }
+}

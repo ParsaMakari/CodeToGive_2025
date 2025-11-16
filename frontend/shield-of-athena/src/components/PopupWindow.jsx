@@ -1,40 +1,30 @@
-import { useState } from "react";
-import { MessageCircle, X } from "lucide-react";
-import Chat from "./Chat";
+import {  X } from "lucide-react";
 import "../css/ChatFloating.scss";
+import "./css/PopupWindow.scss";
 
-function PopupWindow() {
-    const [isOpen, setIsOpen] = useState(false);
+function PopupWindow({ isOpen, onClose, title, children }) {
+    if (!isOpen) return null;
 
     return (
         <>
-            {!isOpen && (
-                <button
+        <div className="popup-window__backdrop" onClick={onClose}>
+            <div
+                className="popup-window__container"
+                onClick={(e) => e.stopPropagation()}
+            >
+                {/* <button
                     type="button"
-                    className="chat-fab"
-                    onClick={() => setIsOpen(true)}
+                    className="chat-close-btn"
+                    onClick={onClose}
                 >
-                    <MessageCircle className="chat-fab__icon" />
-                </button>
-            )}
-            {isOpen && (
-                <div className="chat-fab__backdrop" onClick={() => setIsOpen(false)}>
-                    <div
-                        className="chat-fab__panel"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <button
-                            type="button"
-                            className="chat-close-btn"
-                            onClick={() => setIsOpen(false)}
-                        >
-                            <X />
-                        </button>
+                    <X />
+                </button> */}
 
-                        <Chat />
-                    </div>
+                <div className="popup-body">
+                    {children} 
                 </div>
-            )}
+            </div>
+        </div>
         </>
     );
 }
