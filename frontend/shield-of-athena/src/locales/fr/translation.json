@@ -224,6 +224,35 @@
     "free": "gratuits",
     "thankYou": "Merci de donner aujourd’hui !"
   },
+  "auth": {
+    "login": {
+      "pageTitle": "Connexion",
+      "title": "Se connecter",
+      "emailPlaceholder": "Adresse courriel",
+      "passwordPlaceholder": "Mot de passe",
+      "submit": "Se connecter",
+      "noAccount": "Vous n\u2019avez pas de compte ?",
+      "registerLink": "Inscrivez-vous ici",
+      "errorNoToken": "Échec de la connexion : aucun jeton reçu.",
+      "errorGeneric": "Échec de la connexion."
+    },
+    "register": {
+      "pageTitle": "Inscription",
+      "title": "Créer un compte",
+      "firstNamePlaceholder": "Prénom",
+      "lastNamePlaceholder": "Nom",
+      "usernamePlaceholder": "Nom d\u2019utilisateur",
+      "emailPlaceholder": "Adresse courriel",
+      "passwordPlaceholder": "Mot de passe",
+      "confirmPasswordPlaceholder": "Confirmez le mot de passe",
+      "submit": "S\u2019inscrire",
+      "haveAccount": "Vous avez déjà un compte ?",
+      "loginLink": "Connectez-vous ici",
+      "errorPasswordsNoMatch": "Les mots de passe ne correspondent pas.",
+      "success": "Inscription réussie !",
+      "errorGeneric": "Échec de l\u2019inscription : {{message}}"
+    }
+  },
   "donationForm": {
     "common": {
       "next": "Suivant",

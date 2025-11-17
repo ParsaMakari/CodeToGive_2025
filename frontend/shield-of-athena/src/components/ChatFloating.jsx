@@ -14,7 +14,8 @@ function ChatFloating() {
                     className="chat-fab"
                     onClick={() => setIsOpen(true)}
                 >
-                    <MessageCircle className="chat-fab__icon" />
+                    Chat
+                    <MessageCircle className="chat-fab__icon"/>
                 </button>
             )}
             {isOpen && (

@@ -1,8 +1,13 @@
+// Register.jsx
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import "../css/Auth.scss";
 
 function Register() {
+    const { t, i18n } = useTranslation();
+
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [username, setUserName] = useState("");
@@ -13,90 +18,93 @@ function Register() {
     const [isSuccess, setIsSuccess] = useState(false);
 
     useEffect(() => {
-        document.title = "Register";
-    }, []);
+        document.title = t("auth.register.pageTitle");
+    }, [t, i18n.language]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (password !== confirmpassword) {
             setIsSuccess(false);
-            setMessage("Passwords dont match");
+            setMessage(t("auth.register.errorPasswordsNoMatch"));
             return;
         }
         try {
-            const res = await axios.post("http://localhost:8000/api/auth/register", {
-                firstName: firstName,
-                lastName: lastName,
+            await axios.post("http://localhost:8000/api/auth/register", {
+                firstName,
+                lastName,
                 username,
                 email,
                 password,
             });
             setIsSuccess(true);
-            setMessage("Sucessfully registered!");
+            setMessage(t("auth.register.success"));
         } catch (error) {
             console.error(error);
             setIsSuccess(false);
-            setMessage("Registration failed!" + error.message);
+            setMessage(
+                t("auth.register.errorGeneric", { message: error.message || "" })
+            );
         }
     };
+
     return (
         <div className="auth">
             <div className="auth-card">
-                <h1 className="auth-title">Sign up</h1>
+                <h1 className="auth-title">{t("auth.register.title")}</h1>
 
                 <form className="auth-form" onSubmit={handleSubmit}>
                     <input
                         type="text"
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
-                        placeholder="First Name"
+                        placeholder={t("auth.register.firstNamePlaceholder")}
                         className="auth-input"
                     />
                     <input
                         type="text"
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
-                        placeholder="Last Name"
+                        placeholder={t("auth.register.lastNamePlaceholder")}
                         className="auth-input"
                     />
                     <input
                         type="text"
                         value={username}
                         onChange={(e) => setUserName(e.target.value)}
-                        placeholder="Username"
+                        placeholder={t("auth.register.usernamePlaceholder")}
                         className="auth-input"
                     />
                     <input
                         type="text"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="Email"
+                        placeholder={t("auth.register.emailPlaceholder")}
                         className="auth-input"
                     />
                     <input
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        placeholder="Password"
+                        placeholder={t("auth.register.passwordPlaceholder")}
                         className="auth-input"
                     />
                     <input
                         type="password"
                         value={confirmpassword}
                         onChange={(e) => setConfirmpassword(e.target.value)}
-                        placeholder="Confirm password"
+                        placeholder={t("auth.register.confirmPasswordPlaceholder")}
                         className="auth-input"
                     />
 
                     <button type="submit" className="auth-button">
-                        Sign Up
+                        {t("auth.register.submit")}
                     </button>
                     <div className="auth-footer">
                         <p className="auth-footer-text">
-                            Have an account?
+                            {t("auth.register.haveAccount")}
                             <br />
                             <Link to="/login" className="auth-link">
-                                Login here
+                                {t("auth.register.loginLink")}
                             </Link>
                         </p>
                     </div>

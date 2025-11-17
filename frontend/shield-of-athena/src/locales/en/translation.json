@@ -136,6 +136,35 @@
       }
     ]
   },
+  "auth": {
+    "login": {
+      "pageTitle": "Login",
+      "title": "Log in",
+      "emailPlaceholder": "Email",
+      "passwordPlaceholder": "Password",
+      "submit": "Log in",
+      "noAccount": "Don\u2019t have an account?",
+      "registerLink": "Register here",
+      "errorNoToken": "Login failed! No token received.",
+      "errorGeneric": "Login failed!"
+    },
+    "register": {
+      "pageTitle": "Register",
+      "title": "Sign up",
+      "firstNamePlaceholder": "First name",
+      "lastNamePlaceholder": "Last name",
+      "usernamePlaceholder": "Username",
+      "emailPlaceholder": "Email",
+      "passwordPlaceholder": "Password",
+      "confirmPasswordPlaceholder": "Confirm password",
+      "submit": "Sign up",
+      "haveAccount": "Have an account?",
+      "loginLink": "Login here",
+      "errorPasswordsNoMatch": "Passwords don\u2019t match.",
+      "success": "Successfully registered!",
+      "errorGeneric": "Registration failed! {{message}}"
+    }
+  },
 "profile": {
     "pageTitle": "My profile",
     "header": {

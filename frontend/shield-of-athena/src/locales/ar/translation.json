@@ -433,6 +433,35 @@
       "Community": "فعالية مجتمعية"
     }
   },
+  "auth": {
+    "login": {
+      "pageTitle": "تسجيل الدخول",
+      "title": "تسجيل الدخول",
+      "emailPlaceholder": "البريد الإلكتروني",
+      "passwordPlaceholder": "كلمة المرور",
+      "submit": "تسجيل الدخول",
+      "noAccount": "ليس لديك حساب؟",
+      "registerLink": "سجّل من هنا",
+      "errorNoToken": "فشل تسجيل الدخول: لم يتم استلام رمز.",
+      "errorGeneric": "فشل تسجيل الدخول."
+    },
+    "register": {
+      "pageTitle": "إنشاء حساب",
+      "title": "إنشاء حساب جديد",
+      "firstNamePlaceholder": "الاسم الأول",
+      "lastNamePlaceholder": "اسم العائلة",
+      "usernamePlaceholder": "اسم المستخدم",
+      "emailPlaceholder": "البريد الإلكتروني",
+      "passwordPlaceholder": "كلمة المرور",
+      "confirmPasswordPlaceholder": "تأكيد كلمة المرور",
+      "submit": "إنشاء حساب",
+      "haveAccount": "هل لديك حساب بالفعل؟",
+      "loginLink": "سجّل الدخول من هنا",
+      "errorPasswordsNoMatch": "كلمتا المرور غير متطابقتين.",
+      "success": "تم التسجيل بنجاح!",
+      "errorGeneric": "فشل التسجيل: {{message}}"
+    }
+  },
   "athenaGuide": {
     "badge": "مرشد أثينا",
     "title": "مساعدك في التبرع",

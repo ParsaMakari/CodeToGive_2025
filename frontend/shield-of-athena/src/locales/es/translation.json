@@ -418,6 +418,35 @@
       "Community": "Comunitario"
     }
   },
+  "auth": {
+    "login": {
+      "pageTitle": "Iniciar sesión",
+      "title": "Iniciar sesión",
+      "emailPlaceholder": "Correo electrónico",
+      "passwordPlaceholder": "Contraseña",
+      "submit": "Iniciar sesión",
+      "noAccount": "¿No tienes una cuenta?",
+      "registerLink": "Regístrate aquí",
+      "errorNoToken": "Error al iniciar sesión: no se recibió ningún token.",
+      "errorGeneric": "Error al iniciar sesión."
+    },
+    "register": {
+      "pageTitle": "Registrarse",
+      "title": "Crear cuenta",
+      "firstNamePlaceholder": "Nombre",
+      "lastNamePlaceholder": "Apellido",
+      "usernamePlaceholder": "Nombre de usuario",
+      "emailPlaceholder": "Correo electrónico",
+      "passwordPlaceholder": "Contraseña",
+      "confirmPasswordPlaceholder": "Confirmar contraseña",
+      "submit": "Registrarse",
+      "haveAccount": "¿Ya tienes una cuenta?",
+      "loginLink": "Inicia sesión aquí",
+      "errorPasswordsNoMatch": "Las contraseñas no coinciden.",
+      "success": "¡Registro completado con éxito!",
+      "errorGeneric": "Error al registrarse: {{message}}"
+    }
+  },
   "athenaGuide": {
     "badge": "Guía Athena",
     "title": "Tu asistente de donaciones",

@@ -417,6 +417,35 @@
       "Community": "Общественное мероприятие"
     }
   },
+  "auth": {
+    "login": {
+      "pageTitle": "Вход",
+      "title": "Войти",
+      "emailPlaceholder": "Электронная почта",
+      "passwordPlaceholder": "Пароль",
+      "submit": "Войти",
+      "noAccount": "У вас нет учетной записи?",
+      "registerLink": "Зарегистрируйтесь здесь",
+      "errorNoToken": "Не удалось войти: токен не получен.",
+      "errorGeneric": "Ошибка входа."
+    },
+    "register": {
+      "pageTitle": "Регистрация",
+      "title": "Создать учетную запись",
+      "firstNamePlaceholder": "Имя",
+      "lastNamePlaceholder": "Фамилия",
+      "usernamePlaceholder": "Имя пользователя",
+      "emailPlaceholder": "Электронная почта",
+      "passwordPlaceholder": "Пароль",
+      "confirmPasswordPlaceholder": "Подтвердите пароль",
+      "submit": "Зарегистрироваться",
+      "haveAccount": "У вас уже есть учетная запись?",
+      "loginLink": "Войти здесь",
+      "errorPasswordsNoMatch": "Пароли не совпадают.",
+      "success": "Регистрация прошла успешно!",
+      "errorGeneric": "Ошибка регистрации: {{message}}"
+    }
+  },
   "athenaGuide": {
     "badge": "Athena Guide",
     "title": "Ассистент пожертвований",

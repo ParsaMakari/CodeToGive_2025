@@ -417,6 +417,35 @@
       "Community": "Gemeenschapsevenement"
     }
   },
+  "auth": {
+    "login": {
+      "pageTitle": "Inloggen",
+      "title": "Inloggen",
+      "emailPlaceholder": "E-mailadres",
+      "passwordPlaceholder": "Wachtwoord",
+      "submit": "Inloggen",
+      "noAccount": "Nog geen account?",
+      "registerLink": "Registreer hier",
+      "errorNoToken": "Inloggen mislukt: geen token ontvangen.",
+      "errorGeneric": "Inloggen mislukt."
+    },
+    "register": {
+      "pageTitle": "Registreren",
+      "title": "Account aanmaken",
+      "firstNamePlaceholder": "Voornaam",
+      "lastNamePlaceholder": "Achternaam",
+      "usernamePlaceholder": "Gebruikersnaam",
+      "emailPlaceholder": "E-mailadres",
+      "passwordPlaceholder": "Wachtwoord",
+      "confirmPasswordPlaceholder": "Bevestig wachtwoord",
+      "submit": "Registreren",
+      "haveAccount": "Heb je al een account?",
+      "loginLink": "Log hier in",
+      "errorPasswordsNoMatch": "De wachtwoorden komen niet overeen.",
+      "success": "Registratie succesvol!",
+      "errorGeneric": "Registratie mislukt: {{message}}"
+    }
+  },
   "athenaGuide": {
     "badge": "Athena-Gids",
     "title": "Je donatieassistent",

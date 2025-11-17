@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Heart, ExternalLink, TrendingUp } from "lucide-react";
 
 export default function MatchResultCard({
@@ -57,7 +58,7 @@ export default function MatchResultCard({
                             data-testid="button-donate-now"
                         >
                             <Heart className="w-5 h-5" />
-                            <span>{donateLabel}</span>
+                            <span><Link className="match-link" to="/donate">{donateLabel}</Link></span>
                         </button>
 
                         <button

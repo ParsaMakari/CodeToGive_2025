@@ -6,9 +6,10 @@
   bottom: 3rem;
   z-index: 50;
 
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 999px;
+  width: fit-content;
+  padding: 0.5rem;
+  height: fit-content;
+  border-radius: 120px;
   border: none;
 
   display: inline-flex;
@@ -32,6 +33,7 @@
 }
 
 .chat-fab__icon {
+  margin-left: 0.3rem;
   width: 1.4rem;
   height: 1.4rem;
 }
