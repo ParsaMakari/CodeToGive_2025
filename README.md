@@ -178,7 +178,13 @@ Currently supports:
 ---
 
 # 🎥 Demo Video
-`[https://youtube.com/https://youtu.be/uNwDOkJASlc](https://youtu.be/uNwDOkJASlc)`
+<a href="https://youtu.be/uNwDOkJASlc" target="_blank">
+  <img
+    src="https://img.youtube.com/vi/uNwDOkJASlc/maxresdefault.jpg"
+    alt="Athena HopeBridge – Demo Video"
+    style="max-width: 100%; border-radius: 12px;"
+  />
+</a>
 
 ---
 
