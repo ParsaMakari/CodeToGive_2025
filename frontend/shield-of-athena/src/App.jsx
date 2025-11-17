@@ -17,84 +17,52 @@ import Profile from "./pages/Profile";
 import {jwtDecode} from "jwt-decode";
 import Matcher from "./components/Matcher.jsx";
 import NeedHelp from "./components/NeedHelp";
+import AuthProvider, { useAuth } from "./context/authContext.js";
 
 function App() {
-  const [user, setUser] = useState(null);
-
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("refresh");
-    setUser(null);
-  };
-
-    useEffect(() => {
-        const token = localStorage.getItem("token");
-        if (!token) return;
-
-        try {
-            const decoded = jwtDecode(token);
-            setUser({
-                username: decoded.username,
-                email: decoded.email,
-                id: decoded.user_id,
-            });
-        } catch (err) {
-            console.error("Error decoding JWT:", err);
-            localStorage.removeItem("token");
-            localStorage.removeItem("refresh");
-        }
-    }, []);
-
-
     return (
     <Router>
-      <Layout user={user} onLogout={handleLogout}>
-        <Routes>
-          <Route path="/" element={<HomePage user={user} />} />
+      <AuthProvider>
+        <Layout>
+            <Routes>
+              <Route path="/" element={<HomePage/>} />
 
-          <Route
-            path="/login"
-            element={
-              user ? (
-                <Navigate to="/dashboard" replace />
-              ) : (
-                <Login setUser={setUser} />
-              )
-            }
-          />
+              <Route
+                path="/login"
+                element={
+                    <Login />
+                }
+              />
 
-          <Route
-            path="/register"
-            element={user ? <Navigate to="/dashboard" replace /> : <Register />}
-          />
+              <Route
+                path="/register"
+                element={<Register />}
+              />
 
-          <Route
-            path="/dashboard"
-            element={
-              user ? (
-                <Dashboard user={user} />
-              ) : (
-                <Navigate to="/login" replace />
-              )
-            }
-          />
+              <Route
+                path="/dashboard"
+                element={
+                    <Dashboard />
+                }
+              />
 
-          <Route path="/logout" element={<Logout setUser={setUser} />} />
+              <Route path="/logout" element={<Logout />} />
 
-          <Route path="/donate" element={<DonationPage />} />
-          
-          <Route path="/get-help" element={<NeedHelp />} />
+              <Route path="/donate" element={<DonationPage />} />
+              
+              <Route path="/get-help" element={<NeedHelp />} />
 
-          <Route
-            path="/profile"
-            element={
-                user ? <Profile user={user} /> : <Navigate to="/login" replace />
-            }
-        />
-            <Route path="/matcher" element={<Matcher />} />
-        </Routes>
+              <Route
+                path="/profile"
+                element={
+                    <Profile /> 
+                }
+            />
+                <Route path="/matcher" element={<Matcher />} />
+            </Routes>
 
-      </Layout>
+          </Layout>
+      </AuthProvider>
     </Router>
   );
 }

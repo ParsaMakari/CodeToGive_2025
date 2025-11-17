@@ -12,10 +12,12 @@ import Matcher from "../components/Matcher"
 import Stats from "../components/Stats"
 import TestiomonialScroll from "../components/TestiomonialScroll"
 import QuizPopup from "../components/QuizPopup"
+import { useAuth } from "../context/authContext"
 
-function HomePage({ user }) {
+function HomePage() {
     const navigate = useNavigate();
-    
+    const  { user } = useAuth();
+
     const { t } = useTranslation();
 
     const isLoggedIn = Boolean(user);
@@ -73,19 +75,18 @@ function HomePage({ user }) {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="home_page-testimonials-wrapper">
-                        <TestiomonialScroll/>
-                    </div>                     */}
-
                 </div>                         
             </div>
             <Stats/>
+
+            <Matcher/>
+
             <EventsCalendar events={sampleEvents} />
             <div className="action-cards-grid">
                 <ActionCard
                     icon="donation"
                     title="Make a Donation"
-                    description="Contribute today to help fund treatments, research, and essential support services for those battling cancer."
+                    description="Contribute today to help fund shelters, outreaches, and essential support services for those suffering family violence."
                     actionText="Payment Options"
                     actionType="payment"
                     link="#donate"
@@ -93,8 +94,8 @@ function HomePage({ user }) {
                 
                 <ActionCard
                     icon="support"
-                    title="Get Support"
-                    description="Access vital resources, financial aid, and counseling for cancer patients and their families in their time of need."
+                    title="Start a Fundraiser"
+                    description="Access vital resources, financial aid, and counseling for family violence victims and their families in their time of need."
                     actionText=""
                     actionType="tags"
                     tags={["Financial Aid", "Therapy"]}
@@ -104,7 +105,7 @@ function HomePage({ user }) {
                 <ActionCard
                     icon="volunteer"
                     title="Become a Volunteer"
-                    description="Join our team of volunteers to support cancer patients, assist with community outreach, and make a positive impact."
+                    description="Join our team of volunteers to support family violence victims, assist with community outreach and events, and make a positive impact."
                     actionText="Join Our Team"
                     actionType="avatars"
                     avatars={[
@@ -115,7 +116,6 @@ function HomePage({ user }) {
                     link="#volunteer"
                 />
                 </div>
-            <Matcher/>
         </div>
             
     )

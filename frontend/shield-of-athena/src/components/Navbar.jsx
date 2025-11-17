@@ -7,11 +7,14 @@ import "../css/Navbar.scss";
 import LanguageToggle from "./LanguageToggle";
 import ThemeToggle from "./ThemeToggle";
 import { FaPhone } from "react-icons/fa6";
+import { useAuth } from "../context/authContext";
 
-function NavBar({ user, onLogout }) {
+function NavBar() {
     const navigate = useNavigate();
     const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
+    const {user,logout} = useAuth();
+
 
     const displayName = user?.username || "there";
 
@@ -107,7 +110,7 @@ function NavBar({ user, onLogout }) {
                                 type="button"
                                 className="site-nav__auth"
                                 onClick={() => {
-                                    onLogout();
+                                    logout();
                                     setIsOpen(false);
                                 }}
                             >

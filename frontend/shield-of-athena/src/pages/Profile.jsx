@@ -4,8 +4,11 @@ import { useNavigate } from "react-router";
 import ChatFloating from "../components/ChatFloating";
 import ImpactJourney from "../components/ImpactJourney";
 import { useTranslation } from "react-i18next";
+import { useAuth } from "../context/authContext";
 
-function Profile({ user }) {
+function Profile() {
+    const {user} = useAuth();
+
     const navigate = useNavigate();
     const { t } = useTranslation();
 
@@ -24,6 +27,10 @@ function Profile({ user }) {
     useEffect(() => {
         document.title = t("profile.pageTitle");
     }, [t]);
+
+    useEffect(() => {
+        (!user) && navigate("/login", {replace:true} );
+    }, []);
 
     return (
         <div className="profile-page">

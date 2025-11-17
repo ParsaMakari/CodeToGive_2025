@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/authContext";
 
 function Register() {
     const [firstName, setFirstName] = useState("");
@@ -12,10 +13,15 @@ function Register() {
     const [message, setMessage] = useState("");
     const [isSuccess, setIsSuccess] = useState(false);
 
+    const auth = useAuth();
+
+    const navigate = useNavigate();
+
     useEffect(() => {
         document.title = "Register";
-    }, []);
-
+        auth.user && navigate("/dashboard", {replace:true} );
+    }, []);  
+    
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (password !== confirmpassword) {

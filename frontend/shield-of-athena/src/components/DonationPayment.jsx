@@ -7,11 +7,13 @@ import axios from "axios";
 import PopupWindow from "./PopupWindow";
 import DonationCompletion from "./DonationCompletion";
 import WelcomeScreen from "./WelcomeScreen";
+import { useAuth } from "../context/authContext";
 
 export default function DonationPayment() {
     const { t } = useTranslation();
     const { formData, updateFormData, prevStep } = useDonation();
     const [isOpenPopup,setIsOpenPopup] = useState(false);
+    const {user} = useAuth();
 
     const handleSubmit = async () => {
         if (
@@ -36,7 +38,8 @@ export default function DonationPayment() {
                 amount: finalAmount,
                 currency: formData.currency,
                 is_recurring: formData.donationType==="monthly"? true : false,
-                message: "donation"
+                message: "donation",
+                user:user
             };
 
             const response = await axios.post("http://localhost:8000/api/donations/", payload)

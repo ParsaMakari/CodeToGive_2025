@@ -4,45 +4,36 @@ import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 import "../css/Auth.scss";
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/authContext";
 
-export default function Login({ setUser }) {
-  useEffect(() => {
-    document.title = "Login";
-  }, []);
+export default function Login() {
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
+  const auth = useAuth();
 
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const res = await axios.post("http://localhost:8000/api/auth/login", {
-        email,
-        password,
-      });
-      const tokens = res.data;
-      if (tokens) {
-        localStorage.setItem("token", tokens.token);
-        localStorage.setItem("refresh", tokens.refresh);
-
-        const decoded = jwtDecode(tokens.token);
-          setUser({
-              username: decoded.username || decoded.user_name || decoded.email,
-              email: decoded.email,
-              id: decoded.user_id || decoded.id,
-          });
+    try{
+      if (email !== "" && password !== "") {
+        await auth.login({email:email,password:password});
         setMessage("");
-        navigate("/dashboard");
-      } else {
-        setMessage("Login failed! No token received");
+        navigate("/");        
+        return;
       }
+      alert("pleae provide a valid input");      
     } catch (error) {
-      console.error(error);
-      setMessage("Login failed!");
+      setMessage("Login failed:",error.message);
     }
   };
+
+  useEffect(() => {
+    document.title = "Login";
+    auth.user && navigate("/dashboard", {replace:true} );
+  }, []);  
 
   return (
     <div className="auth">

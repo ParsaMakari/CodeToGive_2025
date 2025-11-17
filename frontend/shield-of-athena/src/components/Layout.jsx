@@ -1,12 +1,20 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ChatFloating from "./ChatFloating";
+import { useEffect } from "react";
+import { useAuth } from "../context/authContext";
 
-function Layout({ user, onLogout, children }) {
+function Layout({ children }) {
+    const {checkAuthStatus} = useAuth();
+  
+    useEffect(() => {
+        checkAuthStatus()
+    }, []);
+
     return (
         <div className="app-shell">
-            <Navbar user={user} onLogout={onLogout} />
-            <main className="app-shell__main">{children}</main>
+            <Navbar/>
+                <main className="app-shell__main">{children}</main>
             <Footer />
             <ChatFloating />
         </div>
