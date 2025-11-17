@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Which statement best describes family violence in Canada?",
+    "options": [
+      "It only involves physical abuse between spouses.",
+      "It can include physical, emotional, financial, and sexual abuse.",
+      "It only affects low-income families.",
+      "It only happens between married people."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Family violence in Canada includes physical, sexual, verbal, emotional, and financial abuse."
+  },
+  {
+    "id": 2,
+    "question": "Roughly what percentage of ever-partnered women in Canada have reported experiencing IPV in their lifetime?",
+    "options": [
+      "About 20%",
+      "About 44%",
+      "About 60%",
+      "Over 80%"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "About 44% of ever-partnered women in Canada reported experiencing psychological, physical or sexual IPV in their lifetime."
+  },
+  {
+    "id": 3,
+    "question": "Which type of IPV is the most common in Canada, according to surveys?",
+    "options": [
+      "Sexual violence",
+      "Physical violence",
+      "Psychological (emotional or financial) abuse",
+      "Homicide"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Psychological abuse (emotional, financial) was the most commonly reported form of IPV in Canada."  
+  },
+  {
+    "id": 4,
+    "question": "According to police‑reported data in 2022, what proportion of IPV victims were women and girls in Canada?",
+    "options": [
+      "Less than half",
+      "About 60%",
+      "About 78%",
+      "Over 90%"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In 2022, 78% of police‑reported IPV victims were women and girls."
+  },
+  {
+    "id": 5,
+    "question": "Why are IPV incidents often under-counted in Canada?",
+    "options": [
+      "All incidents are always reported to police.",
+      "Many people do not report them because of fear, shame or stigma.",
+      "IPV is not considered a crime.",
+      "The police never record IPV incidents."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Many IPV incidents are under‑reported because people may fear reporting, feel shame, or face stigma."
+  }
+]

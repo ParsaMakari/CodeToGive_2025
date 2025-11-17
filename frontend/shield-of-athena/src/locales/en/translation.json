@@ -1,0 +1,450 @@
+{
+  "impactJourney": {
+    "title": "Your Impact Journey",
+    "subtitle": "Your generosity makes a real difference",
+    "loading": "Loading your impact...",
+    "error": "We couldn't load your impact journey. {{message}}",
+
+    "campaign": {
+      "title": "Support the Second Step Housing Campaign",
+      "subtitle": "Together, we can reach the $5M goal for families in need.",
+      "raisedLabel": "Raised so far",
+      "goalLabel": "Goal"
+    },
+
+    "actions": {
+      "shareButton": "Share",
+      "shareCopied": "Link copied! Share it to inspire others."
+    },
+
+    "pathways": {
+      "IMPACT_PATHWAY_EMERGENCY_SHELTER_SAFETY": "Emergency Shelter Program"
+    },
+
+    "programs": {
+      "emergency-shelter-safety": "Emergency Shelter Program"
+    },
+
+    "steps": {
+      "DONATION_RECEIVED": {
+        "title": "Your donation has been received",
+        "description": "Thank you for supporting women and children in need."
+      },
+      "FUNDS_ALLOCATED": {
+        "title": "Funds allocated to your chosen program",
+        "description": "Your contribution is directed toward programs that provide immediate safety and long-term support."
+      },
+      "IMMEDIATE_IMPACT": {
+        "title": "Your donation creates immediate impact",
+        "description": "Tonight, a woman and her children will sleep safely because of you."
+      },
+      "LONG_TERM_IMPACT": {
+        "title": "You're part of their long-term healing journey",
+        "description": "Your donation contributes to long-term stability, safety, and hope for families rebuilding their lives."
+      }
+    }
+  },
+  "home": {
+    "greetingLoggedIn": "Welcome back, {{name}}",
+    "greetingAnon": "Welcome to Shield of Athena",
+    "hero": {
+      "join": "Join us today and",
+      "title": {
+        "say": "Say",
+        "no":"no",
+        "noLeft": "n",
+        "noRight": "",
+        "to":"to",
+        "violence":"Violence !"
+      },
+      "description": "The Shield of Athena is a non-profit organization for victims of family violence. We offer emergency shelter and professional services to women and their children.",
+      "donateCta": "Donate",
+      "victimQuestion": "Are you a victim?",
+      "getHelp": "Get help",
+      "imageAlt": "A supportive illustration representing safety and care"
+    }
+  },
+  "eventsCalendar": {
+    "pill": "Events & News",
+    "title": "Upcoming events at Shield of Athena",
+    "subtitle": "Stay connected with our community activities, fundraisers, and awareness events.",
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month",
+    "empty": "No events on this day yet. Check other dates or come back soon!",
+    "types": {
+      "Fundraiser": "Fundraiser",
+      "Volunteer": "Volunteer",
+      "Workshop": "Workshop",
+      "Community": "Community"
+    }
+  },
+  "layout": {
+    "nav": {
+      "logoAlt": "Shield of Athena logo",
+      "mobileToggle": "Toggle navigation menu",
+      "languageLabel": "Lang",
+      "actions": {
+        "donate": "Donate",
+        "login": "Login",
+        "logout": "Logout",
+        "profile": "My profile"
+      },
+      "options":{
+        "whoWeAre": "WHO WE ARE",
+        "whatWeDo": "WHAT WE DO",
+        "newsAndEvents": "NEWS & EVENTS",
+        "getInvolved": "GET INVOLVED"
+      }
+    },
+    "footer": {
+      "orgName": "Shield of Athena",
+      "rights": "All rights reserved.",
+      "links": {
+        "officialSite": "Official website",
+        "getHelp": "Get help",
+        "contact": "Contact"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Stories from our community",
+    "items": [
+      {
+        "text": "Bouclier d'Athéna helped my family feel safe and supported. Their team was present at every step and made sure we had the resources we needed.",
+        "name": "Mackie Clonts",
+        "role": "Former client, now volunteer"
+      },
+      {
+        "text": "The support and guidance I received was life-changing. I couldn't have navigated this difficult time without their compassionate team.",
+        "name": "Sarah Johnson",
+        "role": "Community member"
+      },
+      {
+        "text": "Professional, caring, and always available. They truly go above and beyond to help those in need.",
+        "name": "Michael Chen",
+        "role": "Local advocate"
+      },
+      {
+        "text": "Their dedication to helping families is remarkable. I'm grateful for everything they've done for our community.",
+        "name": "Emily Rodriguez",
+        "role": "Volunteer coordinator"
+      },
+      {
+        "text": "A beacon of hope during challenging times. Their services made all the difference for my family.",
+        "name": "David Thompson",
+        "role": "Former client"
+      }
+    ]
+  },
+"profile": {
+    "pageTitle": "My profile",
+    "header": {
+      "title": "My account",
+      "subtitle": "View your donations, update your information, and follow your impact with Shield of Athena."
+    },
+    "user": {
+      "editProfile": "Edit profile",
+      "changePassword": "Change password"
+    },
+    "stats": {
+      "title": "Your impact",
+      "totalDonated": {
+        "label": "Total donated",
+        "helper": "Across all campaigns"
+      },
+      "monthlyGift": {
+        "label": "Monthly gift",
+        "perMonth": "month",
+        "helper": "Active recurring donation"
+      },
+      "yearsSupporting": {
+        "label": "Years supporting",
+        "helper": "Thank you for staying"
+      }
+    },
+    "preferences": {
+      "title": "Preferences",
+      "communication": {
+        "label": "Communication",
+        "helper": "Choose how often we contact you.",
+        "options": {
+          "monthlyUpdates": "Monthly updates",
+          "impactReportsOnly": "Only impact reports",
+          "importantNewsOnly": "Important news only"
+        }
+      },
+      "language": {
+        "label": "Language",
+        "helper": "Interface & emails.",
+        "options": {
+          "english": "English",
+          "french": "Français"
+        }
+      },
+      "taxReceipts": {
+        "label": "Tax receipt emails",
+        "helper": "Receive receipts after each donation."
+      }
+    },
+    "timeline": {
+      "title": "Impact timeline",
+      "helper": "Follow how your donations contribute over time — campaigns, emergency funds and long-term support."
+    },
+    "history": {
+      "title": "Recent donations",
+      "helper": "This is a sample list — you can later plug it into the real API.",
+      "tableHeaders": {
+        "date": "Date",
+        "campaign": "Campaign",
+        "amount": "Amount",
+        "type": "Type"
+      },
+      "rows": {
+        "row1": {
+          "date": "Nov 10, 2025",
+          "campaign": "Emergency Shelter Fund",
+          "amount": "$50",
+          "type": "One-time"
+        },
+        "row2": {
+          "date": "Nov 1, 2025",
+          "campaign": "Monthly Gift",
+          "amount": "$25",
+          "type": "Monthly"
+        },
+        "row3": {
+          "date": "Oct 1, 2025",
+          "campaign": "Monthly Gift",
+          "amount": "$25",
+          "type": "Monthly"
+        }
+      },
+      "viewFullHistory": "View full donation history"
+    }
+},
+  "donationPage": {
+    "giftTitle": "Your Gift, Their Freedom",
+    "description": "The Shield helps women and children, as well as cultural communities, to break the cycle of psychological, verbal, economic, sexual and physical violence.",
+    "servicesFree": "All our services are",
+    "free": "free",
+    "thankYou": "Thank you for giving today!"
+  },
+  "donationForm": {
+    "common": {
+      "next": "Next",
+      "back": "Back",
+      "cancel": "Cancel",
+      "donate": "Donate"
+    },
+    "steps": {
+      "amount": "Choose amount",
+      "details": "Details",
+      "payment": "Payment"
+    },
+    "amount": {
+      "title": "Choose amount",
+      "type": {
+        "oneTime": "One-time",
+        "monthly": "Monthly"
+      },
+      "goodCauses":{
+        "title":"Support A Good Cause",
+        "causes":{
+          "emergencyAndSafety":"Emergency Shelter & Safety",
+          "counsel&Healing" :"Counselling & Healing",
+          "childrenAndYouth":"Children & Youth Support",
+          "communityEducation":"Community Education & Prevention"
+        }
+      },
+      "validation": {
+        "noAmount": "Please select or enter an amount."
+      },
+      "cancelMessage": "Donation cancelled.",
+      "aria": {
+        "amount": "Donation amount",
+        "currency": "Currency"
+      }
+    },
+    "details": {
+      "title": "Your information",
+      "labels": {
+        "firstName": "First name *",
+        "lastName": "Last name *",
+        "email": "Email address *",
+        "phone": "Phone number *",
+        "address": "Street address",
+        "city": "City",
+        "zip": "ZIP / Postal code"
+      },
+      "placeholders": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "(555) 123-4567",
+        "address": "123 Main Street",
+        "city": "Montreal",
+        "zip": "H2X 1Y4"
+      },
+      "taxReceipt": "Send me tax receipts for donations",
+      "stayAnonymous": "Stay anonymous",
+      "validation": {
+        "required": "Please fill in all required fields."
+      }
+    },
+    "payment": {
+      "title": "Payment settings",
+      "methods": {
+        "creditCard": "Credit card",
+        "paypal": "Pay with PayPal",
+        "applePay": "Pay with Apple Pay",
+        "googlePay": "Pay with Google Pay"
+      },
+      "labels": {
+        "cardNumber": "Card number",
+        "cardholderName": "Cardholder name",
+        "expirationDate": "Expiration date",
+        "securityCode": "Security code"
+      },
+      "placeholders": {
+        "cardNumber": "1234 5678 9012 3456",
+        "cardholderName": "As shown on card",
+        "expirationDate": "MM / YY",
+        "securityCode": "CVV"
+      },
+      "validation": {
+        "required": "Please fill in all payment details."
+      },
+      "summary": {
+        "total": "Total:",
+        "type": "* {{type}} payment"
+      },
+      "type": {
+        "oneTime": "one-time",
+        "monthly": "monthly"
+      },
+      "alert": {
+        "success": "Thank you for your {{type}} donation of {{amount}} {{currency}}!\n\nDonation summary:\nName: {{name}}\nEmail: {{email}}",
+        "error": "We couldn't process your donation. Please try again later."
+      }
+    }
+  },
+ "welcome": {
+    "pill": "AI-Powered Impact Matching",
+    "title": "Athena Impact Matcher",
+    "subtitle": "Find the most meaningful way you can help today. Answer a few questions and let our AI match you with the Shield of Athena program where your support will make the greatest impact.",
+    "footer": "Takes only 2 minutes • Free • Confidential",
+    "primaryCta": "Start Your Journey",
+    "secondaryCta": "Learn About Our Mission"
+  },
+  "values": {
+    "title": "What matters most to you?",
+    "subtitle": "Select all impact areas that resonate with your values."
+  },
+  "preferences": {
+    "title": "How would you like to help?",
+    "subtitle": "Choose your preferred ways to contribute."
+  },
+  "buttons": {
+    "back": "Back",
+    "continue": "Continue",
+    "findMatch": "Find My Match",
+    "startOver": "Start over and explore other options",
+    "donateNow": "Donate Now",
+    "learnMore": "Learn More"
+  },
+  "steps": {
+    "values": "Values",
+    "preferences": "Preferences",
+    "match": "Match"
+  },
+  "loading": {
+    "title": "Finding your perfect match...",
+    "subtitle": "Our AI is analyzing your values and preferences."
+  },
+  "results": {
+    "pill": "Personalized recommendation",
+    "title": "We found your match!",
+    "subtitle": "Based on your values and preferences, this program is where your support can make a powerful difference today.",
+    "yourImpact": "Your Impact",
+    "storyFromField": "Story from the field"
+  },
+  "impactAreas": {
+    "children": {
+      "title": "Children's Emotional Support",
+      "description": "Counseling, art therapy, and trauma-informed care for children."
+    },
+    "housing": {
+      "title": "Emergency Housing",
+      "description": "Safe shelter and transitional housing for families in crisis."
+    },
+    "legal": {
+      "title": "Legal & Advocacy",
+      "description": "Legal aid, court support, and advocacy services."
+    },
+    "essentials": {
+      "title": "Essential Needs",
+      "description": "Food, clothing, and basic necessities for survivors."
+    },
+    "mothers": {
+      "title": "Support for Mothers",
+      "description": "Parenting resources and maternal mental health support."
+    },
+    "newcomers": {
+      "title": "Newcomer Family Support",
+      "description": "Culturally sensitive services for immigrant families."
+    }
+  },
+  "givingPreferences": {
+    "onetime": "One-time donation",
+    "monthly": "Monthly giving",
+    "adopt": "Adopt-a-Family",
+    "inkind": "In-kind donations",
+    "volunteer": "Volunteer opportunities",
+    "advocacy": "Awareness & advocacy"
+  },
+  "matches": {
+    "children_program": {
+      "name": "Children's Therapeutic Support Program",
+      "description": "Your values align perfectly with our comprehensive program providing trauma-informed counseling, art therapy, and emotional support for children affected by domestic violence.",
+      "impactMetric": "$150 provides 3 therapy sessions for one child",
+      "story": "Through art therapy, I finally found a way to express feelings I couldn't put into words. Now I know I'm not alone, and it's okay to heal at my own pace."
+    },
+    "housing_program": {
+      "name": "Emergency Family Housing & Stabilization",
+      "description": "This program offers safe emergency shelter, transitional apartments, and wrap-around support to help families rebuild their lives after violence.",
+      "impactMetric": "$250 funds 2 nights of safe emergency housing for a family",
+      "story": "Having a safe place to sleep gave us space to breathe. It was the first time in months that I saw my kids sleep peacefully."
+    },
+    "legal_program": {
+      "name": "Legal & Court Support for Survivors",
+      "description": "We provide legal information, accompaniment to court, and advocacy so survivors are not alone when navigating complex legal systems.",
+      "impactMetric": "$100 supports one full day of legal accompaniment",
+      "story": "I was terrified of going to court. Having someone sit beside me, explain each step, and speak up when I couldn’t changed everything."
+    }
+  },
+"athenaGuide": {
+    "badge": "Athena Guide",
+    "title": "Your Donation Support Assistant",
+    "subtitle": "Ask questions about programs, impact, and giving.",
+    "welcome": "Hello! I’m here to help you learn more about the impact of your donation. How can I assist you today?",
+    "inputPlaceholder": "Type your question...",
+    "sendLabel": "Send",
+    "fallbackReply": "I'm not sure I understood that, but I’m here to help!",
+    "errorReply": "I’m having trouble answering right now. Please try again shortly.",
+
+    "suggestions": {
+      "title": "Suggested questions"
+    },
+
+    "sampleQuestions": {
+      "howDonationsUsed": "How are my donations used?",
+      "campaign": "What campaign is currently running?",
+      "monthly": "Should I choose monthly giving?",
+      "taxReceipt": "Do I get a tax receipt?"
+    },
+
+    "crisisBox": {
+      "title": "Immediate Help"
+    }
+  }
+}

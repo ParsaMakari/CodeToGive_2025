@@ -1,0 +1,438 @@
+{
+  "impactJourney": {
+    "title": "Jouw impactreis",
+    "subtitle": "Jouw vrijgevigheid maakt een echt verschil",
+    "loading": "Je impact wordt geladen...",
+    "error": "We konden je impactreis niet laden. {{message}}",
+
+    "campaign": {
+      "title": "Steun de Second Step Housing-campagne",
+      "subtitle": "Samen kunnen we de doelstelling van €5 miljoen halen.",
+      "raisedLabel": "Tot nu toe opgehaald",
+      "goalLabel": "Doel"
+    },
+
+    "actions": {
+      "shareButton": "Delen",
+      "shareCopied": "Link gekopieerd! Deel het om anderen te inspireren."
+    },
+
+    "pathways": {
+      "IMPACT_PATHWAY_EMERGENCY_SHELTER_SAFETY": "Noodopvangprogramma"
+    },
+
+    "programs": {
+      "emergency-shelter-safety": "Noodopvangprogramma"
+    },
+
+    "steps": {
+      "DONATION_RECEIVED": {
+        "title": "Je donatie is ontvangen",
+        "description": "Dank je wel dat je vrouwen en kinderen in nood steunt."
+      },
+      "FUNDS_ALLOCATED": {
+        "title": "Fondsen toegewezen aan je gekozen programma",
+        "description": "Je bijdrage ondersteunt programma’s die directe veiligheid en langdurige steun bieden."
+      },
+      "IMMEDIATE_IMPACT": {
+        "title": "Je donatie creëert onmiddellijke impact",
+        "description": "Vanavond slapen een vrouw en kinderen veilig dankzij jou."
+      },
+      "LONG_TERM_IMPACT": {
+        "title": "Je bent deel van hun hersteltraject",
+        "description": "Je donatie draagt bij aan stabiliteit, veiligheid en hoop."
+      }
+    }
+  },
+
+  "home": {
+    "greetingLoggedIn": "Welkom terug, {{name}}",
+    "greetingAnon": "Welkom bij Shield of Athena",
+    "hero": {
+      "join": "Doe vandaag met ons mee en",
+      "title": {
+        "say": "Zeg",
+        "no": "nee",
+        "noLeft": "n",
+        "noRight": "",
+        "to": "tegen",
+        "violence": "Geweld!"
+      },
+      "description": "Shield of Athena is een non-profitorganisatie die slachtoffers van huiselijk geweld steunt.",
+      "donateCta": "Doneren",
+      "victimQuestion": "Ben je slachtoffer?",
+      "getHelp": "Krijg hulp",
+      "imageAlt": "Een illustratie van steun en veiligheid"
+    }
+  },
+
+  "layout": {
+    "nav": {
+      "logoAlt": "Shield of Athena-logo",
+      "mobileToggle": "Navigatiemenu openen/sluiten",
+      "languageLabel": "Taal",
+      "actions": {
+        "donate": "Doneren",
+        "login": "Inloggen",
+        "logout": "Uitloggen",
+        "profile": "Mijn profiel"
+      },
+      "options": {
+        "whoWeAre": "WIE WE ZIJN",
+        "whatWeDo": "WAT WE DOEN",
+        "newsAndEvents": "NIEUWS & EVENEMENTEN",
+        "getInvolved": "BETROKKEN RAKEN"
+      }
+    },
+    "footer": {
+      "orgName": "Shield of Athena",
+      "rights": "Alle rechten voorbehouden.",
+      "links": {
+        "officialSite": "Officiële website",
+        "getHelp": "Krijg hulp",
+        "contact": "Contact"
+      }
+    }
+  },
+
+  "testimonials": {
+    "title": "Verhalen uit onze gemeenschap",
+    "items": [
+      {
+        "text": "Shield of Athena hielp mijn familie zich veilig en gesteund te voelen.",
+        "name": "Mackie Clonts",
+        "role": "Voormalig cliënt, nu vrijwilliger"
+      },
+      {
+        "text": "De steun die ik kreeg veranderde mijn leven.",
+        "name": "Sarah Johnson",
+        "role": "Gemeenschapslid"
+      },
+      {
+        "text": "Professioneel, zorgzaam en altijd beschikbaar.",
+        "name": "Michael Chen",
+        "role": "Lokale activist"
+      },
+      {
+        "text": "Een ongelooflijke toewijding aan families in nood.",
+        "name": "Emily Rodriguez",
+        "role": "Vrijwilligerscoördinator"
+      },
+      {
+        "text": "Een baken van hoop in moeilijke tijden.",
+        "name": "David Thompson",
+        "role": "Voormalig cliënt"
+      }
+    ]
+  },
+
+  "profile": {
+    "pageTitle": "Mijn profiel",
+    "header": {
+      "title": "Mijn account",
+      "subtitle": "Bekijk je donaties, update je gegevens en volg je impact."
+    },
+    "user": {
+      "editProfile": "Profiel bewerken",
+      "changePassword": "Wachtwoord wijzigen"
+    },
+    "stats": {
+      "title": "Jouw impact",
+      "totalDonated": {
+        "label": "Totaal gedoneerd",
+        "helper": "Alle campagnes"
+      },
+      "monthlyGift": {
+        "label": "Maandelijkse gift",
+        "perMonth": "maand",
+        "helper": "Actieve terugkerende donatie"
+      },
+      "yearsSupporting": {
+        "label": "Jaren van steun",
+        "helper": "Dank je wel dat je blijft steunen"
+      }
+    },
+    "preferences": {
+      "title": "Voorkeuren",
+      "communication": {
+        "label": "Communicatie",
+        "helper": "Kies hoe vaak we contact opnemen.",
+        "options": {
+          "monthlyUpdates": "Maandelijkse updates",
+          "impactReportsOnly": "Alleen impactrapporten",
+          "importantNewsOnly": "Alleen belangrijk nieuws"
+        }
+      },
+      "language": {
+        "label": "Taal",
+        "helper": "Interface & e-mails.",
+        "options": {
+          "english": "Engels",
+          "french": "Frans"
+        }
+      },
+      "taxReceipts": {
+        "label": "Belastingbewijzen per e-mail",
+        "helper": "Ontvang een bewijs na elke donatie."
+      }
+    },
+    "timeline": {
+      "title": "Impacttijdlijn",
+      "helper": "Volg hoe jouw donaties helpen."
+    },
+    "history": {
+      "title": "Recente donaties",
+      "helper": "Dit is een voorbeeldlijst.",
+      "tableHeaders": {
+        "date": "Datum",
+        "campaign": "Campagne",
+        "amount": "Bedrag",
+        "type": "Type"
+      },
+      "rows": {
+        "row1": { "date": "10 nov 2025", "campaign": "Noodfonds", "amount": "€50", "type": "Eenmalig" },
+        "row2": { "date": "1 nov 2025", "campaign": "Maandelijkse donatie", "amount": "€25", "type": "Maandelijks" },
+        "row3": { "date": "1 okt 2025", "campaign": "Maandelijkse donatie", "amount": "€25", "type": "Maandelijks" }
+      },
+      "viewFullHistory": "Volledig overzicht"
+    }
+  },
+
+  "donationPage": {
+    "giftTitle": "Jouw gift, hun vrijheid",
+    "description": "Shield helpt vrouwen en kinderen de cyclus van geweld te doorbreken.",
+    "servicesFree": "Al onze diensten zijn",
+    "free": "gratis",
+    "thankYou": "Bedankt voor je donatie!"
+  },
+
+  "donationForm": {
+    "common": {
+      "next": "Volgende",
+      "back": "Terug",
+      "cancel": "Annuleren",
+      "donate": "Doneren"
+    },
+    "steps": {
+      "amount": "Bedrag",
+      "details": "Details",
+      "payment": "Betaling"
+    },
+    "amount": {
+      "title": "Kies een bedrag",
+      "type": {
+        "oneTime": "Eenmalig",
+        "monthly": "Maandelijks"
+      },
+      "goodCauses": {
+        "title": "Steun een goed doel",
+        "causes": {
+          "emergencyAndSafety": "Noodopvang & veiligheid",
+          "counsel&Healing": "Begeleiding & herstel",
+          "childrenAndYouth": "Kinderen & jongeren",
+          "communityEducation": "Educatie & preventie"
+        }
+      },
+      "validation": { "noAmount": "Kies of vul een bedrag in." },
+      "cancelMessage": "Donatie geannuleerd.",
+      "aria": {
+        "amount": "Donatiebedrag",
+        "currency": "Valuta"
+      }
+    },
+    "details": {
+      "title": "Jouw gegevens",
+      "labels": {
+        "firstName": "Voornaam *",
+        "lastName": "Achternaam *",
+        "email": "E-mail *",
+        "phone": "Telefoon *",
+        "address": "Adres",
+        "city": "Stad",
+        "zip": "Postcode"
+      },
+      "placeholders": {
+        "firstName": "Jan",
+        "lastName": "Jansen",
+        "email": "jan.jansen@example.com",
+        "phone": "0612345678",
+        "address": "Hoofdstraat 123",
+        "city": "Amsterdam",
+        "zip": "1000 AA"
+      },
+      "taxReceipt": "Belastingbewijs ontvangen",
+      "stayAnonymous": "Anoniem blijven",
+      "validation": { "required": "Vul alle verplichte velden in." }
+    },
+    "payment": {
+      "title": "Betaalmethode",
+      "methods": {
+        "creditCard": "Creditcard",
+        "paypal": "Betalen met PayPal",
+        "applePay": "Betalen met Apple Pay",
+        "googlePay": "Betalen met Google Pay"
+      },
+      "labels": {
+        "cardNumber": "Kaartnummer",
+        "cardholderName": "Naam op kaart",
+        "expirationDate": "Vervaldatum",
+        "securityCode": "CVV"
+      },
+      "placeholders": {
+        "cardNumber": "1234 5678 9012 3456",
+        "cardholderName": "Zoals op de kaart",
+        "expirationDate": "MM / JJ",
+        "securityCode": "CVV"
+      },
+      "validation": { "required": "Voer de betalingsgegevens in." },
+      "summary": {
+        "total": "Totaal:",
+        "type": "* {{type}} betaling"
+      },
+      "type": {
+        "oneTime": "eenmalige",
+        "monthly": "maandelijkse"
+      },
+      "alert": {
+        "success": "Bedankt voor je {{type}} donatie van {{amount}} {{currency}}!",
+        "error": "Betaling mislukt."
+      }
+    }
+  },
+
+  "welcome": {
+    "pill": "AI-gestuurde impactmatching",
+    "title": "Athena Impact Matcher",
+    "subtitle": "Ontdek waar jij het meest kunt helpen.",
+    "footer": "Slechts 2 minuten • Gratis • Vertrouwelijk",
+    "primaryCta": "Begin",
+    "secondaryCta": "Meer over onze missie"
+  },
+
+  "values": {
+    "title": "Wat is voor jou het belangrijkst?",
+    "subtitle": "Selecteer alle gebieden die bij jou passen."
+  },
+
+  "preferences": {
+    "title": "Hoe wil je helpen?",
+    "subtitle": "Kies je voorkeuren."
+  },
+
+  "buttons": {
+    "back": "Terug",
+    "continue": "Doorgaan",
+    "findMatch": "Vind mijn match",
+    "startOver": "Opnieuw beginnen",
+    "donateNow": "Nu doneren",
+    "learnMore": "Meer info"
+  },
+
+  "steps": {
+    "values": "Waarden",
+    "preferences": "Voorkeuren",
+    "match": "Match"
+  },
+
+  "loading": {
+    "title": "We zoeken je beste match...",
+    "subtitle": "De AI analyseert je voorkeuren."
+  },
+
+  "results": {
+    "pill": "Persoonlijke aanbeveling",
+    "title": "We hebben een match gevonden!",
+    "subtitle": "Dit is waar jouw steun het meeste verschil maakt.",
+    "yourImpact": "Jouw impact",
+    "storyFromField": "Verhaal uit het veld"
+  },
+
+  "impactAreas": {
+    "children": {
+      "title": "Emotionele steun voor kinderen",
+      "description": "Begeleiding, kunsttherapie en ondersteuning."
+    },
+    "housing": {
+      "title": "Noodopvang",
+      "description": "Veilige opvang en tijdelijke huisvesting."
+    },
+    "legal": {
+      "title": "Juridische hulp",
+      "description": "Juridische begeleiding en ondersteuning in de rechtbank."
+    },
+    "essentials": {
+      "title": "Basisbehoeften",
+      "description": "Voedsel, kleding en essentiële goederen."
+    },
+    "mothers": {
+      "title": "Ondersteuning voor moeders",
+      "description": "Ouderschapssteun en mentale gezondheidszorg."
+    },
+    "newcomers": {
+      "title": "Steun voor nieuwkomers",
+      "description": "Cultureel passende diensten."
+    }
+  },
+
+  "givingPreferences": {
+    "onetime": "Eenmalige donatie",
+    "monthly": "Maandelijkse donatie",
+    "adopt": "Adopteer een familie",
+    "inkind": "Materiële donaties",
+    "volunteer": "Vrijwilligerswerk",
+    "advocacy": "Bewustwording & pleidooi"
+  },
+
+  "matches": {
+    "children_program": {
+      "name": "Therapeutisch steunprogramma voor kinderen",
+      "description": "Therapie en emotionele begeleiding voor kinderen.",
+      "impactMetric": "€150 financiert 3 therapiesessies",
+      "story": "Kunsttherapie hielp me emoties uiten die ik niet kon verwoorden."
+    },
+    "housing_program": {
+      "name": "Noodopvang en stabilisatie",
+      "description": "Veilige opvang en ondersteuning.",
+      "impactMetric": "€250 dekt twee nachten veilige opvang",
+      "story": "Voor het eerst in maanden sliepen mijn kinderen rustig."
+    },
+    "legal_program": {
+      "name": "Juridische begeleiding",
+      "description": "Volledige ondersteuning tijdens juridische procedures.",
+      "impactMetric": "€100 financiert een dag juridische hulp",
+      "story": "Ik stond er in de rechtbank niet alleen voor."
+    }
+  },
+  "eventsCalendar": {
+    "pill": "Evenementen & nieuws",
+    "title": "Aankomende evenementen bij Shield of Athena",
+    "subtitle": "Blijf verbonden met onze gemeenschapsactiviteiten, benefietevenementen en bewustmakingsacties.",
+    "prevMonth": "Vorige maand",
+    "nextMonth": "Volgende maand",
+    "empty": "Er zijn nog geen evenementen op deze dag. Bekijk andere data of kom later terug.",
+    "types": {
+      "Fundraiser": "Benefiet",
+      "Volunteer": "Vrijwilligerswerk",
+      "Workshop": "Workshop",
+      "Community": "Gemeenschapsevenement"
+    }
+  },
+  "athenaGuide": {
+    "badge": "Athena-Gids",
+    "title": "Je donatieassistent",
+    "subtitle": "Stel vragen over programma’s, impact en donaties.",
+    "welcome": "Hallo! Ik help je graag het effect van je donatie te begrijpen.",
+    "inputPlaceholder": "Typ je vraag...",
+    "sendLabel": "Versturen",
+    "fallbackReply": "Ik weet het niet zeker, maar ik wil je helpen.",
+    "errorReply": "Er is een fout opgetreden. Probeer het later opnieuw.",
+    "suggestions": { "title": "Voorbeeldvragen" },
+    "sampleQuestions": {
+      "howDonationsUsed": "Hoe worden mijn donaties gebruikt?",
+      "campaign": "Welke campagne is actief?",
+      "monthly": "Moet ik maandelijks doneren?",
+      "taxReceipt": "Krijg ik een belastingbewijs?"
+    },
+    "crisisBox": { "title": "Directe hulp" }
+  }
+}

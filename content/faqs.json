@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "question": "What is Shield of Athena and what does it do?",
+    "answer": "Shield of Athena is a non-profit organization that supports women and children affected by domestic and family violence. It provides shelter, counselling, legal support referrals, and community education."
+  },
+  {
+    "id": 2,
+    "question": "Where does my donation go?",
+    "answer": "Donations are used to support services such as emergency shelter, counselling, children’s programs, and prevention and awareness initiatives. A portion may also support operational costs needed to keep these services running."
+  },
+  {
+    "id": 3,
+    "question": "Can I choose which program my donation supports?",
+    "answer": "Yes, in our platform you can select an impact pathway or program area (for example, children’s support, emergency shelter, or community education). Your donation will be directed to that area as much as possible."
+  },
+  {
+    "id": 4,
+    "question": "Will I receive a tax receipt?",
+    "answer": "Yes. For eligible donations, you will receive a tax receipt by email after your donation is confirmed."
+  },
+  {
+    "id": 5,
+    "question": "How do you protect the privacy of survivors?",
+    "answer": "All stories and examples shared on the platform are anonymized. Names, locations, and identifying details are changed or removed. Donor data is stored securely and not shared outside the organization."
+  },
+  {
+    "id": 6,
+    "question": "Is my payment information secure?",
+    "answer": "Yes. Payments are processed through a secure, PCI-compliant payment provider. We do not store full credit card details on our servers."
+  },
+  {
+    "id": 7,
+    "question": "Can I make a recurring monthly donation?",
+    "answer": "Yes. You can choose a one-time donation or set up a recurring monthly donation from the donation page or from your donor account settings."
+  },
+  {
+    "id": 8,
+    "question": "How can I see the impact of my donation?",
+    "answer": "After donating, you will see impact summaries on your dashboard and receive follow-up emails showing how donations support specific programs, services, or milestones."
+  },
+  {
+    "id": 9,
+    "question": "Can I donate on behalf of someone else or as a gift?",
+    "answer": "Yes. You can dedicate a donation to someone else. They can receive a personalized thank-you message or e-card if you choose."
+  },
+  {
+    "id": 10,
+    "question": "What if I cannot donate money? Are there other ways to help?",
+    "answer": "Yes. You can support Shield of Athena by sharing campaigns on social media, organizing a fundraiser, volunteering, or participating in awareness events."
+  },
+  {
+    "id": 11,
+    "question": "Can I stay anonymous as a donor?",
+    "answer": "Yes. You can choose to appear as “Anonymous” on any public-facing lists. The organization will still record your details privately if needed for receipts."
+  },
+  {
+    "id": 12,
+    "question": "How do I update my email address or personal information?",
+    "answer": "Log in to your donor account, go to your profile settings, and update your contact information there."
+  },
+  {
+    "id": 13,
+    "question": "Can I cancel or change my recurring donation?",
+    "answer": "Yes. You can manage your recurring donation from your account dashboard or by contacting the organization directly for help."
+  },
+  {
+    "id": 14,
+    "question": "What services are available for children?",
+    "answer": "Shield of Athena offers specialized support for children, including counselling, activities in shelter, and programs designed to help them feel safe and rebuild their confidence."
+  },
+  {
+    "id": 15,
+    "question": "Can men or other family members get help too?",
+    "answer": "The primary focus is on women and children experiencing domestic and family violence. However, the organization can provide information and referrals to appropriate services for other family members when possible."
+  },
+  {
+    "id": 16,
+    "question": "Is the platform available in multiple languages?",
+    "answer": "Yes. Shield of Athena provides multilingual services, and the platform aims to support multiple languages so donors from different communities can easily understand and participate."
+  },
+  {
+    "id": 17,
+    "question": "How do I contact Shield of Athena directly?",
+    "answer": "You can use the contact page on the website to send a message, or call the phone numbers listed there if you or someone you know needs help."
+  },
+  {
+    "id": 18,
+    "question": "What should I do if I or someone I know is in immediate danger?",
+    "answer": "If you or someone you know is in immediate danger, call your local emergency number first. You can then contact Shield of Athena or other support services for follow-up help and safety planning."
+  },
+  {
+    "id": 19,
+    "question": "Can I organize a fundraiser or event for Shield of Athena?",
+    "answer": "Yes. The platform will include tools and guidance to help you create your own fundraising page or event and share it with friends, family, or colleagues."
+  },
+  {
+    "id": 20,
+    "question": "How will I stay informed after I donate?",
+    "answer": "You can opt in to receive updates by email about projects you supported, impact reports, and invitations to campaigns or events."
+  }
+]

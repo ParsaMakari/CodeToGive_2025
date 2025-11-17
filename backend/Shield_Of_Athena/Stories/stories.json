@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "A First Night of Safety",
+    "pathwaySlug": "emergency-shelter-safety",
+    "note": "Names and details changed for safety.",
+    "body": "After months of feeling unsafe at home, Maria* arrived at the shelter late one evening with her young daughter. Thanks to emergency shelter support, they had a warm bed, clean clothes, and someone to listen. In the following days, staff helped them create a safety plan and connect to essential services so they could start rebuilding their lives."
+  },
+  {
+    "id": 2,
+    "title": "Finding Her Voice Again",
+    "pathwaySlug": "counselling-healing",
+    "note": "Names and details changed for safety.",
+    "body": "When Aisha* first started counselling, she spoke very quietly and blamed herself for the violence she experienced. Over several sessions, she learned to recognize abuse, rebuild her self-esteem, and set healthy boundaries. She now describes counselling as the moment she stopped feeling alone and began to imagine a different future."
+  },
+  {
+    "id": 3,
+    "title": "Support for a Child’s Healing",
+    "pathwaySlug": "children-youth-support",
+    "note": "Names and details changed for safety.",
+    "body": "Liam* struggled to sleep and concentrate at school after witnessing violence at home. In the children’s program, he joined small group activities and met other kids with similar experiences. Art and play sessions gave him a safe way to express feelings he could not yet put into words, and his caregiver received guidance on how to support him."
+  },
+  {
+    "id": 4,
+    "title": "Changing a Community Conversation",
+    "pathwaySlug": "community-education-prevention",
+    "note": "Generalized example based on outreach work.",
+    "body": "During a community workshop, many participants shared that they were unsure how to recognize early signs of abuse or how to help a friend safely. After the session, several people requested additional resources and invited Shield of Athena to present at their workplace and school, helping the message reach even more families."
+  }
+]

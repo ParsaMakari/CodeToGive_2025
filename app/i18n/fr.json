@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "default_suggestions": [
+      "Comment puis‑je faire un don?",
+      "Quel est l’impact de mon don?",
+      "J’ai besoin d’aide pour choisir un montant"
+    ]
+  },
+  "errors": {
+    "empty_input": "Je n’ai pas bien compris votre message. Pouvez‑vous m’en dire un peu plus sur ce dont vous avez besoin ou comment vous souhaitez aider?",
+    "generic_error": "Un problème est survenu de notre côté. Veuillez réessayer dans un instant.",
+    "too_long": "Votre message est assez long. J’ai lu le début, mais vous pouvez aussi l’envoyer en plusieurs parties si vous voulez entrer dans les détails."
+  },
+  "safety": {
+    "crisis_text": "Merci d’avoir écrit. Il semble que vous traversiez un moment très difficile et votre sécurité est prioritaire.\n\nJe ne peux pas offrir l’aide d’urgence dont vous pourriez avoir besoin. Veuillez communiquer dès que possible avec {hotline}, ou avec les services d’urgence de votre région. Si vous le pouvez, parlez aussi à une personne en qui vous avez confiance.\n\nPour des questions non urgentes concernant les dons ou nos services, vous pouvez nous joindre à {support_email}.",
+    "emotional_text": "Merci d’avoir partagé comment vous vous sentez. Je suis là pour parler des façons de soutenir l’organisme, mais votre bien‑être est tout aussi important. Si vous vous sentez dépassé·e, il peut être utile d’en parler avec une personne de confiance ou un professionnel de la santé."
+  },
+  "profanity": {
+    "notice": "Je vais faire de mon mieux pour vous aider. Gardons une conversation respectueuse pour que je puisse vous accompagner le plus clairement possible."
+  },
+  "rag": {
+    "intro": "Voici un aperçu rapide basé sur nos informations officielles :"
+  },
+  "intents": {
+    "donation_help": {
+      "base_text": "Je peux certainement vous aider à faire un don. Voici les principales façons de nous soutenir :",
+      "suggestions": [
+        "Montre‑moi étape par étape comment donner en ligne",
+        "Quelles sont les autres façons de donner?",
+        "Puis‑je faire un don mensuel?"
+      ]
+    },
+    "amount_guidance": {
+      "base_text": "Le choix du montant dépend entièrement de ce qui est confortable pour vous. Chaque contribution aide. Voici quelques repères :",
+      "suggestions": [
+        "Donne‑moi des exemples de montants de dons",
+        "Explique l’impact d’un petit don mensuel",
+        "Et si je ne peux donner qu’une seule fois?"
+      ]
+    },
+    "pathway_explanation": {
+      "base_text": "Voici comment fonctionnent généralement les principales façons de faire un don :",
+      "suggestions": [
+        "Explique comment faire un don par carte de crédit",
+        "Puis‑je donner par Interac ou virement bancaire?",
+        "Comment obtenir un reçu d’impôt?"
+      ]
+    },
+    "transparency_inquiry": {
+      "base_text": "Il est tout à fait normal de vouloir savoir comment votre don est utilisé. Voici un résumé :",
+      "suggestions": [
+        "Montre-moi comment les dons sont répartis",
+        "Où puis-je trouver votre rapport annuel?",
+        "Quelle proportion sert aux frais administratifs?",
+        "Envoyez-moi le rapport financier détaillé"
+      ],
+      "snapshot_title": "Portrait de transparence (dernier exercice)",
+      "snapshot_lines": [
+        "81 % -> services directs comme l’hébergement d’urgence, l’intervention 24/7, l’accompagnement juridique et la planification de sécurité",
+        "12 % -> prévention, ateliers dans les écoles, campagnes communautaires et équipes mobiles en régions",
+        "7 % -> administration, infrastructures sécurisées de dons, formation du personnel et vérifications indépendantes pour garantir la reddition de comptes",
+        "Plus de 2 100 femmes et enfants ont été soutenus directement et 430 plans de sécurité personnalisés ont été élaborés l’an dernier"
+      ],
+      "snapshot_cta": "Vous voulez recevoir le bilan financier complet par courriel? Dites simplement « envoie-moi le rapport » et je vous indiquerai comment accéder au bilan détaillé."
+    },
+    "general_info": {
+      "base_text": "Voici un aperçu de notre mission et de nos services :",
+      "suggestions": [
+        "Parle-moi davantage de votre mission",
+        "Quels services offrez-vous?",
+        "Comment soutenez-vous les femmes et les enfants?"
+      ]
+    },
+    "victim_support": {
+      "base_text": "Si vous, ou une personne qui vous est chère, cherchez de la sécurité ou du soutien, voici comment nous pouvons vous aider dès maintenant. Tout ce que vous partagez reste confidentiel et vous pouvez nous contacter même si vous n’êtes pas certain·e de la suite.",
+      "suggestions": [
+        "Comment parler à quelqu’un en toute confidentialité?",
+        "Quelle aide si je dois partir rapidement?",
+        "Pouvez-vous soutenir une amie qui subit de la violence?"
+      ]
+    },
+    "unclear": {
+      "base_text": "Je suis là pour vous aider à trouver la meilleure façon de nous soutenir.",
+      "clarify": "Pouvez-vous préciser si vous souhaitez surtout comprendre notre mission, faire un don maintenant ou découvrir d’autres façons d’aider?",
+      "suggestions": [
+        "Je veux faire un don",
+        "Je veux comprendre votre impact",
+        "Je veux connaître d’autres façons d’aider"
+      ]
+    },
+    "emotional_distress": {
+      "base_text": "Si vous souhaitez tout de même parler de la façon dont vous pouvez aider, je peux vous présenter des moyens simples de nous soutenir, à votre rythme.",
+      "suggestions": [
+        "Explique les différentes façons de donner",
+        "Dis‑moi comment mon don aide concrètement",
+        "Je veux seulement quelques informations de base pour l’instant"
+      ]
+    }
+  },
+  "victim_support_flow": {
+    "ask_contact": "Si vous souhaitez qu’une intervenante vous rejoigne discrètement, vous pouvez répondre avec un numéro de téléphone sécuritaire, un courriel ou un moment où il est plus sûr de vous contacter. Partagez seulement ce qui vous semble sécuritaire — écrivez « pas en sécurité » en tout temps et je resterai sur des infos à faible risque.",
+    "confirm_contact": "Merci. J’ai transmis votre demande à l’intervenante de garde et elle vous rejoindra dès que ce sera sécuritaire. Si vous êtes en danger immédiat, contactez {hotline} ou les services d’urgence de votre région.",
+    "not_safe": "Je comprends. Je vais garder cette conversation centrée sur des ressources que vous pouvez consulter en toute sécurité. Vous pouvez joindre notre ligne confidentielle au {hotline} ou écrire à {support_email} dès que vous avez un moment sécuritaire.",
+    "confirm_suggestions": [
+      "Aide-moi à planifier ma sécurité",
+      "Je veux des infos à partager avec une amie",
+      "Montre-moi plutôt des options de dons"
+    ]
+  }
+}

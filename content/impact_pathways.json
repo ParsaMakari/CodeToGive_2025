@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "slug": "emergency-shelter-safety",
+    "name": "Emergency Shelter & Safety",
+    "shortDescription": "Immediate safe housing, basic needs, and crisis support for women and children escaping violence.",
+    "exampleMetrics": [
+      "Nights of safe shelter provided",
+      "Families supported this month"
+    ],
+    "exampleCosts": [
+      "$40 = one night of safe shelter for a mother and child",
+      "$120 = emergency essentials (food, toiletries, transportation) for a family"
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "counselling-healing",
+    "name": "Counselling & Healing",
+    "shortDescription": "Individual and group counselling to help survivors process trauma and rebuild confidence.",
+    "exampleMetrics": [
+      "Counselling sessions offered",
+      "Women supported in healing programs"
+    ],
+    "exampleCosts": [
+      "$60 = one individual counselling session",
+      "$250 = group workshop for several survivors"
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "children-youth-support",
+    "name": "Children & Youth Support",
+    "shortDescription": "Specialized programs that help children feel safe, express emotions, and regain stability.",
+    "exampleMetrics": [
+      "Children receiving support",
+      "Creative or educational activities hosted"
+    ],
+    "exampleCosts": [
+      "$30 = activity kit for a child",
+      "$150 = one week of after-school support for a child"
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "community-education-prevention",
+    "name": "Community Education & Prevention",
+    "shortDescription": "Workshops, outreach, and campaigns that raise awareness and prevent violence.",
+    "exampleMetrics": [
+      "People reached through outreach",
+      "Workshops and events held"
+    ],
+    "exampleCosts": [
+      "$50 = printed materials for a community workshop",
+      "$200 = outreach session for a community group"
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "legal-social-support",
+    "name": "Legal & Social Support Referrals",
+    "shortDescription": "Guidance and referrals to legal, housing, and social services to help survivors rebuild.",
+    "exampleMetrics": [
+      "Support meetings held",
+      "Referrals to partner services"
+    ],
+    "exampleCosts": [
+      "$70 = support meeting with a social worker",
+      "$180 = accompaniment and translation for a legal appointment"
+    ]
+  }
+]

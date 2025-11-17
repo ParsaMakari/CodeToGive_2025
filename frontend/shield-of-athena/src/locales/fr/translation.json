@@ -1,0 +1,442 @@
+{
+  "impactJourney": {
+    "title": "Votre parcours d’impact",
+    "subtitle": "Votre générosité fait une réelle différence",
+    "loading": "Chargement de votre impact...",
+    "error": "Nous n’avons pas pu charger votre parcours d’impact. {{message}}",
+    "campaign": {
+      "title": "Soutenez la campagne Second Step Housing",
+      "subtitle": "Ensemble, nous pouvons atteindre l’objectif de 5 M$ pour les familles dans le besoin.",
+      "raisedLabel": "Montant amassé",
+      "goalLabel": "Objectif"
+    },
+    "actions": {
+      "shareButton": "Partager",
+      "shareCopied": "Lien copié ! Partagez-le pour inspirer d’autres personnes."
+    },
+    "pathways": {
+      "IMPACT_PATHWAY_EMERGENCY_SHELTER_SAFETY": "Programme d’hébergement d’urgence"
+    },
+    "programs": {
+      "emergency-shelter-safety": "Programme d’hébergement d’urgence"
+    },
+    "steps": {
+      "DONATION_RECEIVED": {
+        "title": "Votre don a été reçu",
+        "description": "Merci de soutenir des femmes et des enfants dans le besoin."
+      },
+      "FUNDS_ALLOCATED": {
+        "title": "Les fonds sont alloués à votre programme",
+        "description": "Votre contribution est dirigée vers des programmes qui offrent une sécurité immédiate et un soutien à long terme."
+      },
+      "IMMEDIATE_IMPACT": {
+        "title": "Votre don a un impact immédiat",
+        "description": "Ce soir, une femme et ses enfants dormiront en sécurité grâce à vous."
+      },
+      "LONG_TERM_IMPACT": {
+        "title": "Vous faites partie de leur parcours de guérison",
+        "description": "Votre don contribue à la stabilité, à la sécurité et à l’espoir des familles qui reconstruisent leur vie."
+      }
+    }
+  },
+  "home": {
+    "greetingLoggedIn": "Bon retour, {{name}}",
+    "greetingAnon": "Bienvenue au Bouclier d’Athéna",
+    "hero": {
+      "join": "Rejoignez-nous dès aujourd’hui et",
+      "title": {
+        "say": "Dites",
+        "no": "non",
+        "noLeft": "n",
+        "noRight": "n",
+        "to": "à la",
+        "violence": "Violence !"
+      },
+      "description": "Le Bouclier d’Athéna est un organisme à but non lucratif pour les victimes de violence familiale. Nous offrons un hébergement d’urgence et des services professionnels aux femmes et à leurs enfants.",
+      "donateCta": "Faire un don",
+      "victimQuestion": "Êtes-vous victime ?",
+      "getHelp": "Obtenir de l’aide",
+      "imageAlt": "Illustration de soutien, de sécurité et de bienveillance"
+    }
+  },
+  "eventsCalendar": {
+    "pill": "Événements & nouvelles",
+    "title": "Événements à venir au Bouclier d’Athéna",
+    "subtitle": "Restez connecté·e à nos activités communautaires, campagnes de financement et événements de sensibilisation.",
+    "prevMonth": "Mois précédent",
+    "nextMonth": "Mois suivant",
+    "empty": "Aucun événement prévu pour cette journée. Consultez d’autres dates ou revenez bientôt !",
+    "types": {
+      "Fundraiser": "Levée de fonds",
+      "Volunteer": "Bénévolat",
+      "Workshop": "Atelier",
+      "Community": "Communautaire"
+    }
+  },
+  "layout": {
+    "nav": {
+      "logoAlt": "Logo du Bouclier d’Athéna",
+      "mobileToggle": "Afficher ou masquer le menu de navigation",
+      "languageLabel": "Langue",
+      "actions": {
+        "donate": "Faire un don",
+        "login": "Connexion",
+        "logout": "Déconnexion",
+        "profile": "Mon profil"
+      },
+      "options": {
+        "whoWeAre": "QUI NOUS SOMMES",
+        "whatWeDo": "CE QUE NOUS FAISONS",
+        "newsAndEvents": "NOUVELLES & ÉVÉNEMENTS",
+        "getInvolved": "S’IMPLIQUER"
+      }
+    },
+    "footer": {
+      "orgName": "Bouclier d’Athéna",
+      "rights": "Tous droits réservés.",
+      "links": {
+        "officialSite": "Site officiel",
+        "getHelp": "Obtenir de l’aide",
+        "contact": "Contact"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Histoires de notre communauté",
+    "items": [
+      {
+        "text": "Bouclier d'Athéna a aidé ma famille à se sentir en sécurité et soutenue. Leur équipe était présente à chaque étape et s’est assurée que nous avions les ressources nécessaires.",
+        "name": "Mackie Clonts",
+        "role": "Ancienne cliente, maintenant bénévole"
+      },
+      {
+        "text": "Le soutien et les conseils que j’ai reçus ont changé ma vie. Je n’aurais pas pu traverser cette période difficile sans leur équipe compatissante.",
+        "name": "Sarah Johnson",
+        "role": "Membre de la communauté"
+      },
+      {
+        "text": "Professionnels, attentionnés et toujours disponibles. Ils font vraiment tout leur possible pour aider les personnes dans le besoin.",
+        "name": "Michael Chen",
+        "role": "Militant local"
+      },
+      {
+        "text": "Leur dévouement envers les familles est remarquable. Je suis reconnaissante pour tout ce qu’ils ont fait pour notre communauté.",
+        "name": "Emily Rodriguez",
+        "role": "Coordonnatrice des bénévoles"
+      },
+      {
+        "text": "Une lueur d’espoir en période difficile. Leurs services ont fait toute la différence pour ma famille.",
+        "name": "David Thompson",
+        "role": "Ancien client"
+      }
+    ]
+  },
+  "profile": {
+    "pageTitle": "Mon profil",
+    "header": {
+      "title": "Mon compte",
+      "subtitle": "Consultez vos dons, mettez vos informations à jour et suivez votre impact avec le Bouclier d’Athéna."
+    },
+    "user": {
+      "editProfile": "Modifier le profil",
+      "changePassword": "Changer le mot de passe"
+    },
+    "stats": {
+      "title": "Votre impact",
+      "totalDonated": {
+        "label": "Total donné",
+        "helper": "Toutes campagnes confondues"
+      },
+      "monthlyGift": {
+        "label": "Don mensuel",
+        "perMonth": "mois",
+        "helper": "Don récurrent actif"
+      },
+      "yearsSupporting": {
+        "label": "Années de soutien",
+        "helper": "Merci de rester avec nous"
+      }
+    },
+    "preferences": {
+      "title": "Préférences",
+      "communication": {
+        "label": "Communication",
+        "helper": "Choisissez la fréquence de nos communications.",
+        "options": {
+          "monthlyUpdates": "Mises à jour mensuelles",
+          "impactReportsOnly": "Seulement les rapports d’impact",
+          "importantNewsOnly": "Seulement les nouvelles importantes"
+        }
+      },
+      "language": {
+        "label": "Langue",
+        "helper": "Interface et courriels.",
+        "options": {
+          "english": "Anglais",
+          "french": "Français"
+        }
+      },
+      "taxReceipts": {
+        "label": "Reçus fiscaux par courriel",
+        "helper": "Recevez vos reçus après chaque don."
+      }
+    },
+    "timeline": {
+      "title": "Frise de votre impact",
+      "helper": "Suivez comment vos dons contribuent au fil du temps — campagnes, fonds d’urgence et soutien à long terme."
+    },
+    "history": {
+      "title": "Dons récents",
+      "helper": "Ceci est une liste d’exemple — vous pourrez plus tard la connecter à la véritable API.",
+      "tableHeaders": {
+        "date": "Date",
+        "campaign": "Campagne",
+        "amount": "Montant",
+        "type": "Type"
+      },
+      "rows": {
+        "row1": {
+          "date": "10 Nov 2025",
+          "campaign": "Fonds pour l’hébergement d’urgence",
+          "amount": "50 $",
+          "type": "Don unique"
+        },
+        "row2": {
+          "date": "1 Nov 2025",
+          "campaign": "Don mensuel",
+          "amount": "25 $",
+          "type": "Mensuel"
+        },
+        "row3": {
+          "date": "1 Oct 2025",
+          "campaign": "Don mensuel",
+          "amount": "25 $",
+          "type": "Mensuel"
+        }
+      },
+      "viewFullHistory": "Voir tout l’historique des dons"
+    }
+  },
+  "donationPage": {
+    "giftTitle": "Votre don, leur liberté",
+    "description": "Le Bouclier aide les femmes et les enfants, ainsi que les communautés culturelles, à briser le cycle de la violence psychologique, verbale, économique, sexuelle et physique.",
+    "servicesFree": "Tous nos services sont",
+    "free": "gratuits",
+    "thankYou": "Merci de donner aujourd’hui !"
+  },
+  "donationForm": {
+    "common": {
+      "next": "Suivant",
+      "back": "Retour",
+      "cancel": "Annuler",
+      "donate": "Faire un don"
+    },
+    "steps": {
+      "amount": "Choisir le montant",
+      "details": "Détails",
+      "payment": "Paiement"
+    },
+    "amount": {
+      "title": "Choisir le montant",
+      "type": {
+        "oneTime": "Don unique",
+        "monthly": "Mensuel"
+      },
+      "goodCauses": {
+        "title": "Soutenir une bonne cause",
+        "causes": {
+          "emergencyAndSafety": "Hébergement d’urgence et sécurité",
+          "counsel&Healing": "Accompagnement et guérison",
+          "childrenAndYouth": "Soutien aux enfants et aux jeunes",
+          "communityEducation": "Éducation communautaire et prévention"
+        }
+      },
+      "validation": {
+        "noAmount": "Veuillez sélectionner ou saisir un montant."
+      },
+      "cancelMessage": "Don annulé.",
+      "aria": {
+        "amount": "Montant du don",
+        "currency": "Devise"
+      }
+    },
+    "details": {
+      "title": "Vos informations",
+      "labels": {
+        "firstName": "Prénom *",
+        "lastName": "Nom *",
+        "email": "Adresse courriel *",
+        "phone": "Numéro de téléphone *",
+        "address": "Adresse",
+        "city": "Ville",
+        "zip": "Code postal"
+      },
+      "placeholders": {
+        "firstName": "Jean",
+        "lastName": "Dupont",
+        "email": "jean.dupont@example.com",
+        "phone": "(555) 123-4567",
+        "address": "123 rue Principale",
+        "city": "Montréal",
+        "zip": "H2X 1Y4"
+      },
+      "taxReceipt": "M’envoyer un reçu fiscal pour mes dons",
+      "stayAnonymous": "Rester anonyme",
+      "validation": {
+        "required": "Veuillez remplir tous les champs obligatoires."
+      }
+    },
+    "payment": {
+      "title": "Paramètres de paiement",
+      "methods": {
+        "creditCard": "Carte de crédit",
+        "paypal": "Payer avec PayPal",
+        "applePay": "Payer avec Apple Pay",
+        "googlePay": "Payer avec Google Pay"
+      },
+      "labels": {
+        "cardNumber": "Numéro de carte",
+        "cardholderName": "Nom du titulaire",
+        "expirationDate": "Date d’expiration",
+        "securityCode": "Code de sécurité"
+      },
+      "placeholders": {
+        "cardNumber": "1234 5678 9012 3456",
+        "cardholderName": "Tel qu’indiqué sur la carte",
+        "expirationDate": "MM / AA",
+        "securityCode": "CVV"
+      },
+      "validation": {
+        "required": "Veuillez remplir tous les détails de paiement."
+      },
+      "summary": {
+        "total": "Total :",
+        "type": "* Paiement {{type}}"
+      },
+      "type": {
+        "oneTime": "unique",
+        "monthly": "mensuel"
+      },
+      "alert": {
+        "success": "Merci pour votre don {{type}} de {{amount}} {{currency}} !\n\nRésumé du don :\nNom : {{name}}\nCourriel : {{email}}",
+        "error": "Nous n’avons pas pu traiter votre don. Veuillez réessayer plus tard."
+      }
+    }
+  },
+  "welcome": {
+    "pill": "Appariement d’impact propulsé par l’IA",
+    "title": "Athena Impact Matcher",
+    "subtitle": "Découvrez la façon la plus significative d’aider aujourd’hui. Répondez à quelques questions et laissez notre outil vous associer au programme de Shield of Athena où votre soutien aura le plus grand impact.",
+    "footer": "2 minutes seulement • Gratuit • Confidentiel",
+    "primaryCta": "Commencer votre parcours",
+    "secondaryCta": "En savoir plus sur notre mission"
+  },
+  "values": {
+    "title": "Qu’est-ce qui compte le plus pour vous ?",
+    "subtitle": "Sélectionnez tous les domaines d’impact qui correspondent à vos valeurs."
+  },
+  "preferences": {
+    "title": "Comment souhaitez-vous aider ?",
+    "subtitle": "Choisissez les façons de contribuer qui vous conviennent."
+  },
+  "buttons": {
+    "back": "Retour",
+    "continue": "Continuer",
+    "findMatch": "Trouver ma recommandation",
+    "startOver": "Recommencer et explorer d’autres options",
+    "donateNow": "Faire un don maintenant",
+    "learnMore": "En savoir plus"
+  },
+  "steps": {
+    "values": "Valeurs",
+    "preferences": "Préférences",
+    "match": "Recommandation"
+  },
+  "loading": {
+    "title": "Nous cherchons votre meilleure correspondance...",
+    "subtitle": "Notre outil analyse vos valeurs et préférences."
+  },
+  "results": {
+    "pill": "Recommandation personnalisée",
+    "title": "Nous avons trouvé votre programme !",
+    "subtitle": "Selon vos valeurs et vos préférences, ce programme est celui où votre soutien peut avoir le plus d’impact aujourd’hui.",
+    "yourImpact": "Votre impact",
+    "storyFromField": "Témoignage du terrain"
+  },
+  "impactAreas": {
+    "children": {
+      "title": "Soutien émotionnel aux enfants",
+      "description": "Accompagnement, art-thérapie et soutien tenant compte des traumatismes pour les enfants."
+    },
+    "housing": {
+      "title": "Hébergement d’urgence",
+      "description": "Refuge sécuritaire et logements de transition pour les familles en crise."
+    },
+    "legal": {
+      "title": "Aide juridique et plaidoyer",
+      "description": "Aide juridique, soutien au tribunal et services de défense des droits."
+    },
+    "essentials": {
+      "title": "Besoins essentiels",
+      "description": "Nourriture, vêtements et produits de base pour les survivantes."
+    },
+    "mothers": {
+      "title": "Soutien aux mères",
+      "description": "Ressources parentales et soutien en santé mentale périnatale."
+    },
+    "newcomers": {
+      "title": "Soutien aux nouveaux arrivants",
+      "description": "Services culturellement adaptés pour les familles immigrantes."
+    }
+  },
+  "givingPreferences": {
+    "onetime": "Don unique",
+    "monthly": "Don mensuel",
+    "adopt": "Programme « Adopter une famille »",
+    "inkind": "Dons en nature",
+    "volunteer": "Possibilités de bénévolat",
+    "advocacy": "Sensibilisation et plaidoyer"
+  },
+  "matches": {
+    "children_program": {
+      "name": "Programme de soutien thérapeutique pour enfants",
+      "description": "Vos valeurs s’alignent parfaitement avec notre programme offrant un accompagnement tenant compte des traumatismes, de l’art-thérapie et un soutien émotionnel pour les enfants touchés par la violence familiale.",
+      "impactMetric": "150 $ permettent d’offrir 3 séances de thérapie à un enfant",
+      "story": "Grâce à l’art-thérapie, j’ai enfin trouvé une façon d’exprimer des émotions que je ne pouvais pas mettre en mots. Maintenant je sais que je ne suis pas seul·e et que j’ai le droit de guérir à mon rythme."
+    },
+    "housing_program": {
+      "name": "Programme d’hébergement et de stabilisation pour familles",
+      "description": "Ce programme offre un refuge sécuritaire, des logements de transition et un soutien global pour aider les familles à reconstruire leur vie après la violence.",
+      "impactMetric": "250 $ financent 2 nuits d’hébergement sécuritaire pour une famille",
+      "story": "Avoir un endroit sûr où dormir nous a permis de souffler. C’était la première fois depuis des mois que je voyais mes enfants dormir paisiblement."
+    },
+    "legal_program": {
+      "name": "Soutien juridique et accompagnement au tribunal",
+      "description": "Nous offrons de l’information juridique, un accompagnement au tribunal et des services de défense des droits pour que les survivantes ne soient jamais seules face au système.",
+      "impactMetric": "100 $ soutiennent une journée complète d’accompagnement juridique",
+      "story": "J’étais terrifiée à l’idée d’aller au tribunal. Avoir quelqu’un à mes côtés pour m’expliquer chaque étape et parler quand je n’y arrivais pas a tout changé."
+    }
+  },
+  "athenaGuide": {
+    "badge": "Athena Guide",
+    "title": "Votre assistante aux dons",
+    "subtitle": "Posez vos questions sur les programmes, l’impact et les façons de donner.",
+    "welcome": "Bonjour ! Je suis là pour vous aider à mieux comprendre l’impact de votre don. Comment puis-je vous aider aujourd’hui ?",
+    "inputPlaceholder": "Écrivez votre question...",
+    "sendLabel": "Envoyer",
+    "fallbackReply": "Je ne suis pas certaine d’avoir bien compris, mais je suis là pour vous aider !",
+    "errorReply": "J’ai du mal à répondre pour le moment. Veuillez réessayer un peu plus tard.",
+    "suggestions": {
+      "title": "Questions suggérées"
+    },
+    "sampleQuestions": {
+      "howDonationsUsed": "Comment mes dons sont-ils utilisés ?",
+      "campaign": "Quelle campagne est en cours ?",
+      "monthly": "Devrais-je choisir un don mensuel ?",
+      "taxReceipt": "Vais-je recevoir un reçu d’impôt ?"
+    },
+    "crisisBox": {
+      "title": "Aide immédiate"
+    }
+  }
+}

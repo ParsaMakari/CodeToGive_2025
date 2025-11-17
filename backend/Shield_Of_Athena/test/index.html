@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Login Test</h2>
+
+<input id="username" type="text" placeholder="Username"><br><br>
+<input id="password" type="password" placeholder="Password"><br><br>
+
+<button onclick="login()">Login</button>
+
+<pre id="result"></pre>
+
+<script>
+async function login() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    try {
+        const response = await fetch("http://127.0.0.1:8000/api/token/", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ username, password })
+        });
+
+        if (!response.ok) {
+            console.error("Login failed", response.status);
+            const text = await response.text();
+            console.log("Response:", text);
+            return;
+        }
+
+        const data = await response.json(); // JSON with access & refresh tokens
+        console.log("JWT Tokens:", data);
+
+        // Save token for further requests
+        localStorage.setItem("access", data.access);
+        localStorage.setItem("refresh", data.refresh);
+
+    } catch (err) {
+        console.error("Network or parsing error:", err);
+    }
+}
+</script>
+
+</body>
+</html>

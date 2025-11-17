@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Gabarito';
+    src: url('assets/fonts/gabarito-cdnfonts/Gabarito-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family:"Gabarito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

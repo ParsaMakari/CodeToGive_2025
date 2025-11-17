@@ -1,0 +1,42 @@
+@use "../../css/themes" as *;
+
+.payment-methods {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.method-btn {
+  padding: 16px;
+  border: 2px solid var(--color-border-subtle, #e5e7eb);
+  border-radius: 12px;
+  background: var(--color-card-bg-strong, #ffffff);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--color-text-main, #111827);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    border-color: var(--color-primary, #4c1d95);
+  }
+
+  &.active {
+    background: var(--color-primary, #4c1d95);
+    border-color: var(--color-primary, #4c1d95);
+    color: #ffffff;
+  }
+}
+
+.icon-btn {
+  padding: 10px;
+  min-width: 55px;
+}
+
+.payment-icon {
+  width: 24px;
+  height: 24px;
+}
