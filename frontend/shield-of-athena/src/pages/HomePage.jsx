@@ -13,6 +13,8 @@ import Stats from "../components/Stats"
 import TestiomonialScroll from "../components/TestiomonialScroll"
 import QuizPopup from "../components/QuizPopup"
 import { useAuth } from "../context/authContext"
+import Quiz from "../components/Quiz"
+import NeedHelp from "../components/NeedHelp"
 
 function HomePage() {
     const navigate = useNavigate();
@@ -115,6 +117,17 @@ function HomePage() {
                     ]}
                     link="#volunteer"
                 />
+                </div>
+                <div className="home-page-quiz">
+                    <div className="home-page-quiz-title">
+                        <h2>
+                            Test your knowledge about family violence
+                        </h2>
+                    </div>
+                    <Quiz/>
+                </div>
+                <div className="home-page-ressources">
+                    <NeedHelp/>
                 </div>
         </div>
             

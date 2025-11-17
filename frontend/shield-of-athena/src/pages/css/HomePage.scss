@@ -267,6 +267,16 @@
   }
 }
 
+// quiz home page
+
+.home-page-quiz{
+  background-color: var(--color-card-bg-soft);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+}
+
 
 /* ----------- MOBILE (phones & small tablets) ----------- */
 @media (max-width: 768px) {

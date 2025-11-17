@@ -3,13 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import { useState, useEffect } from "react";
 import { LucideX } from "lucide-react";
+import QuizCompletion from "./QuizCompletion";
 
-export default function Quiz({onClose}) {
+export default function Quiz({onClose,setQuizFinished}) {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isAnswerCorrect,setIsAnswerCorrect] = useState(null);
-
+  const [showCompletion, setShowCompletion] = useState(false);
 
   useEffect(() => {
     const fetchQuiz = async () => {
@@ -41,24 +42,47 @@ export default function Quiz({onClose}) {
       }    
     }
   }
+  const handlePrevious = ()=>{
+    setSelectedAnswer(null);
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  }
 
   const handleNext = () => {
     setSelectedAnswer(null);
+    setIsAnswerCorrect(null);
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
-      alert("Quiz finished!");
+      setShowCompletion(true);
+      setQuizFinished && setQuizFinished(true);
     }
   };
+
+  const handleRestart = () => {
+    setShowCompletion(false);
+    setCurrentIndex(0);
+    setSelectedAnswer(null);
+    setIsAnswerCorrect(null);
+  };  
+
+
+  if(showCompletion) return (
+        <QuizCompletion
+          onClose={onClose} 
+          onRestart={handleRestart}
+        />
+      ) 
 
   return (
     <div className="container">
       <Card className="quiz-card">
         <Card.Header className="quiz-header">
           Learn about family violence
-          <div className="quiz-panel-close-btn" onClick={onClose}>
+          {onClose && <div className="quiz-panel-close-btn" onClick={onClose}>
             <LucideX size={20}/>
-          </div>
+          </div>}
         </Card.Header>
       
         <div className="question-number">

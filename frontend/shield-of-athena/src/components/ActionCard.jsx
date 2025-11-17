@@ -1,6 +1,7 @@
 import { Apple, ArrowUpRight, DollarSign, DollarSignIcon, Heart, Users } from "lucide-react";
 import "./css/ActionCard.scss"
 import { FaApple, FaGoogle, FaPaypal } from "react-icons/fa6";
+import { useNavigate } from "react-router";
 
 // Payment icons component
 const PaymentIcons = () => (
@@ -25,7 +26,6 @@ const AvatarGroup = ({ images }) => (
   </div>
 );
 
-
 export default function ActionCard({ 
   icon,
   title, 
@@ -37,6 +37,9 @@ export default function ActionCard({
   link = "#",
   className = ""
 }) {
+  
+  const navigate = useNavigate();
+
   const renderIcon = () => {
     const iconMap = {
       'donation': <DollarSign className="card-icon" />,
@@ -53,7 +56,7 @@ export default function ActionCard({
           <div className="card-action">
             <PaymentIcons />
             <span className="action-text">{actionText}</span>
-            <a href={link} className="action-button">
+            <a href={link} className="action-button" onClick={()=>navigate("/donate")}>
               <ArrowUpRight className="action-arrow" />
             </a>
           </div>
