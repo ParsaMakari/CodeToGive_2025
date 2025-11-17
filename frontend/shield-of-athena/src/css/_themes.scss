@@ -11,6 +11,7 @@ $shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.06);
 $shadow-soft-strong: 0 18px 45px rgba(79, 70, 229, 0.2);
 $shadow-chip: 0 8px 18px rgba(15, 23, 42, 0.12);
 $shadow-button: 0 8px 20px rgba(79, 70, 229, 0.08);
+$shadow-action-card : 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
 // Transitions
 $transition-soft: 0.15s ease-in-out;
@@ -26,6 +27,8 @@ $transition-soft: 0.15s ease-in-out;
   --color-card-bg-strong: #ffffff;
   --color-card-border-soft: rgba(148, 163, 184, 0.25);
   --color-border-subtle: #e5e7eb;
+
+  --color-action-card-bg:#ffffff;
 
   /* Primary / brand */
   --color-primary: #4c1d95;
@@ -76,7 +79,7 @@ $transition-soft: 0.15s ease-in-out;
   --color-card-bg-strong: #020617;
   --color-card-border-soft: rgba(148, 163, 184, 0.35);
   --color-border-subtle: rgba(148, 163, 184, 0.4);
-
+  
   --color-primary: #9394b5;
   --color-primary-soft: #1e1b4b;
   --color-primary-chip-bg: #1f2937;
@@ -101,6 +104,15 @@ $transition-soft: 0.15s ease-in-out;
   --color-soft-grey: #313039;
   --color-error: #b91c1c;
   --color-success: #15803d;
+
+    /* Quiz response choices*/
+  --color-quiz-res-bg: #020617;
+  --color-quiz-res-text:  #9394b5;
+  --color-quiz-res-border:  #a855f7;
+  --color-quiz-res-border-hover:  #9394b5;
+  --color-quiz-res-bg-hover:  #111827;
+  --color-quiz-res-true-bg:rgb(0, 185, 0);
+  --color-quiz-res-false-bg:rgb(228, 0, 0);
 
   --color-primary-dark: #ebe1f5;
 

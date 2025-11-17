@@ -11,8 +11,8 @@
 }
 
 .quiz-fab-close{
-    background-color:white;
-    border: 2px solid white;
+    background-color:var(--color-card-bg-strong);
+    border: 2px solid var(--color-card-bg-strong);
     z-index: 100;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@
     top:-3rem;
     left: 1rem;
     font-size: small;
-    background-color: #ffffff;
+    background-color: var(--color-card-bg-strong);
     padding: 0.2rem;
     z-index: 100;
     border-radius: 0.2rem;

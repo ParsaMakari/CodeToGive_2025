@@ -59,7 +59,7 @@
 .type-btn.active {
     background: var(--color-primary, #4c1d95);
     border-color: var(--color-primary, #4c1d95);
-    color: #ffffff;
+    color: var(--color-card-bg-strong);
 }
 
 /* --- Amount Input --- */
@@ -151,7 +151,7 @@
 .preset-btn.selected {
     border-color: var(--color-primary, #4c1d95);
     background: var(--color-primary, #4c1d95);
-    color: #ffffff;
+    color: var(--color-card-bg-strong);
 }
 
 /* --- Mobile (amount card) --- */
@@ -234,7 +234,7 @@
 
 .form-label.impact-label{
     font-weight: 400;
-    color: #4c1d95;
+    color: var(--color-primary);
     margin-bottom: 0%;
 }
 
@@ -316,7 +316,7 @@
     top: 3px;
     width: 6px;
     height: 11px;
-    border: solid #ffffff;
+    border: 2px solid var(--color-border-subtle);
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
@@ -335,11 +335,12 @@
 .form-selection{
     background-color: transparent;
     border: none;
+    color: var(--color-primary);
 
     padding: 10px 15px;
-    border: 2px solid #e5e7eb;
+    border: 2px solid var(--color-card-border-soft);
     font-size: 0.9rem;
-    background-color: white;
+    background-color: var(--color-card-bg-soft);
     border-radius: 0.5rem;
 
     column-gap: 20px;
@@ -348,10 +349,11 @@
 }
 
 select option {
+color: var(--color-primary);
+
   padding: 12px;
   font-size: 0.9rem;
-  background: #ffffff;
-  color: #111827;
+  background-color: var(--color-card-bg-soft);
   cursor: pointer;
 }
 
@@ -364,7 +366,7 @@ select option {
     cursor: pointer;
 }
 .form-selection-grid-item:hover{
-    border-color: #9ca3af;
+    border-color: var( --color-card-border-soft);
 }
 
 .form-selection-grid-item.item-selected{
@@ -379,7 +381,6 @@ select option {
     padding: 0.6rem;
     border-radius: 5rem;
     color: var(--color-primary, #4c1d95)
-
 }
 
 .form-group.impact-goup{
