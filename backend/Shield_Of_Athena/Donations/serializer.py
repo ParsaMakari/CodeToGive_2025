@@ -2,7 +2,7 @@ from rest_framework import serializers
 from Users.serializer import UserSerializer
 from .models import Donation
 from datetime import date
-
+import json
 
 class DonationSerializer(serializers.ModelSerializer):
     user = UserSerializer(read_only=True)
@@ -17,7 +17,8 @@ class DonationSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         request = self.context.get("request")
-        user = getattr(request, "user", None)
+
+        user = getattr((request), "user", None)
 
         # Auto-set date to today
         validated_data["date"] = date.today()

@@ -13,15 +13,17 @@ def donate(request):
     serializer = DonationSerializer(data=request.data, context={"request": request})
     if serializer.is_valid():
         donation = serializer.save()
-        user = getattr(donation, "user", None)
+        user = request.data.get("user");
         first_name = None
         recipient_email = None
         if user:
-            first_name = user.first_name or user.username
-            recipient_email = user.email or None
+            first_name = user["username"] or user["first_name"]
+            recipient_email = user["email"] or None
 
+        print(user)
+    
         confirmation(
-            first_name or "",
+            first_name or "Donor",
             donation.amount,
             donation.currency,
             impact_pathway_name=getattr(donation, "impact_pathway_slug", None),
