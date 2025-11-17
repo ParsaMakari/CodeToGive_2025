@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/authContext";
+import { LucideCheck } from "lucide-react";
 
 function Register() {
     const [firstName, setFirstName] = useState("");
@@ -96,6 +97,12 @@ function Register() {
                         placeholder="Confirm password"
                         className="auth-input"
                     />
+
+                    <label class="checkbox-container">
+                        <input type="checkbox"/>
+                        <LucideCheck className="checkmark" size={18}/>
+                        Agree to receive notifications emails
+                    </label>              
 
                     <button type="submit" className="auth-button">
                         Sign Up

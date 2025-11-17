@@ -4,7 +4,7 @@
   position: fixed;
   right: 1.5rem;
   bottom: 3rem;
-  z-index: 50;
+  z-index: 100;
 
   width: 2.5rem;
   height: 2.5rem;
@@ -39,7 +39,7 @@
 .chat-fab__backdrop {
   position: fixed;
   inset: 0;
-  z-index: 45;
+  z-index: 100;
   background: rgba(15, 23, 42, 0.35);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);

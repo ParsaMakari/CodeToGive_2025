@@ -9,6 +9,10 @@ export default function QuizPopup (){
     const [isHover,setIsHover] = useState(false);
     const [isHoverClose,setIsHoverClose] = useState(false);    
     const [isIconVisible,setIsIconVisible] = useState(true);
+    const  [isQuizFinished,setIsQuizFinished] = useState(false);
+    
+    const [flickerTime,setFlickerTime] = useState(3);
+
     const controls = useAnimation();
 
     const triggerShake = () => {
@@ -29,14 +33,14 @@ export default function QuizPopup (){
     }
 
     useEffect(()=>{
-        if(!isHover){
-        const interval = setInterval(() => {
-            triggerShake()
-        }, 4000); // 2000ms = 2 seconds
-
-        return () => clearInterval(interval); 
+        if(!isHover && !isQuizFinished && (flickerTime>0)){
+            const interval = setInterval(() => {
+                setFlickerTime(flickerTime-1);
+                triggerShake();
+            }, 4000);
+            return () => clearInterval(interval); 
         }
-    },[isHover])
+    },[isHover,flickerTime,isQuizFinished])
 
     if(!isIconVisible) return null;
 
@@ -64,7 +68,7 @@ export default function QuizPopup (){
                         isHoverClose?
                         "Close"
                         :
-                        "Test your knowlage"
+                        "Test your knowledge"
                     }
                     
                 </p>
@@ -92,7 +96,7 @@ export default function QuizPopup (){
                             <X />
                         </button> */}
 
-                        <Quiz onClose = {handleClose}/>
+                        <Quiz onClose={handleClose} setQuizFinished={setIsQuizFinished}/>
                     </div>
                 </div>
             )}
