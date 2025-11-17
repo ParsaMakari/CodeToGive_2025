@@ -32,9 +32,9 @@ export default function Login() {
 
   useEffect(() => {
     document.title = "Login";
-    auth.user && navigate("/dashboard", {replace:true} );
   }, []);  
-
+  
+  (auth.user!=null) && navigate("/", {replace:true} );
   return (
     <div className="auth">
       <div className="auth-card">

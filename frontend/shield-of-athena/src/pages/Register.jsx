@@ -19,7 +19,7 @@ function Register() {
 
     useEffect(() => {
         document.title = "Register";
-        auth.user && navigate("/dashboard", {replace:true} );
+        (auth.user!=null) && navigate("/", {replace:true} );
     }, []);  
     
     const handleSubmit = async (e) => {
@@ -45,6 +45,9 @@ function Register() {
             setMessage("Registration failed!" + error.message);
         }
     };
+    
+    (auth.user!=null) && navigate("/", {replace:true} );
+
     return (
         <div className="auth">
             <div className="auth-card">

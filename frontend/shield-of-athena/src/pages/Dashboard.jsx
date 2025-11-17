@@ -13,6 +13,7 @@ function Dashboard() {
         (!auth.user) && navigate("/login", {replace:true} );
     }, []);     
 
+    (auth.user===null) && navigate("/login", {replace:true} );
     return (
         <>
             <HomePage />
